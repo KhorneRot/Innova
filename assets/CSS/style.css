@@ -9,6 +9,7 @@
     display: inline-flex;
     color: rgb(255, 255, 255);
     text-align: center;
+    justify-content: ;
     padding: 14px 16px;
     text-decoration: none;
     font-family: ;
@@ -20,8 +21,34 @@
 }
 
 
+.encabezado {
+    display: flex;
+    justify-content: flex-start;
 
-.logo {
-width: 200px;
-height: 150px;
+}
+
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.telefono {
+    padding-left: 778px;
+    padding-right: 10px;
+}
+
+.redes{
+    padding-left: 1252px;
+    padding-top: 28px;
+    
+}
+
+.email {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 10px;
+
 }
