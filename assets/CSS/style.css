@@ -23,32 +23,67 @@
 
 .encabezado {
     display: flex;
-    justify-content: flex-start;
+    justify-content: end;
+    
 
 }
 
-
-.info{
+.logo{
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    padding-left: 20px;
-    padding-top: 10px;
+    bottom: -24px; 
+
+}
+.contacto {
+    display: flex;
+
+
 }
 
 .telefono {
-    padding-left: 778px;
+    display: flex;
     padding-right: 10px;
 }
 
-.redes{
-    padding-left: 1252px;
-    padding-top: 28px;
-    
+.navbar2{
+    display: flex;
+    justify-content: space-between;
 }
 
 .email {
+    display: flex;
     padding-left: 20px;
-    padding-top: 5px;
     padding-right: 10px;
 
+}
+
+
+.redes{
+    display: flex;
+    position:relative ;
+    justify-content: flex-end;
+    bottom: 30px;
+    right: 45px;
+    
+}
+/* FIN DE NAVBAR */
+
+
+/* PAGINA DE INICIO */
+
+.portada{
+    max-width: 100%;
+}
+
+.portada img {
+    width: 100%;
+    height: auto;
+}
+
+.logo-portada{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 393px;
+    left: 157px;
 }
