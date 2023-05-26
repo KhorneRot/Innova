@@ -61,7 +61,7 @@
 
 .redes{
     position:relative ;
-    bottom: 13px;
+    bottom: 12px;
     right: 45px;
     
 }
@@ -72,6 +72,26 @@
     width: 100%;
     background-color: #ffffff;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  
+  .item:nth-child(1) {
+    grid-row: 1 / span 2;
+  }
+  
+  .item {
+    background-color: #ffffff;
+    /* padding: 20px; */
+  }
+
+  .item2{
+    justify-self: end;
+  }
 /* FIN DE NAVBAR */
 
 
@@ -128,22 +148,3 @@
     align-items: flex-end;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-  }
-  
-  .item:nth-child(1) {
-    grid-row: 1 / span 2;
-  }
-  
-  .item {
-    background-color: #ffffff;
-    /* padding: 20px; */
-  }
-
-  .item2{
-    justify-self: end;
-  }
