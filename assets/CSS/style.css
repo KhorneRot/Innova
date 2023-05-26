@@ -5,6 +5,7 @@
     text-align: center;
 }
 
+
 .navbar a {
     display: inline-flex;
     color: rgb(255, 255, 255);
@@ -31,7 +32,7 @@
 .logo{
     position: relative;
     display: flex;
-    bottom: -24px; 
+   
 
 }
 .contacto {
@@ -59,23 +60,34 @@
 
 
 .redes{
-    display: flex;
     position:relative ;
-    justify-content: flex-end;
-    bottom: 30px;
+    bottom: 13px;
     right: 45px;
     
+}
+
+.navegador{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
 }
 /* FIN DE NAVBAR */
 
 
 /* PAGINA DE INICIO */
 
-.portada{
-    max-width: 100%;
-}
 
+.portada{
+    font-size: 0;
+}
 .portada img {
+    width: 100%;
+    height: auto;
+    border-bottom: none
+  
+}
+.cuerpo img {
     width: 100%;
     height: auto;
 }
@@ -87,3 +99,51 @@
     top: 393px;
     left: 157px;
 }
+
+.prueba{
+    display: flex;
+}
+
+.prueba1{
+    display: flex;
+    background-color: #0E67A7;
+    height: 30px;
+    width: 30px;
+    align-items: stretch;
+}
+
+.prueba2{
+    display: flex;
+    background-color: #01f135;
+    height: 30px;
+    width: 30px;
+    align-items: flex-start;
+}
+
+.prueba3{
+    display: flex;
+    background-color: #9c1612;
+    height: 30px;
+    width: 30px;
+    align-items: flex-end;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  
+  .item:nth-child(1) {
+    grid-row: 1 / span 2;
+  }
+  
+  .item {
+    background-color: #ffffff;
+    /* padding: 20px; */
+  }
+
+  .item2{
+    justify-self: end;
+  }
