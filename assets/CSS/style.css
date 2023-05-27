@@ -1,3 +1,14 @@
+ @font-face{
+    font-family: 'Frutiger';
+   src: url(../fonts/frutiger-75-black.otf);
+}
+ 
+ 
+body {
+    margin: 0;
+    padding: 0;
+  }
+ 
  /* Estilos para la barra de navegación */
  .navbar {
     background-color: #0E67A7;
@@ -10,15 +21,17 @@
     display: inline-flex;
     color: rgb(255, 255, 255);
     text-align: center;
-    justify-content: ;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: ;
+    font-family: 'Frutiger';
+    font-size: 24px;
+    padding: 10px 20px;
+  
 }
 
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #1387da;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -44,6 +57,7 @@
 .telefono {
     display: flex;
     padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar2{
@@ -54,7 +68,8 @@
 .email {
     display: flex;
     padding-left: 20px;
-    padding-right: 10px;
+    padding-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -66,12 +81,6 @@
     
 }
 
-.navegador{
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: #ffffff;
-}
 
 .container {
     display: grid;
@@ -86,12 +95,21 @@
   
   .item {
     background-color: #ffffff;
-    /* padding: 20px; */
+    padding-top: 5px;
+    padding-left: 30px;
   }
 
   .item2{
     justify-self: end;
   }
+
+.navbartop{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+
 /* FIN DE NAVBAR */
 
 
