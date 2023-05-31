@@ -34,13 +34,11 @@ body {
     color: rgb(255, 255, 255);
 }
 
-
-.encabezado {
-    display: flex;
-    justify-content: end;
-    
-
-}
+@media screen and (max-width: 1100px) {
+    .navbar a {
+      display: none; /* Ocultar la navbar */
+    }
+  }
 
 .logo{
     position: relative;
@@ -103,10 +101,18 @@ body {
     justify-self: end;
   }
 
+  @media screen and (max-width: 1100px) {
+    .item2 {
+      display: none; 
+    }
+  }
+
+
 .navbartop{
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 999;
     background-color: #ffffff;
 }
 
@@ -117,6 +123,7 @@ body {
 
 
 .portada{
+    position: relative;
     font-size: 0;
 }
 .portada img {
@@ -138,31 +145,49 @@ body {
     left: 157px;
 }
 
-.prueba{
-    display: flex;
+.cuerpo{
+    position: relative;
 }
 
-.prueba1{
-    display: flex;
+.texto-superpuesto {
+    position: absolute;
+    top: 11%; 
+    left: 50%; 
+    text-align: center;
+    transform: translate(-50%, -50%); /* Centra el texto en el centro del contenedor */
+    color: #ffffff; /* Color del texto */
+    font-size: 2.2rem; /* Tamaño de fuente del texto */
+    /* Otros estilos de texto según tus necesidades */
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+  @media screen and (max-width: 1700px) {
+    .texto-superpuesto {
+      font-size: 150%; /* Tamaño de fuente para pantallas más pequeñas */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .texto-superpuesto {
+      font-size: 125%; /* Tamaño de fuente para pantallas aún más pequeñas */
+    }
+  }
+
+  .sobrenosotros{
+    position: absolute;
+    top: 60%; 
+    left: 50%; 
+    text-align: center;
+    transform: translate(-50%, -50%);
     background-color: #0E67A7;
-    height: 30px;
-    width: 30px;
-    align-items: stretch;
-}
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 42px;
+    text-decoration: none;
+    font-family: 'Frutiger';
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-.prueba2{
-    display: flex;
-    background-color: #01f135;
-    height: 30px;
-    width: 30px;
-    align-items: flex-start;
-}
-
-.prueba3{
-    display: flex;
-    background-color: #9c1612;
-    height: 30px;
-    width: 30px;
-    align-items: flex-end;
-}
-
+  }
