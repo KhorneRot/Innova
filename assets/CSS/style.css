@@ -38,14 +38,14 @@ body {
     .navbar a {
       display: none; /* Ocultar la navbar */
     }
+    .color-bar {
+      display: block;
+      background-color: #0E67A7;
+      height: 25px;
+
+    }
   }
 
-.logo{
-    position: relative;
-    display: flex;
-   
-
-}
 .contacto {
     display: flex;
 
@@ -91,11 +91,18 @@ body {
     grid-row: 1 / span 2;
   }
   
-  .item {
-    background-color: #ffffff;
-    padding-top: 5px;
-    padding-left: 30px;
+ 
+  .item img {
+    height: auto; 
+    width: 350px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    padding-top: 2px;
   }
+
+  
+ 
+
 
   .item2{
     justify-self: end;
@@ -154,26 +161,15 @@ body {
     top: 11%; 
     left: 50%; 
     text-align: center;
-    transform: translate(-50%, -50%); /* Centra el texto en el centro del contenedor */
-    color: #ffffff; /* Color del texto */
-    font-size: 2.2rem; /* Tamaño de fuente del texto */
-    /* Otros estilos de texto según tus necesidades */
+    transform: translate(-50%, -50%); 
+    color: #ffffff; 
+    font-size: 1.8vw;
+    max-width: 1000px;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 36px;
-    padding-right: 36px;
+ 
 }
 
-  @media screen and (max-width: 1700px) {
-    .texto-superpuesto {
-      font-size: 150%; /* Tamaño de fuente para pantallas más pequeñas */
-    }
-  }
   
-  @media screen and (max-width: 480px) {
-    .texto-superpuesto {
-      font-size: 125%; /* Tamaño de fuente para pantallas aún más pequeñas */
-    }
-  }
 
   .sobrenosotros{
     position: absolute;
@@ -183,11 +179,14 @@ body {
     transform: translate(-50%, -50%);
     background-color: #0E67A7;
     color: #ffffff;
-    padding: 10px 20px;
-    font-size: 42px;
+    padding: 3px 19px;
+    font-size: 2.8vw;
+    max-width: 1000px;
     text-decoration: none;
     font-family: 'Frutiger';
-    border-radius: 5px;
+    border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   }
+  
+ 
