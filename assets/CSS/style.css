@@ -266,7 +266,7 @@
 
 
 /* CONTACTANOS */
-
+/* CONTACTO */
 .contactanos {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
@@ -309,3 +309,60 @@
   margin-left: -16px;
   /* margin-right: 25px; */
 }
+/* FIN DE CONTACTO */
+
+
+
+/* GOOGLE MAPS */
+.mapa{
+  display: flex;
+  justify-content: flex-end;
+}
+/* FIN GOOGLE MAPS */
+
+
+/* MENSAJE */
+.contact-section {
+  max-width: 600px;
+  /* margin: 0 auto; */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.form-group div {
+  display: inline-block;
+  width: 50%;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+/* FIN DE MENSAJE */
