@@ -4,14 +4,17 @@
 }
  
  
-body {
+ html, body {
     margin: 0;
     padding: 0;
   }
  
  /* Estilos para la barra de navegación */
  .navbar {
+  display: flex;
+  justify-content: center;
     background-color: #0E67A7;
+    flex-wrap: nowrap;
     overflow: hidden;
     text-align: center;
 }
@@ -19,13 +22,15 @@ body {
 
 .navbar a {
     display: inline-flex;
+    
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Frutiger';
-    font-size: 24px;
+    font-size: 28px;
     padding: 10px 20px;
+    height: auto;
   
 }
 
@@ -33,6 +38,22 @@ body {
     background-color: #1387da;
     color: rgb(255, 255, 255);
 }
+
+
+@media screen and (max-width: 1605px) {
+  .navbar a {
+    font-size: 30px;
+
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .navbar a {
+    font-size: 20px;
+
+  }
+}
+
 
 @media screen and (max-width: 1100px) {
     .navbar a {
@@ -91,10 +112,14 @@ body {
     grid-row: 1 / span 2;
   }
   
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
  
   .item img {
-    height: auto; 
-    width: 350px;
+    height: 155px; 
+    width: auto;
     padding-left: 10px;
     padding-bottom: 2px;
     padding-top: 2px;
@@ -163,7 +188,7 @@ body {
     text-align: center;
     transform: translate(-50%, -50%); 
     color: #ffffff; 
-    font-size: 1.8vw;
+    font-size: 1.4vw;
     max-width: 1000px;
     font-family: Arial, Helvetica, sans-serif;
  
@@ -173,14 +198,14 @@ body {
 
   .sobrenosotros{
     position: absolute;
-    top: 60%; 
+    top: 66%; 
     left: 50%; 
     text-align: center;
     transform: translate(-50%, -50%);
     background-color: #0E67A7;
     color: #ffffff;
     padding: 3px 19px;
-    font-size: 2.8vw;
+    font-size: 2.4vw;
     max-width: 1000px;
     text-decoration: none;
     font-family: 'Frutiger';
@@ -189,4 +214,45 @@ body {
 
   }
   
- 
+ /* LINEA DE PRODUCTOS INICIO */
+ .linea-de-productos{
+  width: 100%;
+  max-width: 2000px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;  
+  font-family: Arial, Helvetica, sans-serif ;
+
+ }
+
+ .linea-de-productos .card{
+  width: 380px;
+  height: 450px;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+ }
+
+ .linea-de-productos .card:hover{
+  transform: translateY(-15px);
+  /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); */
+ }
+
+ .linea-de-productos .card .botonproductos{
+  background-color: #0E67A7;
+    color: #ffffff;
+    padding: 3px 19px;
+    max-width: 1000px;
+    text-decoration: none;
+    font-family: 'Frutiger';
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+
+/* LINEA DE PRODCUCTOS FINAL */
+
