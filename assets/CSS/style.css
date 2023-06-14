@@ -227,8 +227,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
   /* margin: auto;   */
   font-family: Arial, Helvetica, sans-serif ;
 
@@ -239,7 +239,7 @@
   height: 500px;
   border-radius: 2px;
   overflow: hidden;
-  margin: 20px 10px 10px 10px;
+  /* margin: 20px 10px 10px 10px; */
   text-align: center;
   transition: all 0.25s;
  }
@@ -293,7 +293,9 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   text-align: center;
+
   width: 1000px;
+
   font-family: Arial, Helvetica, sans-serif;
   
 }
@@ -327,14 +329,21 @@
   /* margin: 0 auto; */
 }
 
-.form-group {
-  margin-bottom: 20px;
+
+.form-group .datos {
+  background-color: #0E67A7;
+  color: #ffffff;
+  font-family: Frutiger;
+  border-radius: 3px;
+  padding: 3px 19px;
 }
 
-.form-group label {
-  display: block;
-  font-weight: bold;
+.form-group {
+  margin-bottom: 20px;
+  
 }
+
+
 
 .form-group input,
 .form-group textarea {
@@ -353,15 +362,16 @@
 }
 
 button[type="submit"] {
-  background-color: #007bff;
+  background-color: #0E67A7;
   color: #fff;
   padding: 10px 20px;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #1387da;
 }
 
 
