@@ -272,11 +272,24 @@
 /* CONTACTANOS */
 /* CONTACTO */
 
+.contactanos{
+  /* margin-right: 30px; */
+  margin: 10px;
+}
+
+@media screen and (min-width: 980px) {
+  .contactanos{
+  margin-right: 80px;
+    /* justify-content: center; */
+    /* margin-left: 30px; */
+  }
+}
+
 .seccioninfo{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: auto;
+  width: 100%;
   height: auto;
 
 }
@@ -285,7 +298,7 @@
 .info{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space;
+  justify-content: space-around;
   text-align: center;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
@@ -323,6 +336,7 @@
   justify-content: center;
   width:580px; 
   height:250px; 
+  margin-top: 10px;
   
   
 }
@@ -392,13 +406,15 @@ button[type="submit"]:hover {
 
 @media screen and (max-width: 600px) {
   .mapa{
-    width: 400px;
+    width: 380px;
     height: 250px;
-    /* margin-left: 100px; */
+    /* justify-content: center; */
+    /* margin-left: 30px; */
   }
 
   .info{
     justify-content: center;
+    /* margin-left: 23px; */
   }
 
 
