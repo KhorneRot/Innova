@@ -349,19 +349,59 @@
   /* margin: 0 auto; */
 }
 
+.envianosmensaje{
+  margin: 10px;
+}
 
-.form-group .datos {
+.form-group1 {
   background-color: #0E67A7;
   color: #ffffff;
   font-family: Frutiger;
-  border-radius: 3px;
-  padding: 3px 19px;
+  /* border-radius: 3px; */
+  padding: 5px 10px;
+  width: 66px;
+  margin-bottom: 7px;
 }
 
-.form-group {
-  margin-bottom: 20px;
-  
+
+.form-group2 {
+  background-color: #0E67A7;
+  color: #ffffff;
+  font-family: Frutiger;
+  /* border-radius: 3px; */
+  padding: 5px 10px;
+  width: 72px;
+  margin-top: 22px;
+  margin-bottom: 7px;
 }
+
+
+.form-group3 {
+  background-color: #0E67A7;
+  color: #ffffff;
+  font-family: Frutiger;
+  /* border-radius: 3px; */
+  padding: 5px 10px;
+  width: 47px;
+  margin-bottom: 7px;
+  margin-top: 22px;
+
+}
+
+
+.form-group4 {
+  background-color: #0E67A7;
+  color: #ffffff;
+  font-family: Frutiger;
+  /* border-radius: 3px; */
+  padding: 5px 10px;
+  width: 184px;
+  margin-bottom: 7px;
+  margin-top: 22px;
+}
+
+
+
 
 .datos{
   margin-bottom: 10px;
@@ -369,7 +409,16 @@
 
 
 input[type="text"] {
-  padding: 5px; /* Agrega un padding al input para separarlo del label */
+  padding: 5px; 
+  width: 427px;
+}
+input[type="text2"] {
+  padding: 5px; 
+  width: 192px;
+}
+input[type="email"] {
+  padding: 5px; 
+  width: 192px;
 }
 
 
@@ -394,14 +443,49 @@ button[type="submit"] {
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   cursor: pointer;
+  font-family: "Frutiger";
+
+  margin-top: 7px;
 }
 
 button[type="submit"]:hover {
   background-color: #1387da;
 }
 
+.mensaje5{
+  width: 567px;
+}
+
+.telefono2{
+  margin-right: 30px;
+}
+
+.contactoP{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mensaje6{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+@media screen and (max-width: 592px) {
+  .mensaje5{
+    width: 384px;
+
+  }
+  input[type="text"]{
+    width: 374px;
+  }
+}
+
+
+
+/* FIN DE MENSAJE */
 
 
 @media screen and (max-width: 600px) {
@@ -440,4 +524,3 @@ button[type="submit"]:hover {
 
   }
 }
-/* FIN DE MENSAJE */
