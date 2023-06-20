@@ -5,6 +5,7 @@
  
  
  html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
   }
@@ -28,9 +29,11 @@
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Frutiger';
-    font-size: 24px;
+    font-size: 16px;
     padding: 10px 20px;
     height: auto;
+    margin-right: 24px;
+    margin-left: 24px;
   
 }
 
@@ -40,19 +43,19 @@
 }
 
 
-@media screen and (max-width: 1605px) {
+/* @media screen and (max-width: 1605px) {
   .navbar a {
     font-size: 30px;
 
   }
-}
-
+} */
+/* 
 @media screen and (max-width: 1340px) {
   .navbar a {
     font-size: 20px;
 
   }
-}
+} */
 
 
 @media screen and (max-width: 1100px) {
@@ -63,6 +66,10 @@
       display: block;
       background-color: #0E67A7;
       height: 25px;
+
+    }
+    .item img{
+      margin-top: 5px;
 
     }
   }
@@ -118,18 +125,25 @@
   }
  
   .item img {
-    height: 119px; 
+    height: 100px; 
     width: auto;
-    padding-left: 10px;
-    padding-bottom: 2px;
-    padding-top: 2px;
+    margin-top: 12px;
+    margin-left: 14px;
+    /* margin-bottom: px; */
   }
-
   @media screen and (max-width: 600px) {
     .item img{
       height: 80px;
+      margin-top: 6px;
     }
   }
+  @media screen and (max-width: 1100px) {
+    .item img{
+      /* height: 80px; */
+      margin-top: 2px;
+    }
+  }
+
   
  
 
@@ -230,7 +244,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 30px;
-  margin-top: 10px;
+  margin-top: 50px;
   /* margin: auto;   */
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif ;
@@ -624,19 +638,13 @@ button[type="submit"]:hover {
 /* FONDO INICIO */
 
 .fondo0{
-  display: flex;
-  justify-content: center;
-  /* background-color: #0E67A7; */
+  position: relative;
+  min-height: 100vh;
 }
 
 
-.fondo0 img{
-  display: flex;
-  /* position: absolute; */
-  justify-content: end;
-  width: 1042px;
-  
-}
+
+
 .fondo1{
   display: flex;
   justify-content: end;
@@ -645,9 +653,16 @@ button[type="submit"]:hover {
 
 
 .fondo1 img{
-position: absolute;  /* position: absolute; */
-  justify-content: end;
-  top: 366%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
+.fondocentro img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
