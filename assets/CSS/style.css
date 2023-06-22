@@ -281,13 +281,7 @@ margin-right: auto;
   margin: 10px;
 }
 
-@media screen and (min-width: 980px) {
-  .contactanos{
-  margin-right: 80px;
-    /* justify-content: center; */
-    /* margin-left: 30px; */
-  }
-}
+
 
 .seccioninfo{
   display: flex;
@@ -308,7 +302,7 @@ margin-right: auto;
   text-align: center;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  
+  margin-bottom: 75px;
 }
 
 .info2{
@@ -340,9 +334,10 @@ margin-right: auto;
 .mapa{
   display: flex;
   justify-content: center;
-  width:580px; 
-  height:250px; 
-  margin-top: 10px;
+  width:585px; 
+  height:260px; 
+  /* margin-top: 10px; */
+  margin-bottom: 35px;
   
   
 }
@@ -533,87 +528,15 @@ button[type="submit"]:hover {
 
 /* NUESTRO BLOG */
 
-.nuestroblog1{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
 
 
-}
-.nuestroblog2{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #0E67A7;
-  color: #ffffff;
-  font-family: Frutiger;
-  border-radius: 3px;
-  padding: 5px 10px;
-  width: 380px;
-  margin-bottom: 7px;
-  margin-top: 22px;
-  font-size: 24px;
-  text-align: center;
-}
-.nuestroblog3{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 300px;
-  margin-bottom: 390px;
-}
 
 
-.nuestroblog3 img{
-  /* margin-right: 30px; */
-  max-width: 550px;
-}
 
-.blog1{
-  font-size: large;
-  margin: 20px;
-  font-size: 40px;
-  width: 500px;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.blog2{
-  width: 400px;
-  margin: 20px;
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif
-}
 
-.blog3{
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  justify-content: center;
-}
 
-@media screen and (max-width: 600px) {
-  .nuestroblog3 img{
-    width: 380px;
-    
-  }
-  .blog3{
-    display: flex;
-    flex-wrap: wrap;
-    /* margin: 20px; */
-  }
 
-  .blog1{
-    width: 357px;
-    font-size: 30px;
-    /* text-align: center; */
-  }
-
-  .blog2{
-    width: 345px;
-    margin: 5px;
-    font-size: 20px;
-  }
-}
 
 /* FIN NUESTRO BLOG */
 
@@ -622,44 +545,155 @@ button[type="submit"]:hover {
 
 /* FONDO INICIO */
 
-.fondo0{
-  position: relative;
-  min-height: 100vh;
-}
+
+
+/* FIN FONDO INICIO */
 
 
 
+/* FOOTER */
 
-.fondo1{
+
+.footer{
   display: flex;
-  justify-content: end;
-  /* background-color: #0E67A7; */
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  background-color: #0E67A7;
+  margin: 0 auto;
+  padding: 0 2rem;
+  /* width: 100%; */
+  /* max-width: 75rem; */
 }
 
-
-.fondo1 img{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-
-.fondocentro img{
-  display: block;
-  margin-left: auto;
+.primerS{
+  color: #ffffff;
+  list-style-type: none;
+  margin-top: 20px;
+  font-size: 30px;
   margin-right: auto;
+  width: 340px;
+  /* margin-left: auto; */
+
+}
+
+.redesfooter{
+  margin-top: 15px;
 }
 
 
-@media screen and (max-width: 1268px) {
-  .fondo1{
-   display: none;
+.segundaS {
+  color: #ffffff;
+  text-decoration: none;
+  list-style-type: none;
+  margin-top: 20px;
+  font-size: 25px;
+  width: 163px;
+}
+
+.segundaS a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
+.tercerS{
+  
+   color: #ffffff;
+  margin-right: 60px;
+  margin-top: 20px;
+  font-size: 100%;
+  margin-left: auto;
+} 
+
+.telfooter{
+  display: flex;
+}
+.telfooter img{
+  margin-right: 15px;
+}
+.emailfooter{
+  display: flex;
+  width: 473px;
+}
+
+
+
+.emailfooter img{
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  
+}
+.ubifooter{
+  display: flex;
+  /* width: 473px; */
+}
+
+.ubifooter img{
+  margin-right: 15px;
+}
+
+.border-light{
+  background-color: #0E67A7;
+color: #ffffff;
+}
+
+
+.footer2{
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  background-color: #0E67A7;
+}
+
+.lineadivisora{
+    /* width: 50%; */
+    border: 0;
+    height: 1px;
+    background-color: #ffffff;
+  
+}
+
+.footer3 {
+  display: flex;
+  /* justify-content: center; */
+  /* padding: 1rem; */
+  background-color: #0E67A7;
+}
+
+.footer3 > div {
+  flex: 1 1 0;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #0E67A7;
+}
+
+@media (max-width: 768px) {
+  .footer3 {
+      flex-direction: column;
+  }
+
+  .footer > div {
+      margin: 0;
+      margin-bottom: 1rem;
+  }
+
+  .emailfooter{
+    font-size: 14px;
+  }
+
+  .ubifooter{
+    font-size: 14px;
+  }
+  .telfooter{
+    font-size: 14px;
+  }
+
+  .primerS{
+    font-size: 22px;
+  }
+  .segundaS{
+    font-size: 20px;
   }
 }
-@media screen and (max-width: 1090px) {
-  .fondo0{
-   display: none;
-  }
-}
-
-
