@@ -1,3 +1,6 @@
+
+ 
+ 
  @font-face{
     font-family: 'Frutiger';
    src: url(../fonts/frutiger-75-black.otf);
@@ -169,24 +172,34 @@
   background-color: #0E67A7;
 }
 
-.figura{
-display: flex;
-justify-content: center;
-
-}
 
 
-.figura2{
+
+
+.somosI{
+  position: relative;
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
 }
-.figura2 img{
-  /* position: relative; */
+
+.somosI img{
+  width: 70%;
+}
+
+.somosT{
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
   width: 60%;
- 
+  font-size: 28px;
 }
+
+
+
 
 .sobrenosotros{
 background-color: #0E67A7;
@@ -204,13 +217,50 @@ margin-right: auto;
 }
 
 
-@media screen and (max-width: 360px) {
-  .figura2 img{
-    width: 100%;
- 
+@media screen and (max-width: 1350px) {
+  .somosT {
+    font-size: 25px; 
+  }
+}
+@media screen and (max-width: 1035px) {
+  .somosT {
+    font-size: 22px; 
+  }
+}
+@media screen and (max-width: 833px) {
+  .somosT {
+    font-size: 20px; 
   }
 
 }
+@media screen and (max-width: 766px) {
+  .somosT {
+    width: 80%;
+    font-size: 19px;
+  }
+  .somosI img{
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 539px) {
+  .somosT {
+    width: 80%;
+    font-size: 15px;
+  }
+  
+
+}
+@media screen and (max-width: 444px) {
+  .somosT {
+    width: 80%;
+    font-size: 12px;
+  }
+  
+
+}
+
+
 
 /* FIN PAGINA DE INICIO */
   
@@ -293,8 +343,7 @@ margin-right: auto;
   justify-content: center;
   width: 100%;
   height: auto;
-  /* margin-top: 45px; */
-  margin-bottom: 45px;
+
 
 }
 
@@ -306,7 +355,7 @@ margin-right: auto;
   text-align: center;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 75px;
+  margin-bottom: 17px;
 }
 
 
@@ -344,7 +393,7 @@ margin-right: auto;
   display: flex;
   justify-content: center;
   width:585px; 
-  height:260px; 
+  height:330px; 
   /* margin-top: 10px; */
   margin-bottom: 35px;
   
@@ -552,14 +601,67 @@ button[type="submit"]:hover {
 
 /* NUESTRO BLOG */
 
+.nblog {
+  background-color: #0E67A7;
+color: #ffffff;
+font-family: Frutiger;
+border-radius: 3px;
+padding: 5px 5px;
+width: 328px;
+/* margin-bottom: 50px; */
+margin-top: 50px;
+font-size: 20px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
 
+}
 
+.nblog {
+  padding: 0;
+}
 
+.nblog2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
 
+/* .nblog2 p{
+  width: 578px;
+  font-size: 25px;
+  
+}
 
+.nblog2 h3{
+  font-size: 40px;
+} */
 
+.nblog2 img{
+  width: 100%;
+}
 
+.nblog3{
+  margin-left: 32px;
+  margin-right: 20px;
+  width: 635px;
+  font-size: 25px;
+}
 
+.nblog3 h3{
+  font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .nblog3{
+  font-size: 18px;
+
+   }
+  .nblog3 h3{
+    font-size: 23px;
+  }
+}
 
 
 /* FIN NUESTRO BLOG */
@@ -569,7 +671,33 @@ button[type="submit"]:hover {
 
 /* FONDO INICIO */
 
+.fondof{
+  position: relative;
+}
 
+.fondof img{
+  /* position: absolute; */
+  width: 100%;
+
+}
+
+
+.fondof2 img{
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .fondof img {
+    display: none;
+    }
+}
+@media (min-width: 500px) {
+  .fondof2 img {
+    display: none;
+    }
+}
 
 /* FIN FONDO INICIO */
 
@@ -745,6 +873,8 @@ color: #ffffff;
   /* align-items: center; */
   background-color: #0d568a;
   color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
   
 }
 
@@ -752,3 +882,5 @@ color: #ffffff;
   margin-left: 10px;
   margin-right: 10px;
 }
+
+/* FIN FOOTER */
