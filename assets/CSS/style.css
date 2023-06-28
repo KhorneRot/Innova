@@ -96,7 +96,7 @@
 
   .navbarA a:hover {
     background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    color: #1387da
 }
 
   .navbarA{
@@ -220,7 +220,7 @@
     margin-left: 165px;
   }
   #contactonav{
-    scroll-margin-top: 100px;
+    scroll-margin-top: 135px;
   }
 }
 
