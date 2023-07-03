@@ -1,0 +1,15 @@
+.imgnosotros img{
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    /* margin-left: 50%;
+    margin-right: 50%; */
+}
+
+.nosotrosP{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+}
