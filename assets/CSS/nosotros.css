@@ -216,3 +216,24 @@ font-size: 20px;
   
 }
 /* FIN NOSOTROS */
+
+.finnosotros{
+    display: flex;
+    width: 100%;    justify-content: center;
+}
+.finnosotros2{
+    display: flex;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    margin-bottom: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.finnosotros img{
+    margin-top: 20px;
+}

@@ -18,3 +18,12 @@ function ocultar_menu(){
     background_menu.style.display = "none";
 }
 
+
+
+function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+  
