@@ -880,11 +880,13 @@ margin-right: auto;
 .emailfooter img{
   margin-right: 10px;
   margin-top: 10px;
-  margin-bottom: 20px;
+
   
 }
 .ubifooter{
   display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .ubifooter img{
