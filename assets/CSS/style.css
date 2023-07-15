@@ -475,8 +475,9 @@ margin-right: auto;
 }
 @media screen and (max-width: 405px) {
   .somosT {
-    width: 80%;
-    font-size: 10px;
+    width: 84%;
+    font-size: 12.3px;
+    margin-bottom: 33px;
   }
 
   
@@ -626,11 +627,27 @@ margin-right: auto;
 /* MENSAJE */
 .contact-section {
   max-width: 600px;
+
 }
 
-.envianosmensaje{
-  margin: 10px;
+.right-content{
+  width: 670px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
+
+.right-content input#telefono{
+  width: 263px;
+}
+.right-content input#email{
+  width: 320px;
+}
+.right-content input#nombre{
+  width: 58%;
+}
+
+
 
 .form-group1 {
   background-color: #0E67A7;
