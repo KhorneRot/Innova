@@ -26,7 +26,16 @@ function scrollToTop() {
       behavior: 'smooth'
     });
   }
-  
 
 
+  document.addEventListener("DOMContentLoaded", function() {
+    const titulos = document.querySelectorAll(".acordeon .titulo");
   
+    titulos.forEach(function(titulo) {
+      titulo.addEventListener("click", function() {
+        this.parentElement.classList.toggle("activo");
+        const icono = this.querySelector(".accordion-icon");
+        icono.classList.toggle("rotate");
+      });
+    });
+  });
