@@ -1,3 +1,5 @@
+// menu burger
+
 document.getElementById("btn_menu").addEventListener("click", mostrar_menu);
 
 document.getElementById("closeM").addEventListener("click", ocultar_menu)
@@ -19,7 +21,7 @@ function ocultar_menu(){
 }
 
 
-
+// ir arriba
 function scrollToTop() {
     window.scrollTo({
       top: 0,
@@ -27,7 +29,7 @@ function scrollToTop() {
     });
   }
 
-
+// productos
   document.addEventListener("DOMContentLoaded", function() {
     const titulos = document.querySelectorAll(".acordeon .titulo");
   
@@ -39,3 +41,5 @@ function scrollToTop() {
       });
     });
   });
+
+

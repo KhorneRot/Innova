@@ -368,6 +368,7 @@ font-size: 24px;
 text-align: center;
 margin-left: auto;
 margin-right: auto;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -419,11 +420,13 @@ font-size: 24px;
 text-align: center;
 margin-left: auto;
 margin-right: auto;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .sobrenosotros a{
   text-decoration: none;
   color: #ffffff;
+  
 }
 
 @media screen and (max-width: 1570px) {

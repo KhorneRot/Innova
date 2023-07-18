@@ -1,0 +1,26 @@
+@font-face{
+    font-family: 'Frutiger';
+   src: url(../fonts/frutiger-75-black.otf);
+}
+ 
+
+.product2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+
+
+ 
+
+
+.product-details {
+    display: none; /* Oculta el contenido por defecto */
+  }
+  
+  .show-details {
+    display: block !important; /* Muestra el contenido cuando se agrega la clase */
+  }
+  
