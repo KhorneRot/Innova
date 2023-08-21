@@ -108,6 +108,7 @@
 }
 
 
+
   /* BURGER */
 
 @media screen and (max-width: 1100px) {
@@ -120,6 +121,11 @@
       height: 100vh;
       z-index: 1;
       transition: all 300ms;
+  }
+
+  .unionnavbar{
+    display: flex;
+    justify-content: space-around;
   }
 
   .navbarA a:hover {
@@ -178,8 +184,7 @@
 
    #btn_menu{
    
-    margin-right: 40px;
-    margin-top: 30px;
+    justify-content: right;
     font-size: 40px;
     color: #0E67A7;
     cursor: pointer;
@@ -188,7 +193,9 @@
   .btn2{
     display: flex;
     justify-content: end;
-  }
+    margin-top: 23px;
+    margin-right: 10px;
+    }
 
   .navbarA .btn3{
     display: block;
@@ -256,6 +263,11 @@
   }
 }
 
+@media screen and (max-width: 1100px) {
+  #btn_menu{
+    justify-content: right;
+  }
+}
 
 
 /* FIN BURGER */
@@ -280,7 +292,7 @@
 .email {
     display: flex;
     padding-left: 20px;
-    padding-right: 50px;
+    padding-right: 35px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -288,14 +300,19 @@
 
 .redes{
     position:relative ;
-    bottom: 12px;
-    right: 45px;
+    right: 22px;
     
 }
 
+.navbarparte2{
+  display: flex;
+  margin-top: 10px;
+}
 
 .containerA {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto;
     grid-gap: 10px;
@@ -311,9 +328,10 @@
   }
  
   .itemA img {
-    height: 100px; 
+    height: 85px; 
     width: auto;
-    margin-top: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 14px;
    
   }
