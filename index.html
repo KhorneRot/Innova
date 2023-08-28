@@ -194,24 +194,26 @@
 
         <!-- MENSAJE -->
         <div class="right-content">
-            <form class="envianosmensaje">
+            <form class="envianosmensaje" action="https://formsubmit.co/atencionalcliente@innovadoradepinturas.com.mx" method="POST">
                 <div class="form-group1">
-                  <label for="nombre">Nombre</label >
+
+                  <label for="nombre">Nombre</label>
                   </div>
-                  <input type="text" id="nombre" name="nombre" required>
+                  <input type="text" id="nombre" name="nombre" placeholder="Nombre">
          <div class="contactoP">
+
             <div class="telefono2"> 
                 <div class="form-group2">
                   <label for="telefono">Teléfono</label>
                 </div>
-                  <input type="text2" id="telefono" name="telefono" required>
+                  <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required>
                 </div>
+
                 <div>
                 <div class="form-group3">
                   <label for="email">Email</label>
                 </div>
-           
-                  <input type="email" id="email" name="email" required>
+                  <input type="email" id="email" name="email" placeholder="Email">
                 </div>
         </div>
         <div>
@@ -222,8 +224,10 @@
                   <textarea class="mensaje5" name="mensaje" rows="12" required></textarea>
                 </div>
                 <div class="mensaje6">
-                <button type="submit">Enviar</button>
+                <input type="submit" value="Enviar"></input>
                 </div>
+                <input type="hidden" name="_next" value="https://khornerot.github.io/Innova/">
+                <input type="hidden" name="_captcha" value="false">
               </form>
         </div> 
     </div> 
