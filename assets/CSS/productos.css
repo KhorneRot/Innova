@@ -55,6 +55,34 @@
 
     color:#0E67A7
   }
+  .acordeon .producto .contenido2 a{
+ 
+    text-decoration: none;
+
+    color:#0E67A7
+  }
+  .acordeon .contenido2 {
+    /* max-height: 0; */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .acordeon .activo .contenido2 {
+    /* max-height: 1000px;  */
+  }
+  
+  .acordeon .producto .contenido2 p{
+    font-size: 15px;
+    margin-left: 30px;
+    color: black;
+    
+  }
+  .acordeon .producto .contenido a{
+ 
+    text-decoration: none;
+
+    color:#0E67A7
+  }
 
  
    
