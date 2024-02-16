@@ -375,6 +375,7 @@
 /* PAGINA DE INICIO */
 
 
+
 .nproductos p{
   background-color: #0E67A7;
 color: #ffffff;
@@ -391,6 +392,76 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 
+
+.about-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  overflow: hidden;
+  
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../img/Almacen\ limpiecito.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 30%; /* Opacidad de la imagen de fondo */
+  z-index: -1; /* Coloca la imagen de fondo detrás del contenido */
+}
+
+.about-content{
+  margin-left: 40px;
+  width: 80%;
+}
+
+.about-content h2{
+  font-size: 60px;
+  color: #0d568a;
+  
+  font-family: Frutiger;
+}
+.about-content p{
+  color: #0d568a;
+  font-size: 30px;
+}
+
+.about-link{
+  text-decoration: none;
+}
+
+.about-link p{
+  background-color: #0E67A7;
+  color: #ffffff;
+  font-family: Frutiger;
+  border-radius: 3px;
+  width: 265px;
+  margin-bottom: 43px;
+  margin-top: 22px;
+  font-size: 24px;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.acomodoinicio{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* FIN NOSOTROS */
 .nproductos a{
   text-decoration: none;
   color: #ffffff;
