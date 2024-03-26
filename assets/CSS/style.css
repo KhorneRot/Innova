@@ -1000,7 +1000,7 @@ margin-right: auto;
 }
 
 .redesfooter{
-  margin-top: 70px;
+  margin-top: 25px;
 }
 
 
@@ -1010,7 +1010,7 @@ margin-right: auto;
   list-style-type: none;
   font-size: 20px;
   width: 163px;
-  padding-left: 30%;
+  /* padding-left: 30%; */
 }
 
 .segundaS a{
@@ -1020,10 +1020,10 @@ margin-right: auto;
 
 .tercerS{
   color: #ffffff;
-  margin-right: 60px;
+  /* margin-right: 60px; */
   font-size: 100%;
-  margin-left: auto;
-  padding-left: 70px;
+  /* margin-left: auto; */
+  /* padding-left: 70px; */
 } 
 
 .telfooter{
@@ -1037,7 +1037,7 @@ margin-right: auto;
 }
 
 .emailfooter img{
-  margin-right: 10px;
+  margin-right: 17px;
   margin-top: 10px;
 
   
@@ -1063,12 +1063,13 @@ margin-right: auto;
 
 .footer3 {
   display: flex;
+  justify-content: center;
   background-color: #0E67A7;
   width: 100%;
 }
 
 .footer3 > div {
-  flex: 1 1 0;
+  /* flex: 1 1 0; */
   margin: 1rem;
   padding: 1rem;
   background-color: #0E67A7;
@@ -1078,6 +1079,7 @@ margin-right: auto;
   .footer3 {
       flex-direction: column;
   }
+
 
   .footer > div {
       margin: 0;
@@ -1100,8 +1102,8 @@ margin-right: auto;
 @media (max-width: 462px) {
 
 .emailfooter{
-    font-size: 14px;
-    display: block;
+    font-size: 13px;
+    /* display: block; */
   }
 
   .ubifooter{
@@ -1117,6 +1119,12 @@ margin-right: auto;
   .segundaS{
     font-size: 20px;
   }
+
+  .emailfooter img{
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+
 }
 
 
