@@ -5,6 +5,19 @@
 }
  
 
+.mensaje{
+  display: flex;
+  font-family: 'Frutiger';
+  color: #0E67A7;
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 90px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 33px;
+  text-align: center;
+}
+
 .nproductos2{
     background-color: #0E67A7;
   color: #ffffff;
@@ -25,14 +38,24 @@
     color: #ffffff;
   }
 
+.nosotrosfondo{
+  background-color: #0E67A7;
+}
+
 .nosotros1{
-    font-size: 25px;
-    background-color: #0E67A7;
-    font-family: "Frutiger";
-    color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column; 
+  justify-content: center; /* Centrado horizontal para la dirección de columna */
+  align-items: center; /* Centrado vertical para la dirección de columna */
+  font-size: 25px;
+  max-width: 1220px; /* O el ancho máximo que prefieras para tu cuadro de texto */
+  margin: auto; /* Esto centrará el div en la pantalla */
+  background-color: #0E67A7;
+  font-family: "Frutiger";
+  color: #ffffff;
+  padding: 20px; /* Puedes ajustar esto a tu preferencia */
+  box-sizing: border-box;
+  text-align: justify;
  
    
 }
@@ -53,6 +76,7 @@
     text-align: center;
     font-family: "Frutiger";
     color: #ffffff;
+    margin: auto;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 5px;
@@ -72,6 +96,10 @@
     }
 
     .nosotros2 p{
+      font-size: 20px;
+    }
+
+    .mensaje{
       font-size: 20px;
     }
 }
