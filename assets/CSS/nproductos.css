@@ -130,3 +130,120 @@
 .mapa2 img{
     width: 100%;
 }
+
+
+/* SECCION DE PRODUCTOS */
+
+.productosInn{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+
+
+}
+
+ .productosInn .productoEtiqueta{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  background-color:#dcdcdcc2;
+  border-radius: 15px;
+  width: 300px; 
+  margin: 50px; 
+  
+  transition: all 0.25s;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+
+}
+
+.productoEtiqueta img{
+  width: 60%;
+  height: auto;
+}
+
+.productoEtiqueta button {
+  align-self: flex-end; 
+  background-color: #0E67A7;
+  color: #ffffff;
+  font-family: Frutiger;
+  border-radius: 3px;
+  border: none;
+  padding: 2px 15px;
+  margin-bottom: 20px;
+  margin-right: 25px;
+  margin-top: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.productosInn .productoEtiqueta:hover{
+  transform: translateY(-15px);
+}
+
+
+/* Estilo del modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 15px; /* Optional: for rounded corners */
+  animation-name: modalopen;
+  animation-duration: 0.4s;
+}
+
+.modal-content img{
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 100%;
+}
+
+.modal-content h2{
+  text-align: center;
+}
+
+.contenidoP{
+  display: flex;
+}
+
+.contenidoP P{
+  text-align: justify;
+  padding-right: 50px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation */
+@keyframes modalopen {
+  from {opacity: 0}
+  to {opacity: 1}
+}
