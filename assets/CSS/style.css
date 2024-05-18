@@ -311,7 +311,7 @@
 
 .containerA {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto;
@@ -381,7 +381,7 @@
 color: #ffffff;
 font-family: Frutiger;
 border-radius: 3px;
-width: 350px;
+width: 1042px;
 margin-bottom: 43px;
 margin-top: 22px;
 font-size: 24px;
@@ -399,10 +399,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   color: #ffffff;
   overflow: hidden;
-  
 }
 
 .about-section::before {
@@ -412,52 +411,56 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/assets/img/Pagina_de_inicio/Almacenlimpiecito.jpg);
+  background-image: url('/assets/img/Pagina_de_inicio/Almacenlimpiecito.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  opacity: 30%; /* Opacidad de la imagen de fondo */
+  opacity: 0.3; /* Opacidad de la imagen de fondo */
   z-index: -1; /* Coloca la imagen de fondo detrás del contenido */
 }
 
-.about-content{
-  margin-left: 40px;
-  width: 80%;
+.about-content {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
 }
 
-.about-content h2{
+.about-content h2 {
   font-size: 60px;
   color: #0d568a;
-  
   font-family: Frutiger;
 }
-.about-content p{
+
+.about-content p {
   color: #0d568a;
   font-size: 25px;
+  text-align: justify;
 }
 
-.about-link{
+.about-link {
   text-decoration: none;
+  display: inline-block;
 }
 
-.about-link p{
+.about-link p {
   background-color: #0E67A7;
   color: #ffffff;
   font-family: Frutiger;
   border-radius: 3px;
-  width: 265px;
-  margin-bottom: 43px;
-  margin-top: 22px;
-  font-size: 24px;
+  padding: 10px 20px;
+  font-size: 20px;
   text-align: center;
-  margin-left: 40px;
-  margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 30px;
 }
 
-.acomodoinicio{
+.acomodoinicio {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -600,8 +603,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
  .linea-de-productosA .cardA{
-  width: 385px;
-  height: 540px;
+  width: 320px;
+  height: 460px;
   border-radius: 2px;
   overflow: hidden;
   text-align: center;
@@ -613,26 +616,32 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
  .linea-de-productosA .cardA strong{
   color: #0E67A7;
-  font-size: 20px;
+  font-size: 16px;
  }
 
  .linea-de-productosA .cardA:hover{
   transform: translateY(-15px);
  }
 
+.linea-de-productosA  .cardA p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  text-align: justify;
+}
+
  .linea-de-productosA .cardA .botonproductosA{
   display: inline-block;
   background-color: #0E67A7;
     color: #ffffff;
     padding: 3px 19px;
-    max-width: 1000px;
+    max-width: 211px;
     text-decoration: none;
     font-family: 'Frutiger';
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 10px;
-    font-size: 15px;
-    margin-top: -26px;
+    font-size: 13px;
     width: 238px;
  }
 
