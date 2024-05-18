@@ -374,7 +374,13 @@
 
 /* PAGINA DE INICIO */
 
+.carrprueba{
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  margin: auto;
 
+}
 
 .nproductos p{
   background-color: #0E67A7;
