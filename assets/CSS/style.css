@@ -484,28 +484,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #0E67A7;
 }
 
-.somosI{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 50px;
-}
 
-.somosI img{
-  width: 70%;
-}
 
-.somosT{
-  position: absolute;
-  text-align: center;
-  color: #ffffff;
-  width: 60%;
-  font-size: 34px;
-  font-family: "frutiger";
-}
 
 .sobrenosotros{
 background-color: #0E67A7;
@@ -528,64 +508,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   
 }
 
-@media screen and (max-width: 1570px) {
-  .somosT {
-    font-size: 25px; 
-  }
-}
-@media screen and (max-width: 1300px) {
-  .somosT {
-    font-size: 22px; 
-  }
-
-  .somosI img{
-    width: 80%;
-  }
-}
-@media screen and (max-width: 990px) {
-  .somosT {
-    font-size: 20px; 
-  }
-  .somosI img{
-    width: 80%;
-  }
-}
-@media screen and (max-width: 900px) {
-  .somosT {
-    width: 80%;
-    font-size: 20px;
-  }
-  .somosI img{
-    width: 100%;
-  }
-
-}
-@media screen and (max-width: 675px) {
-  .somosT {
-    width: 80%;
-    font-size: 15px;
-  }
-
-}
-@media screen and (max-width: 521px) {
-  .somosT {
-    width: 80%;
-    font-size: 12px;
-  }
-
-  
-}
-@media screen and (max-width: 405px) {
-  .somosT {
-    width: 84%;
-    font-size: 12.3px;
-    margin-bottom: 33px;
-  }
-
-  
-  
-  
-}
 
 
 /* FIN PAGINA DE INICIO */
@@ -656,6 +578,24 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
  *::after {
      box-sizing: content-box !important;
  }
+
+
+ @media screen and (max-width: 1080px) {
+  .nproductos p{
+    width: 660px;
+    
+  }
+}
+ @media screen and (max-width: 720px) {
+  .nproductos p{
+    width: 320px;
+    font-size: 18px;
+    
+  }
+}
+
+
+
 /* LINEA DE PRODCUCTOS FINAL */
 
 
@@ -716,7 +656,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 .mapa{
   display: flex;
   justify-content: center;
-  width:585px; 
+  width:500px; 
   height:330px; 
   margin-bottom: 35px;
 }
@@ -739,20 +679,20 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .right-content{
-  width: 670px;
+  width: 470px;
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 
 .right-content input#telefono{
-  width: 263px;
+  width: 320px;
 }
 .right-content input#email{
   width: 320px;
 }
 .right-content input#nombre{
-  width: 58%;
+  width: 320px;
 }
 
 
@@ -849,12 +789,10 @@ input[type="submit"]:hover {
 .mensaje5{
 
   width: 100%; 
-  height: auto; 
+  height: 180px; 
 }
 
-.telefono2{
-  margin-right: 30px;
-}
+
 
 .contactoP{
   display: flex;
@@ -865,15 +803,20 @@ input[type="submit"]:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
+
 }
 
 @media screen and (max-width: 458px) {
   .mensaje5{
-    width: 98%;
+    width: 100%;
 
   }
   input[type="text"]{
     width: 97%;
+  }
+
+  .mensaje6{
+    margin-right: 0px;
   }
 }
 
