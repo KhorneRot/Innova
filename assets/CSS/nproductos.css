@@ -224,6 +224,7 @@
 
 .modal-content h2{
   text-align: center;
+  margin-left: 42px;
 }
 
 .contenidoP{
@@ -267,11 +268,11 @@
 .modal-content #closeP{
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 10px;
-  /* position: absolute; */
+  margin-left: 10px;
   font-size: 40px;
   color: #0E67A7;
   cursor: pointer;
+  position: relative;
 }
 
 
@@ -406,6 +407,21 @@ font-size: 10px;
 
 }
 
+@media screen and (max-width: 600px){
+
+  .modal-content{
+    margin: 14% auto;
+    width: 70%;
+  }
+
+  .modal-content img{
+    margin: 0;
+    width: 55%;
+  }
+
+}
+
+
 @media screen and (max-width: 500px){
 
   .descargapdf p{
@@ -417,7 +433,7 @@ font-size: 10px;
 @media screen and (max-width: 420px){
 
   .modal-content{
-    margin: 16% auto;
+    margin: 19% auto;
     width: 80%;
   }
 

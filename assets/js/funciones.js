@@ -16,7 +16,7 @@ function mostrar_menu(){
     background_menu.style.display = "block";
 }
 function ocultar_menu(){
-    nav.style.right = "-250px";
+    nav.style.right = "-350px";
     background_menu.style.display = "none";
 }
 
