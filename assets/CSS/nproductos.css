@@ -235,6 +235,10 @@
   margin-bottom: -26px;
 }
 
+.descargapdf a{
+  text-decoration: none;
+}
+
 .contenidoP p{
   text-align: justify;
   width: 56%;
