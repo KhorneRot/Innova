@@ -913,6 +913,7 @@ margin-right: auto;
 
 .nblog2 img{
   width: 100%;
+  justify-content: end;
 }
 
 .nblog3{

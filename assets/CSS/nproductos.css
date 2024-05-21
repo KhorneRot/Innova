@@ -47,8 +47,8 @@
     flex-direction: column; 
   justify-content: center; /* Centrado horizontal para la dirección de columna */
   align-items: center; /* Centrado vertical para la dirección de columna */
-  font-size: 25px;
-  max-width: 1220px; /* O el ancho máximo que prefieras para tu cuadro de texto */
+  font-size: 20px;
+  max-width: 990px; /* O el ancho máximo que prefieras para tu cuadro de texto */
   margin: auto; /* Esto centrará el div en la pantalla */
   background-color: #0E67A7;
   font-family: "Frutiger";
@@ -142,6 +142,14 @@
 
 }
 
+.productoEtiqueta p{
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: center;
+ 
+
+}
+
  .productosInn .productoEtiqueta{
   display: flex;
   flex-direction: column;
@@ -180,7 +188,6 @@
 }
 
 
-/* Estilo del modal */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -199,10 +206,10 @@
 .modal-content {
   display: flex;
   background-color: #fefefe;
-  margin: 5% auto; /* 5% from the top and centered */
+  margin: 8% auto; /* 5% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 40%; /* Could be more or less, depending on screen size */
   border-radius: 15px; /* Optional: for rounded corners */
   animation-name: modalopen;
   animation-duration: 0.4s;
@@ -210,7 +217,7 @@
 
 .modal-content img{
   margin-left: 50px;
-  margin-right: 50px;
+  margin-right: 25px;
   margin-top: 30px;
   width: 30%;
 }
@@ -222,15 +229,17 @@
 .contenidoP{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
+  margin-bottom: -26px;
 }
 
 .contenidoP p{
   text-align: justify;
-  width: 50%;
-  font-size: 20px;
-  margin-top: 30px;
+  width: 56%;
+  font-size: 22px;
+  /* margin-left: 12px; */
+  /* margin-top: -45px; */
 
 }
 
@@ -242,8 +251,7 @@
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover,.close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -256,7 +264,7 @@
 }
 
 
-#closeM{
+.modal-content #closeP{
   display: flex;
   flex-direction: row-reverse;
   margin-right: 10px;
@@ -277,7 +285,7 @@ margin-top: 0;
 
 .descargapdf{
   margin-top: 50px;
-  margin-left: 85px;
+  margin-left: 35px;
 }
 
 .descargapdf p{
@@ -293,11 +301,10 @@ margin-top: 0;
   color: #ffffff;
   font-family: Frutiger;
   border-radius: 3px;
-  height: 38px;
-  width: 220px;
-  font-size: 24px;
+  height: 35px;
+  width: 170px;
+  font-size: 22px;
   text-align: center;
-  margin-top: 90px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -305,9 +312,10 @@ margin-top: 0;
 
 .modalparte2{
   display: flex;
-  margin-top: -30px;
+  /* margin-top: -30px; */
   flex-wrap: wrap;
   flex-direction: row;
+  align-items: baseline;
 }
 
 .botoncontact a{
@@ -315,17 +323,39 @@ margin-top: 0;
   color: #ffffff;
 }
 
+@media screen and (max-width: 1660px){
+
+
+.modal-content{
+  margin: 10% auto;
+  width: 45%;
+}
+
+}
+
 @media screen and (max-width: 1550px){
 
 .contenidoP p{
-font-size: 17px;
+font-size: 20px;
+margin-left: 0;
+width: 50%;
+}
+
+.modal-content{
+  margin: 10% auto;
+  width: 50%;
 }
 
 }
 @media screen and (max-width: 1250px){
 
 .contenidoP p{
-font-size: 15px;
+font-size: 20px;
+}
+
+.modal-content{
+  margin: 10% auto;
+  width: 60%;
 }
 
 }
@@ -334,5 +364,71 @@ font-size: 15px;
 .modaltop{
 font-size: 10px;
 }
+.contenidoP{
+  flex-direction: column;
+}
+  
+.contenidoP p{
+  width: 80%;
+  font-size: 20px;
+  margin-top: 10px;
+}
 
+.modal-content{
+  margin: 10% auto;
+  width: 70%;
+}
+
+.modal-content img{
+  margin: 0;
+  width: 35%;
+}
+
+}
+
+
+@media screen and (max-width: 750px){
+
+  .botoncontact{
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+
+}
+@media screen and (max-width: 680px){
+
+  .modal-content{
+    margin: 14% auto;
+    width: 70%;
+  }
+
+
+}
+
+@media screen and (max-width: 500px){
+
+  .descargapdf p{
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width: 420px){
+
+  .modal-content{
+    margin: 16% auto;
+    width: 80%;
+  }
+
+
+}
+
+
+.titulo{
+  font-family: "Frutiger";
+  font-size: 30px;
+  color: #0E67A7;
+  text-align: center;
+  margin-top: 50px;
 }
