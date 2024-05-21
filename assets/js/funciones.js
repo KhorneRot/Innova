@@ -14,10 +14,12 @@ background_menu = document.getElementById("back_menu");
 function mostrar_menu(){
     nav.style.right = "0px";
     background_menu.style.display = "block";
+    document.body.style.overflow = "hidden";
 }
 function ocultar_menu(){
     nav.style.right = "-350px";
     background_menu.style.display = "none";
+    document.body.style.overflow = "auto"; // Reactivar el desplazamiento
 }
 
 
@@ -45,20 +47,20 @@ function scrollToTop() {
 // Seccion de productos
 
 function openModal() {
-
   document.getElementById("myModal").style.display = "block";
+  document.body.style.overflow = "hidden"; // Desactivar el desplazamiento
 }
 
 var span = document.getElementsByClassName("close")[0];
 
-
 span.onclick = function() {
   document.getElementById("myModal").style.display = "none";
+  document.body.style.overflow = "auto"; // Reactivar el desplazamiento
 }
-
 
 window.onclick = function(event) {
   if (event.target == document.getElementById("myModal")) {
     document.getElementById("myModal").style.display = "none";
+    document.body.style.overflow = "auto"; // Reactivar el desplazamiento
   }
 }
