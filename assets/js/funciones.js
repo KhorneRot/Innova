@@ -46,21 +46,21 @@ function scrollToTop() {
 
 // Seccion de productos
 
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
+// Seccion de productos
+
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = "block";
   document.body.style.overflow = "hidden"; // Desactivar el desplazamiento
 }
 
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  document.getElementById("myModal").style.display = "none";
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
   document.body.style.overflow = "auto"; // Reactivar el desplazamiento
 }
 
 window.onclick = function(event) {
-  if (event.target == document.getElementById("myModal")) {
-    document.getElementById("myModal").style.display = "none";
-    document.body.style.overflow = "auto"; // Reactivar el desplazamiento
+  if (event.target.classList.contains('modal')) {
+      event.target.style.display = "none";
+      document.body.style.overflow = "auto"; // Reactivar el desplazamiento
   }
 }
