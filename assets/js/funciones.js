@@ -64,3 +64,5 @@ window.onclick = function(event) {
       document.body.style.overflow = "auto"; // Reactivar el desplazamiento
   }
 }
+
+
