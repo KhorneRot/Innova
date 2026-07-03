@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovadora de Pinturas | Calidad y Color Mexicano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Elfsight Google Reviews | Reseñas Innovadora de Pinturas -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="display:block; width:100%; height:100%; position:relative;">
+                <img src="img/IMAGOTIPObLB.png" alt="Innovadora de Pinturas" class="logo-white">
+                <img src="img/IMAGOTIPO.png" alt="Innovadora de Pinturas" class="logo-color">
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <ul class="nav-links" id="mobileMenu">
+                <li><a href="index.html#inicio" class="active">Inicio</a></li>
+                <li><a href="index.html#nosotros">Empresa</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="index.html#contacto" class="nav-btn">Contacto</a></li>
+            </ul>
+
+            <div class="nav-search desktop-search">
+                <div class="nav-search-box">
+                    <input
+                        type="text"
+                        id="productSearch"
+                        placeholder="Buscar producto..."
+                        aria-label="Buscar producto"
+                        autocomplete="off"
+                    >
+                    <button type="button" onclick="buscarProductoEnCatalogo('productSearch', 'searchSuggestions')">Buscar</button>
+                </div>
+                <div class="search-suggestions" id="searchSuggestions"></div>
+            </div>
+
+            <div class="mobile-search-panel" id="mobileSearchPanel">
+                <div class="nav-search">
+                    <div class="nav-search-box">
+                        <input
+                            type="text"
+                            id="mobileProductSearch"
+                            placeholder="Buscar producto..."
+                            aria-label="Buscar producto"
+                            autocomplete="off"
+                        >
+                        <button type="button" onclick="buscarProductoEnCatalogo('mobileProductSearch', 'mobileSearchSuggestions')">Buscar</button>
+                    </div>
+                    <div class="search-suggestions" id="mobileSearchSuggestions"></div>
+                </div>
+            </div>
+
+            <button class="search-toggle-btn" id="searchToggleBtn" aria-label="Abrir búsqueda" aria-expanded="false" aria-controls="mobileSearchPanel">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+                </svg>
+            </button>
+
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="pantone-tooltip" id="pantoneTooltip"></div>
+
+    <header id="inicio" class="hero">
+        <div class="pantone-bg" aria-hidden="true">
+
+            <div class="pantone-row row-1">
+                <div class="pantone-group">
+                    <div class="pantone-card" style="background:#c8102e;"><span class="pantone-code">PANTONE 186 C</span></div>
+                    <div class="pantone-card" style="background:#ef4444;"><span class="pantone-code">PANTONE 1788 C</span></div>
+                    <div class="pantone-card" style="background:#f25c2a;"><span class="pantone-code">PANTONE 172 C</span></div>
+                    <div class="pantone-card" style="background:#f97316;"><span class="pantone-code">PANTONE 158 C</span></div>
+                    <div class="pantone-card" style="background:#f59e0b;"><span class="pantone-code">PANTONE 137 C</span></div>
+                    <div class="pantone-card" style="background:#facc15;"><span class="pantone-code">PANTONE 123 C</span></div>
+                    <div class="pantone-card" style="background:#fde047;"><span class="pantone-code">PANTONE 121 C</span></div>
+                    <div class="pantone-card" style="background:#f78fb3;"><span class="pantone-code">PANTONE 1905 C</span></div>
+                    <div class="pantone-card" style="background:#e11d48;"><span class="pantone-code">PANTONE 7424 C</span></div>
+                    <div class="pantone-card" style="background:#c2185b;"><span class="pantone-code">PANTONE 214 C</span></div>
+                </div>
+                <div class="pantone-group">
+                    <div class="pantone-card" style="background:#c8102e;"><span class="pantone-code">PANTONE 186 C</span></div>
+                    <div class="pantone-card" style="background:#ef4444;"><span class="pantone-code">PANTONE 1788 C</span></div>
+                    <div class="pantone-card" style="background:#f25c2a;"><span class="pantone-code">PANTONE 172 C</span></div>
+                    <div class="pantone-card" style="background:#f97316;"><span class="pantone-code">PANTONE 158 C</span></div>
+                    <div class="pantone-card" style="background:#f59e0b;"><span class="pantone-code">PANTONE 137 C</span></div>
+                    <div class="pantone-card" style="background:#facc15;"><span class="pantone-code">PANTONE 123 C</span></div>
+                    <div class="pantone-card" style="background:#fde047;"><span class="pantone-code">PANTONE 121 C</span></div>
+                    <div class="pantone-card" style="background:#f78fb3;"><span class="pantone-code">PANTONE 1905 C</span></div>
+                    <div class="pantone-card" style="background:#e11d48;"><span class="pantone-code">PANTONE 7424 C</span></div>
+                    <div class="pantone-card" style="background:#c2185b;"><span class="pantone-code">PANTONE 214 C</span></div>
+                </div>
+                <div class="pantone-group">
+                    <div class="pantone-card" style="background:#c8102e;"><span class="pantone-code">PANTONE 186 C</span></div>
+                    <div class="pantone-card" style="background:#ef4444;"><span class="pantone-code">PANTONE 1788 C</span></div>
+                    <div class="pantone-card" style="background:#f25c2a;"><span class="pantone-code">PANTONE 172 C</span></div>
+                    <div class="pantone-card" style="background:#f97316;"><span class="pantone-code">PANTONE 158 C</span></div>
+                    <div class="pantone-card" style="background:#f59e0b;"><span class="pantone-code">PANTONE 137 C</span></div>
+                    <div class="pantone-card" style="background:#facc15;"><span class="pantone-code">PANTONE 123 C</span></div>
+                    <div class="pantone-card" style="background:#fde047;"><span class="pantone-code">PANTONE 121 C</span></div>
+                    <div class="pantone-card" style="background:#f78fb3;"><span class="pantone-code">PANTONE 1905 C</span></div>
+                    <div class="pantone-card" style="background:#e11d48;"><span class="pantone-code">PANTONE 7424 C</span></div>
+                    <div class="pantone-card" style="background:#c2185b;"><span class="pantone-code">PANTONE 214 C</span></div>
+                </div>
+            </div>
+
+            <div class="pantone-row row-2">
+                <div class="pantone-group">
+                    <div class="pantone-card" style="background:#b7d800;"><span class="pantone-code">PANTONE 381 C</span></div>
+                    <div class="pantone-card" style="background:#84cc16;"><span class="pantone-code">PANTONE 375 C</span></div>
+                    <div class="pantone-card" style="background:#43b02a;"><span class="pantone-code">PANTONE 361 C</span></div>
+                    <div class="pantone-card" style="background:#00b140;"><span class="pantone-code">PANTONE 354 C</span></div>
+                    <div class="pantone-card" style="background:#00a36c;"><span class="pantone-code">PANTONE 3405 C</span></div>
+                    <div class="pantone-card" style="background:#00bfb3;"><span class="pantone-code">PANTONE 3268 C</span></div>
+                    <div class="pantone-card" style="background:#32d3c7;"><span class="pantone-code">PANTONE 3255 C</span></div>
+                    <div class="pantone-card" style="background:#14b8a6;"><span class="pantone-code">PANTONE 7711 C</span></div>
+                    <div class="pantone-card" style="background:#22c55e;"><span class="pantone-code">PANTONE 7480 C</span></div>
+                    <div class="pantone-card" style="background:#5eead4;"><span class="pantone-code">PANTONE 3242 C</span></div>
+                </div>
+                <div class="pantone-group">
+                    <div class="pantone-card" style="background:#b7d800;"><span class="pantone-code">PANTONE 381 C</span></div>
+                    <div class="pantone-card" style="background:#84cc16;"><span class="pantone-code">PANTONE 375 C</span></div>
+                    <div class="pantone-card" style="background:#43b02a;"><span class="pantone-code">PANTONE 361 C</span></div>
+                    <div class="pantone-card" style="background:#00b140;"><span class="pantone-code">PANTONE 354 C</span></div>
+                    <div class="pantone-card" style="background:#00a36c;"><span class="pantone-code">PANTONE 3405 C</span></div>
+                    <div class="pantone-card" style="background:#00bfb3;"><span class="pantone-code">PANTONE 3268 C</span></div>
+                    <div class="pantone-card" style="background:#32d3c7;"><span class="pantone-code">PANTONE 3255 C</span></div>
+                    <div class="pantone-card" style="background:#14b8a6;"><span class="pantone-code">PANTONE 7711 C</span></div>
+                    <div class="pantone-card" style="background:#22c55e;"><span class="pantone-code">PANTONE 7480 C</span></div>
+                    <div class="pantone-card" style="background:#5eead4;"><span class="pantone-code">PANTONE 3242 C</span></div>
+                </div>
+                <div class="pantone-group">
+                    <div class="pantone-card" style="background:#b7d800;"><span class="pantone-code">PANTONE 381 C</span></div>
+                    <div class="pantone-card" style="background:#84cc16;"><span class="pantone-code">PANTONE 375 C</span></div>
+                    <div class="pantone-card" style="background:#43b02a;"><span class="pantone-code">PANTONE 361 C</span></div>
+                    <div class="pantone-card" style="background:#00b140;"><span class="pantone-code">PANTONE 354 C</span></div>
+                    <div class="pantone-card" style="background:#00a36c;"><span class="pantone-code">PANTONE 3405 C</span></div>
+                    <div class="pantone-card" style="background:#00bfb3;"><span class="pantone-code">PANTONE 3268 C</span></div>
+                    <div class="pantone-card" style="background:#32d3c7;"><span class="pantone-code">PANTONE 3255 C</span></div>
+                    <div class="pantone-card" style="background:#14b8a6;"><span class="pantone-code">PANTONE 7711 C</span></div>
+                    <div class="pantone-card" style="background:#22c55e;"><span class="pantone-code">PANTONE 7480 C</span></div>
+                    <div class="pantone-card" style="background:#5eead4;"><span class="pantone-code">PANTONE 3242 C</span></div>
+                </div>
+            </div>
+
+            <div class="pantone-row row-3">
+                <div class="pantone-group">
+                    <div class="pantone-card" style="background:#00a3e0;"><span class="pantone-code">PANTONE 2995 C</span></div>
+                    <div class="pantone-card" style="background:#0077c8;"><span class="pantone-code">PANTONE 3005 C</span></div>
+                    <div class="pantone-card" style="background:#0072ce;"><span class="pantone-code">PANTONE 285 C</span></div>
+                    <div class="pantone-card" style="background:#2563eb;"><span class="pantone-code">PANTONE 2727 C</span></div>
+                    <div class="pantone-card" style="background:#4f46e5;"><span class="pantone-code">PANTONE 2725 C</span></div>
+                    <div class="pantone-card" style="background:#6366f1;"><span class="pantone-code">PANTONE 2726 C</span></div>
+                    <div class="pantone-card" style="background:#7c3aed;"><span class="pantone-code">PANTONE 2665 C</span></div>
+                    <div class="pantone-card" style="background:#6f2dbd;"><span class="pantone-code">PANTONE 2597 C</span></div>
+                    <div class="pantone-card" style="background:#5b2c83;"><span class="pantone-code">PANTONE 2617 C</span></div>
+                    <div class="pantone-card" style="background:#4c1d95;"><span class="pantone-code">PANTONE 2685 C</span></div>
+                </div>
+                <div class="pantone-group">
+                    <div class="pantone-card" style="background:#00a3e0;"><span class="pantone-code">PANTONE 2995 C</span></div>
+                    <div class="pantone-card" style="background:#0077c8;"><span class="pantone-code">PANTONE 3005 C</span></div>
+                    <div class="pantone-card" style="background:#0072ce;"><span class="pantone-code">PANTONE 285 C</span></div>
+                    <div class="pantone-card" style="background:#2563eb;"><span class="pantone-code">PANTONE 2727 C</span></div>
+                    <div class="pantone-card" style="background:#4f46e5;"><span class="pantone-code">PANTONE 2725 C</span></div>
+                    <div class="pantone-card" style="background:#6366f1;"><span class="pantone-code">PANTONE 2726 C</span></div>
+                    <div class="pantone-card" style="background:#7c3aed;"><span class="pantone-code">PANTONE 2665 C</span></div>
+                    <div class="pantone-card" style="background:#6f2dbd;"><span class="pantone-code">PANTONE 2597 C</span></div>
+                    <div class="pantone-card" style="background:#5b2c83;"><span class="pantone-code">PANTONE 2617 C</span></div>
+                    <div class="pantone-card" style="background:#4c1d95;"><span class="pantone-code">PANTONE 2685 C</span></div>
+                </div>
+                <div class="pantone-group">
+                    <div class="pantone-card" style="background:#00a3e0;"><span class="pantone-code">PANTONE 2995 C</span></div>
+                    <div class="pantone-card" style="background:#0077c8;"><span class="pantone-code">PANTONE 3005 C</span></div>
+                    <div class="pantone-card" style="background:#0072ce;"><span class="pantone-code">PANTONE 285 C</span></div>
+                    <div class="pantone-card" style="background:#2563eb;"><span class="pantone-code">PANTONE 2727 C</span></div>
+                    <div class="pantone-card" style="background:#4f46e5;"><span class="pantone-code">PANTONE 2725 C</span></div>
+                    <div class="pantone-card" style="background:#6366f1;"><span class="pantone-code">PANTONE 2726 C</span></div>
+                    <div class="pantone-card" style="background:#7c3aed;"><span class="pantone-code">PANTONE 2665 C</span></div>
+                    <div class="pantone-card" style="background:#6f2dbd;"><span class="pantone-code">PANTONE 2597 C</span></div>
+                    <div class="pantone-card" style="background:#5b2c83;"><span class="pantone-code">PANTONE 2617 C</span></div>
+                    <div class="pantone-card" style="background:#4c1d95;"><span class="pantone-code">PANTONE 2685 C</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="reveal">Innovadora de Pinturas<br>Industriales</h1>
+                <p class="reveal">Empresa 100% mexicana fabricante de pinturas y recubrimientos de alta calidad. Tu aliado ideal para proyectos industriales y arquitectónicos.</p>
+                <div class="hero-btns reveal">
+                    <a href="productos.html" class="btn primary">Ver Productos</a>
+                    <a href="#nosotros" class="btn secondary">Conócenos</a>
+                </div>
+            </div>
+            <div class="hero-video reveal">
+                <iframe src="https://www.youtube.com/embed/eBOKUnWa1WE?autoplay=1&mute=1&loop=1&playlist=eBOKUnWa1WE" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </header>
+
+    <section id="nosotros" class="about">
+        <div class="container about-grid">
+            <div class="about-text reveal">
+                <h2 class="section-title-left">Empresa 100% Mexicana con <span class="blue-text">Compromiso y Calidad</span></h2>
+                <p style="margin-bottom: 20px; color: var(--text-light);">Somos una empresa 100% mexicana dedicada a la fabricación de pinturas y recubrimientos de alta calidad. Con años de experiencia en el mercado, nos hemos consolidado como un aliado confiable para tus proyectos de pintura y recubrimiento.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🏅</div>
+                        <div>
+                            <h4>Calidad Garantizada</h4>
+                            <p>Productos certificados que cumplen con altos estándares internacionales.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💡</div>
+                        <div>
+                            <h4>Innovación Constante</h4>
+                            <p>Desarrollo continuo de nuevas fórmulas y tecnologías.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="check-list">
+                    <li><span class="check">✓</span> Materias primas de la más alta calidad</li>
+                    <li><span class="check">✓</span> Procesos de fabricación certificados</li>
+                    <li><span class="check">✓</span> Compromiso con el medio ambiente</li>
+                    <li><span class="check">✓</span> Soporte técnico especializado</li>
+                </ul>
+            </div>
+
+            <div style="width: 100%;">
+                <div class="stats-grid reveal">
+                    <div class="stat-card">
+                        <h3>15+</h3>
+                        <p>Años de Experiencia</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>500+</h3>
+                        <p>Clientes Satisfechos</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>50+</h3>
+                        <p>Productos</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Mexicanos</p>
+                    </div>
+
+                    <div class="stat-badge-card" style="animation-delay: 0s;">
+                        <img src="img/Logo-ISO.png" alt="Certificación ISO 9001">
+                    </div>
+                    <div class="stat-badge-card" style="animation-delay: 0.5s;">
+                        <img src="img/Logo-DistintivoESRc.png" alt="Empresa Socialmente Responsable">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title reveal line-section-header">Nuestras Líneas de Pintura</h2>
+            <div class="calculator-box lines-showcase-box reveal" id="lineShowcaseBox">
+                <div class="line-showcase">
+                    <div class="line-carousel-shell">
+                        <button type="button" class="line-nav-btn" id="linePrevBtn" aria-label="Mostrar línea anterior">&#8249;</button>
+                        <div class="line-carousel-track" id="lineCarouselTrack"></div>
+                        <button type="button" class="line-nav-btn" id="lineNextBtn" aria-label="Mostrar siguiente línea">&#8250;</button>
+                    </div>
+
+                    <div class="line-content-grid" id="lineContentGrid">
+                        <div class="comparison-card">
+                            <div class="comparison-toolbar">
+                                <div class="comparison-copy">
+                                    <span class="badge-calculator" id="activeLineBadge">Línea arquitectónica</span>
+                                    <h3 id="activeLineTitle">Arquitectónica</h3>
+                                    <p id="activeProjectText">Desliza para comparar el antes y el después de cada proyecto.</p>
+                                </div>
+                            </div>
+
+                            <div class="before-after-wrapper" id="beforeAfterWrapper">
+                                <div class="comparison-after">
+                                    <img id="afterImage" class="comparison-image" alt="Imagen después" src="img/Despues2.png">
+                                </div>
+                                <div class="comparison-before">
+                                    <img id="beforeImage" class="comparison-image" alt="Imagen antes" src="img/Antes2.png">
+                                </div>
+                                <div class="comparison-divider" id="comparisonDivider">
+                                    <span class="comparison-handle"></span>
+                                </div>
+                                <span class="comparison-label before">Antes</span>
+                                <span class="comparison-label after">Después</span>
+                            </div>
+
+                            <div class="comparison-footer">
+                                <input type="range" id="comparisonRange" class="comparison-range" min="0" max="100" value="50" aria-label="Deslizador comparativo antes y después">
+                                <div class="pair-controls">
+                                    <button type="button" class="pair-btn" id="pairPrevBtn" aria-label="Proyecto anterior">&#8249;</button>
+                                    <span class="pair-counter" id="pairCounter">1 / 1</span>
+                                    <button type="button" class="pair-btn" id="pairNextBtn" aria-label="Siguiente proyecto">&#8250;</button>
+                                </div>
+                                <div class="project-dots" id="projectDots"></div>
+                            </div>
+                        </div>
+
+                        <div class="promo-card">
+                            <div class="promo-image-wrap">
+                                <img id="promoImage" class="promo-image" alt="Producto promocional destacado" src="img/Princess_promo.png">
+                            </div>
+                            <div class="promo-content">
+                                <span class="promo-badge" id="promoBadge">Producto destacado</span>
+                                <h3 id="promoTitle">Arquitectónica Premium</h3>
+                                <p id="promoText">Excelente poder cubriente, acabado uniforme y gran desempeño para proyectos residenciales y comerciales.</p>
+                                <a id="promoLink" href="productos.html" class="promo-link">Ver productos</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora" class="paint-calculator-section">
+        <div class="container">
+            <div class="calculator-box calculator-standalone-box reveal">
+                <div class="compact-calculator-card">
+                    <div class="compact-calculator-title">
+                        <span class="badge-calculator">Cálculo rápido</span>
+                        <h3>Calcula tus litros</h3>
+                        <p>Ingresa los datos de tu proyecto y obtén una recomendación estimada de compra.</p>
+                    </div>
+
+                    <div class="calculator-form">
+                        <div class="input-group-calc">
+                            <label for="area">Área a pintar (m²)</label>
+                            <input type="number" id="area" placeholder="Ej. 120" min="1" step="0.01">
+                        </div>
+
+                        <div class="input-group-calc">
+                            <label for="coats">Número de manos</label>
+                            <select id="coats">
+                                <option value="1">1 mano</option>
+                                <option value="2" selected>2 manos</option>
+                                <option value="3">3 manos</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group-calc">
+                            <label for="surface">Tipo de superficie</label>
+                            <select id="surface">
+                                <option value="1">Lisa / sellada</option>
+                                <option value="1.10" selected>Repintado normal</option>
+                                <option value="1.20">Nueva / semiporosa</option>
+                                <option value="1.35">Muy porosa / rugosa</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group-calc">
+                            <label for="product">Tipo de pintura</label>
+                            <select id="product">
+                                <option value="10">Arquitectónica Estándar (10 m²/L)</option>
+                                <option value="8" selected>Arquitectónica Premium (8 m²/L)</option>
+                                <option value="7">Industrial (7 m²/L)</option>
+                                <option value="6">Señalización / Alto tráfico (6 m²/L)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group-calc">
+                            <label for="presentation">Presentación sugerida</label>
+                            <select id="presentation">
+                                <option value="1">1 litro</option>
+                                <option value="4">4 litros</option>
+                                <option value="19" selected>19 litros</option>
+                            </select>
+                        </div>
+
+                        <button type="button" class="calc-btn" onclick="calcularPintura()">Calcular</button>
+                    </div>
+
+                    <div class="result-card">
+                        <h3>Resultado estimado</h3>
+                        <div class="result-item">
+                            <span>Litros requeridos:</span>
+                            <strong id="litrosResultado">--</strong>
+                        </div>
+                        <div class="result-item">
+                            <span>Envases sugeridos:</span>
+                            <strong id="envasesResultado">--</strong>
+                        </div>
+                        <div class="result-item">
+                            <span>Total a comprar:</span>
+                            <strong id="totalCompraResultado">--</strong>
+                        </div>
+                        <p class="result-note">
+                            Estimación basada en rendimiento teórico. El consumo real puede variar según preparación de superficie, método de aplicación, color y condiciones de obra.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <div class="container">
+            <div class="elfsight-app-d23c5ec1-9da1-4c23-8d7e-9225bc3cc7c2" data-elfsight-app-lazy></div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="contact-header reveal">
+                <span class="badge">Atención a Clientes</span>
+                <h2>Contáctanos</h2>
+                <p>¿Tienes alguna pregunta o necesitas una cotización a la medida? Estamos listos para atenderte.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <div class="info-box flex">
+                        <div class="icon">📞</div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>55 58 65 57 11 / 55 51 16 13 13</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-box">
+                        <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 10px;">
+                            <div class="icon">📍</div>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Avenida Quinta Nepantla S/N Col. San Pablo, Otlica, Trigotenco, 54960 Tultepec, Méx.</p>
+                            </div>
+                        </div>
+                        <div class="map-container">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.831306080144!2d-99.11835768859164!3d19.67720113274625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f48edb5453e5%3A0x39f518a060198ba5!2sInnovadora%20de%20Pinturas%20Industriales%2C%20S.%20A.%20de%20C.%20V.!5e0!3m2!1ses-419!2smx!4v1773248107226!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                        </div>
+                    </div>
+                    
+                    <div class="info-box flex" style="margin-top: 20px;">
+                        <div class="icon">⏰</div>
+                        <div>
+                            <h4>Horario de Atención</h4>
+                            <p>Lunes a Viernes: 9:00 - 18:00 hrs<br>Sábados: 8:00 - 13:00 hrs</p>
+                        </div>
+                    </div>
+                    <div class="info-box flex">
+                        <div class="icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>pedidos@innovadoradepinturas.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/xzbnjegy" method="POST" class="contact-form reveal">
+                    <h3>Envíanos un Mensaje</h3>
+                    <div class="input-group">
+                        <label>Nombre</label>
+                        <input type="text" name="name" placeholder="Tu nombre completo" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Teléfono</label>
+                        <input type="tel" name="phone" placeholder="Tu número de teléfono">
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Mensaje / Comentario</label>
+                        <textarea id="contactMessage" name="message" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">✈ Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="custom-footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.42,126.3,200.72,118.7,243.6,114.08,285.3,95.1,321.39,56.44Z" fill="#0a1931"></path>
+            </svg>
+        </div>
+        
+        <div class="footer-content container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <span>🖌️</span> Innovadora de Pinturas
+                </div>
+                <p>Empresa 100% mexicana dedicada a la fabricación de pinturas y recubrimientos de alta calidad para todo tipo de aplicaciones.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Productos</h4>
+                <ul>
+                    <li><a href="productos.html">Línea Industrial</a></li>
+                    <li><a href="productos.html">Línea Arquitectónica</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#productos">Certificaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Soporte</h4>
+                <ul>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#contacto">Soporte Técnico</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <p>© 2026 Innovadora de Pinturas Industriales. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/525546192932" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+    </a>
+
+ <script src="js/index.js" defer></script>
+</body>
+</html>

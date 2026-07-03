@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Innovadora de Pinturas Industriales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/productos.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="display:block; width:100%; height:100%; position:relative;">
+                <img src="img/IMAGOTIPObLB.png" alt="Innovadora de Pinturas" class="logo-white">
+                <img src="img/IMAGOTIPO.png" alt="Innovadora de Pinturas" class="logo-color">
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <ul class="nav-links" id="mobileMenu">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#nosotros">Empresa</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="index.html#contacto" class="nav-btn">Contacto</a></li>
+            </ul>
+
+            <div class="nav-search desktop-search">
+                <div class="nav-search-box">
+                    <input
+                        type="text"
+                        id="productSearch"
+                        placeholder="Buscar producto..."
+                        aria-label="Buscar producto"
+                        autocomplete="off"
+                    >
+                    <button type="button" onclick="buscarProducto('productSearch', 'searchSuggestions')">Buscar</button>
+                </div>
+                <div class="search-suggestions" id="searchSuggestions"></div>
+            </div>
+
+            <div class="mobile-search-panel" id="mobileSearchPanel">
+                <div class="nav-search">
+                    <div class="nav-search-box">
+                        <input
+                            type="text"
+                            id="mobileProductSearch"
+                            placeholder="Buscar producto..."
+                            aria-label="Buscar producto"
+                            autocomplete="off"
+                        >
+                        <button type="button" onclick="buscarProducto('mobileProductSearch', 'mobileSearchSuggestions')">Buscar</button>
+                    </div>
+                    <div class="search-suggestions" id="mobileSearchSuggestions"></div>
+                </div>
+            </div>
+
+            <button class="search-toggle-btn" id="searchToggleBtn" aria-label="Abrir búsqueda" aria-expanded="false" aria-controls="mobileSearchPanel">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+                </svg>
+            </button>
+
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="products-hero">
+        <div class="container hero-grid">
+            <div class="hero-copy reveal">
+                <h1>Catálogo de Productos</h1>
+                <p>
+                    Soluciones en pinturas y recubrimientos para aplicaciones arquitectónicas,
+                    industriales, mantenimiento, señalización y sistemas complementarios.
+                    Diseñadas para ofrecer protección, durabilidad, estética y desempeño.
+                </p>
+
+                <div class="hero-badges">
+                    <span class="hero-badge">Arquitectónica</span>
+                    <span class="hero-badge">Industrial</span>
+                    <span class="hero-badge">Señalización</span>
+                    <span class="hero-badge">Primarios y selladores</span>
+                    <span class="hero-badge">Especialidades</span>
+                </div>
+
+                <div class="hero-btns">
+                    <a href="#lineas" class="btn primary">Ver catálogo</a>
+                    <a href="#solicitud" class="btn secondary">Solicitar cotización</a>
+                </div>
+            </div>
+
+            <div class="hero-panel reveal">
+                <h3>Nuestro catálogo está pensado para:</h3>
+                <ul>
+                    <li>✔ Proyectos de construcción y acabados</li>
+                    <li>✔ Estructuras metálicas y superficies industriales</li>
+                    <li>✔ Mantenimiento general de instalaciones</li>
+                    <li>✔ Señalización de tránsito y seguridad</li>
+                    <li>✔ Sistemas de preparación, sellado y protección</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="lineas" class="catalog-intro">
+        <div class="container">
+            <div class="section-heading reveal">
+                <h2>Nuestras líneas de producto</h2>
+                <p>
+                    Te presentamos una propuesta de catálogo separada por líneas, con productos
+                    sugeridos para una fábrica de pinturas. Cada producto incluye descripción general
+                    y presentaciones comerciales de referencia.
+                </p>
+            </div>
+
+            <div class="line-nav reveal">
+                <a href="#arquitectonica">Arquitectónica</a>
+                <a href="#industrial">Industrial</a>
+                <a href="#mantenimiento">Mantenimiento y señalización</a>
+                <a href="#complementos">Selladores y complementos</a>
+                <a href="#especialidades">Especialidades</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="arquitectonica" class="product-line">
+        <div class="container">
+            <div class="line-header reveal">
+                <div class="line-title-wrap">
+                    <h3>Línea Arquitectónica</h3>
+                    <p>
+                        Productos para interiores y exteriores con enfoque en acabado,
+                        poder cubriente, lavabilidad y durabilidad.
+                    </p>
+                </div>
+                <span class="line-pill blue">Acabado y decoración</span>
+            </div>
+
+            <div class="products-grid">
+                <article class="product-card reveal" data-search="pintura vinilica mate interior recubrimiento base agua muros plafones interiores buen poder cubriente acabado uniforme 1 l 4 l 19 l casas oficinas escuelas comercios">
+                    <h4>Pintura Vinílica Mate Interior</h4>
+                    <p>Recubrimiento base agua para muros y plafones interiores. Buen poder cubriente y acabado uniforme.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>1 L, 4 L, 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Aplicación</strong>
+                            <span>Casas, oficinas, escuelas, comercios</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-search="pintura acrilica premium exterior fachadas superficies expuestas intemperie humedad radiacion solar 4 l 19 l mayor durabilidad retencion de color">
+                    <h4>Pintura Acrílica Premium Exterior</h4>
+                    <p>Formulada para resistir intemperie, humedad y radiación solar. Ideal para fachadas y superficies expuestas.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>4 L, 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Beneficio</strong>
+                            <span>Mayor durabilidad y retención de color</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-search="esmalte arquitectonico base solvente herreria puertas barandales madera metal brillante satinado mate 1 l 4 l 19 l">
+                    <h4>Esmalte Arquitectónico Base Solvente</h4>
+                    <p>Acabado brillante o satinado para herrería, puertas, barandales y superficies de madera o metal.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>1 L, 4 L, 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Acabados</strong>
+                            <span>Brillante, satinado, mate</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-search="impermeabilizante acrilico elastomerico losas azoteas elasticidad resistencia al agua 4 l 19 l techumbres mantenimiento preventivo">
+                    <h4>Impermeabilizante Acrílico Elastomérico</h4>
+                    <p>Recubrimiento protector para losas y azoteas con buena elasticidad y resistencia al agua.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>4 L, 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Uso recomendado</strong>
+                            <span>Azoteas, techumbres y mantenimiento preventivo</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="industrial" class="product-line alt">
+        <div class="container">
+            <div class="line-header reveal">
+                <div class="line-title-wrap">
+                    <h3>Línea Industrial</h3>
+                    <p>
+                        Recubrimientos para protección de superficies metálicas, maquinaria,
+                        estructuras, equipos y ambientes de mayor exigencia.
+                    </p>
+                </div>
+                <span class="line-pill red">Protección y desempeño</span>
+            </div>
+
+            <div class="products-grid">
+                <article class="product-card red reveal" data-search="primario anticorrosivo alquidalico metal metalico estructuras herreria equipo metalico adherencia corrosion 1 l 4 l 19 l 200 l">
+                    <h4>Primario Anticorrosivo Alquidálico</h4>
+                    <p>Base protectora para superficies metálicas ferrosas. Favorece la adherencia y ayuda a reducir la corrosión.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>1 L, 4 L, 19 L, 200 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Aplicación</strong>
+                            <span>Estructuras, herrería, equipo metálico</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card red reveal" data-search="esmalte industrial secado rapido superficies metalicas brillo semi mate mate 1 l 4 l 19 l 200 l">
+                    <h4>Esmalte Industrial de Secado Rápido</h4>
+                    <p>Acabado para superficies metálicas con buena apariencia, rapidez de secado y facilidad de aplicación.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>1 L, 4 L, 19 L, 200 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Acabados</strong>
+                            <span>Brillante, semi mate y mate</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card red reveal" data-search="recubrimiento epoxico 2k epoxico dos componentes resistencia quimica mecanica pisos tanques areas de proceso kit 4 l kit 19 l plantas talleres">
+                    <h4>Recubrimiento Epóxico 2K</h4>
+                    <p>Sistema de dos componentes de alta resistencia química y mecánica para pisos, tanques y áreas de proceso.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>Kit 4 L, Kit 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Uso recomendado</strong>
+                            <span>Plantas, talleres, zonas de alto desgaste</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card red reveal" data-search="poliuretano alifatico acabado industrial premium retencion brillo color exterior kit 4 l kit 19 l">
+                    <h4>Poliuretano Alifático</h4>
+                    <p>Acabado industrial premium con excelente retención de brillo, color y resistencia al exterior.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>Kit 4 L, Kit 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Beneficio</strong>
+                            <span>Excelente acabado final y durabilidad</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card red reveal" data-search="pintura alta temperatura escapes hornos tuberias equipos termicos componentes metalicos 1 l 4 l">
+                    <h4>Pintura Alta Temperatura</h4>
+                    <p>Recubrimiento especial para superficies sometidas a temperaturas elevadas como escapes, hornos y tuberías.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>1 L, 4 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Aplicación</strong>
+                            <span>Equipos térmicos y componentes metálicos</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="mantenimiento" class="product-line">
+        <div class="container">
+            <div class="line-header reveal">
+                <div class="line-title-wrap">
+                    <h3>Mantenimiento y Señalización</h3>
+                    <p>
+                        Productos pensados para mantenimiento de instalaciones, seguridad visual,
+                        marcaje y control de áreas operativas.
+                    </p>
+                </div>
+                <span class="line-pill yellow">Seguridad y tráfico</span>
+            </div>
+
+            <div class="products-grid">
+                <article class="product-card yellow reveal" data-search="pintura para trafico base solvente señalizacion horizontal pisos patios estacionamientos amarillo blanco rojo azul 4 l 19 l 200 l">
+                    <h4>Pintura para Tráfico Base Solvente</h4>
+                    <p>Desarrollada para señalización horizontal en pisos, patios y estacionamientos con secado funcional y buena visibilidad.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>4 L, 19 L, 200 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Colores comunes</strong>
+                            <span>Amarillo, blanco, rojo, azul</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card yellow reveal" data-search="pintura demarcadora de areas delimitar pasillos zonas peatonales seguridad industrial almacenamiento naves almacenes patios estacionamientos 4 l 19 l">
+                    <h4>Pintura Demarcadora de Áreas</h4>
+                    <p>Ideal para delimitar pasillos, zonas peatonales, seguridad industrial y áreas de almacenamiento.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>4 L, 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Uso recomendado</strong>
+                            <span>Naves, almacenes, patios y estacionamientos</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card yellow reveal" data-search="recubrimiento antideslizante rampas escalones zonas humedas seguridad peatonal 1 l 4 l 19 l">
+                    <h4>Recubrimiento Antideslizante</h4>
+                    <p>Producto para generar superficies con mayor seguridad al tránsito peatonal en rampas, escalones y zonas húmedas.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>1 L, 4 L, 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Beneficio</strong>
+                            <span>Ayuda a reducir riesgo de resbalones</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card yellow reveal" data-search="esmalte para mantenimiento general equipos herreria estructuras mantenimiento correctivo preventivo 1 l 4 l 19 l planta edificios talleres">
+                    <h4>Esmalte para Mantenimiento General</h4>
+                    <p>Acabado funcional para equipos, herrería, estructuras ligeras y mantenimiento correctivo o preventivo.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>1 L, 4 L, 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Aplicación</strong>
+                            <span>Uso general en planta, edificios y talleres</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="complementos" class="product-line alt">
+        <div class="container">
+            <div class="line-header reveal">
+                <div class="line-title-wrap">
+                    <h3>Selladores y Complementos</h3>
+                    <p>
+                        Productos auxiliares para preparar superficie, mejorar adherencia,
+                        uniformar absorción y complementar el sistema de recubrimiento.
+                    </p>
+                </div>
+                <span class="line-pill green">Preparación de superficie</span>
+            </div>
+
+            <div class="products-grid">
+                <article class="product-card green reveal" data-search="sellador vinilico superficies porosas rendimiento pintura interiores exteriores muros nuevos yeso pasta aplanados 1 l 4 l 19 l">
+                    <h4>Sellador Vinílico</h4>
+                    <p>Reduce absorción en superficies porosas y mejora el rendimiento de la pintura en interiores y exteriores.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>1 L, 4 L, 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Uso recomendado</strong>
+                            <span>Muros nuevos, yeso, pasta y aplanados</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card green reveal" data-search="sellador acrilico para exterior fachadas exteriores adherencia uniformidad acabado 4 l 19 l">
+                    <h4>Sellador Acrílico para Exterior</h4>
+                    <p>Ayuda a estabilizar la superficie y favorece una mejor adherencia en sistemas de fachadas y exteriores.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>4 L, 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Beneficio</strong>
+                            <span>Mejora la uniformidad del acabado</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card green reveal" data-search="thinner reductor ajuste viscosidad limpieza equipo base solvente 1 l 4 l 19 l 200 l">
+                    <h4>Thinner / Reductor</h4>
+                    <p>Auxiliar para ajuste de viscosidad y limpieza de equipo según el tipo de sistema base solvente.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>1 L, 4 L, 19 L, 200 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Aplicación</strong>
+                            <span>Ajuste de aplicación y limpieza de herramienta</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card green reveal" data-search="fondo base preparadora anclaje desempeno acabado final sistemas architectonicos industriales 1 l 4 l 19 l">
+                    <h4>Fondo / Base Preparadora</h4>
+                    <p>Producto de transición para promover anclaje y mejorar el desempeño del acabado final.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>1 L, 4 L, 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Uso recomendado</strong>
+                            <span>Sistemas arquitectónicos e industriales</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="especialidades" class="product-line">
+        <div class="container">
+            <div class="line-header reveal">
+                <div class="line-title-wrap">
+                    <h3>Línea de Especialidades</h3>
+                    <p>
+                        Productos para requerimientos específicos donde el desempeño técnico,
+                        la resistencia o el acabado especial son clave.
+                    </p>
+                </div>
+                <span class="line-pill dark">Soluciones especializadas</span>
+            </div>
+
+            <div class="products-grid">
+                <article class="product-card dark reveal" data-search="wash primer primario anclaje superficies metalicas no ferrosas aluminio galvanizado sistemas especiales kit 1 l kit 4 l">
+                    <h4>Wash Primer</h4>
+                    <p>Primario de anclaje para superficies metálicas no ferrosas o preparaciones especiales previas al acabado.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>Kit 1 L, Kit 4 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Uso recomendado</strong>
+                            <span>Aluminio, galvanizado y sistemas especiales</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card dark reveal" data-search="recubrimiento para piso industrial resistencia desgaste limpieza plantas talleres almacenes laboratorios kit 4 l kit 19 l">
+                    <h4>Recubrimiento para Piso Industrial</h4>
+                    <p>Producto para áreas con tránsito moderado o alto, con buena resistencia al desgaste y fácil limpieza.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>Kit 4 L, Kit 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Aplicación</strong>
+                            <span>Plantas, talleres, almacenes, laboratorios</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card dark reveal" data-search="barniz protector transparente madera metal sellado brillante satinado 1 l 4 l 19 l">
+                    <h4>Barniz Protector Transparente</h4>
+                    <p>Capa de protección y acabado para madera, metal u otras superficies cuando se busca realzar apariencia y sellado.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>1 L, 4 L, 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Acabados</strong>
+                            <span>Brillante y satinado</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card dark reveal" data-search="recubrimiento alta resistencia quimica exposicion agentes quimicos limpieza frecuente areas de proceso contencion mantenimiento pesado kit 4 l kit 19 l">
+                    <h4>Recubrimiento de Alta Resistencia Química</h4>
+                    <p>Sistema para ambientes agresivos donde existe exposición a agentes químicos o limpieza frecuente.</p>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <strong>Presentaciones</strong>
+                            <span>Kit 4 L, Kit 19 L</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Uso recomendado</strong>
+                            <span>Áreas de proceso, contención y mantenimiento pesado</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="section-heading reveal">
+                <h2>¿Qué puedes destacar de tu catálogo?</h2>
+                <p>
+                    Esta sección te ayuda a comunicar valor comercial y técnico, no solo listar productos.
+                </p>
+            </div>
+
+            <div class="advantages-grid">
+                <div class="adv-card reveal">
+                    <div class="adv-icon">🎨</div>
+                    <h4>Variedad de sistemas</h4>
+                    <p>Portafolio para proyectos arquitectónicos, industriales y de mantenimiento.</p>
+                </div>
+
+                <div class="adv-card reveal">
+                    <div class="adv-icon">🛡️</div>
+                    <h4>Protección</h4>
+                    <p>Soluciones diseñadas para durabilidad, adherencia y desempeño funcional.</p>
+                </div>
+
+                <div class="adv-card reveal">
+                    <div class="adv-icon">🏭</div>
+                    <h4>Aplicación técnica</h4>
+                    <p>Productos adaptados a distintos sustratos, condiciones y exigencias operativas.</p>
+                </div>
+
+                <div class="adv-card reveal">
+                    <div class="adv-icon">📦</div>
+                    <h4>Presentaciones comerciales</h4>
+                    <p>Opciones para menudeo, proyectos medianos y consumo industrial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solicitud" class="catalog-cta">
+        <div class="container">
+            <div class="cta-box reveal">
+                <h2>¿Necesitas una cotización o ficha técnica?</h2>
+                <p>
+                    Podemos ayudarte a definir el sistema ideal según superficie, ambiente,
+                    rendimiento esperado y presentación requerida.
+                </p>
+
+                <div class="cta-tags">
+                    <span>Asesoría técnica</span>
+                    <span>Atención a distribuidores</span>
+                    <span>Proyectos especiales</span>
+                    <span>Desarrollo de color</span>
+                </div>
+
+                <a href="index.html#contacto" class="btn primary">Ir a contacto</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="custom-footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.42,126.3,200.72,118.7,243.6,114.08,285.3,95.1,321.39,56.44Z" fill="#0a1931"></path>
+            </svg>
+        </div>
+
+        <div class="footer-content container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <span>🖌️</span> Innovadora de Pinturas
+                </div>
+                <p>Empresa 100% mexicana dedicada a la fabricación de pinturas y recubrimientos de alta calidad para todo tipo de aplicaciones.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Productos</h4>
+                <ul>
+                    <li><a href="#arquitectonica">Línea Arquitectónica</a></li>
+                    <li><a href="#industrial">Línea Industrial</a></li>
+                    <li><a href="#mantenimiento">Señalización</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="index.html#nosotros">Sobre Nosotros</a></li>
+                    <li><a href="index.html#productos">Líneas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Soporte</h4>
+                <ul>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                    <li><a href="index.html#contacto">Soporte Técnico</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <p>© 2026 Innovadora de Pinturas Industriales. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/525546192932" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+    </a>
+
+    <script src="js/productos.js" defer></script>
+</body>
+</html>
