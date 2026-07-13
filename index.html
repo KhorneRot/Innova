@@ -274,71 +274,135 @@
         </div>
     </section>
 
-    <section id="productos" class="products">
-        <div class="container">
-            <h2 class="section-title reveal line-section-header">Nuestras Líneas de Pintura</h2>
-            <div class="calculator-box lines-showcase-box reveal" id="lineShowcaseBox">
-                <div class="line-showcase">
-                    <div class="line-carousel-shell">
-                        <button type="button" class="line-nav-btn" id="linePrevBtn" aria-label="Mostrar línea anterior">&#8249;</button>
-                        <div class="line-carousel-track" id="lineCarouselTrack"></div>
-                        <button type="button" class="line-nav-btn" id="lineNextBtn" aria-label="Mostrar siguiente línea">&#8250;</button>
-                    </div>
+    <section class="pantone-gallery-section" aria-labelledby="pantoneGalleryTitle">
+        <div class="container pantone-gallery-layout">
+            <div class="pantone-gallery-copy reveal">
+                <span class="section-kicker">Inspiración de color</span>
+                <h2 id="pantoneGalleryTitle">Color, acabado y estilo para tus proyectos</h2>
+                <p>Una galería visual para mostrar tonos de tendencia y reforzar la capacidad de Innovadora de Pinturas para desarrollar soluciones con personalidad.</p>
+                <a href="productos.html" class="gallery-cta">Explorar productos</a>
+            </div>
 
-                    <div class="line-content-grid" id="lineContentGrid">
-                        <div class="comparison-card">
-                            <div class="comparison-toolbar">
-                                <div class="comparison-copy">
-                                    <span class="badge-calculator" id="activeLineBadge">Línea arquitectónica</span>
-                                    <h3 id="activeLineTitle">Arquitectónica</h3>
-                                    <p id="activeProjectText">Desliza para comparar el antes y el después de cada proyecto.</p>
-                                </div>
-                            </div>
+            <div class="pantone-slider reveal" id="pantoneSlider" aria-label="Carrusel de colores Pantone">
+                <button type="button" class="pantone-slider-btn pantone-prev" id="pantonePrevBtn" aria-label="Ver color anterior">&#8249;</button>
 
-                            <div class="before-after-wrapper" id="beforeAfterWrapper">
-                                <div class="comparison-after">
-                                    <img id="afterImage" class="comparison-image" alt="Imagen después" src="img/Despues2.png">
-                                </div>
-                                <div class="comparison-before">
-                                    <img id="beforeImage" class="comparison-image" alt="Imagen antes" src="img/Antes2.png">
-                                </div>
-                                <div class="comparison-divider" id="comparisonDivider">
-                                    <span class="comparison-handle"></span>
-                                </div>
-                                <span class="comparison-label before">Antes</span>
-                                <span class="comparison-label after">Después</span>
-                            </div>
+                <div class="pantone-slider-viewport">
+                    <figure class="pantone-slide is-active" data-title="PANTONE 116 C" data-color="Amarillo">
+                        <img src="img/pantone-gallery/pantone-amarillo.webp" alt="Composición amarilla PANTONE 116 C" decoding="async">
+                    </figure>
+                    <figure class="pantone-slide" data-title="PANTONE 299 C" data-color="Azul">
+                        <img src="img/pantone-gallery/pantone-azul.webp" alt="Composición azul PANTONE 299 C" loading="lazy" decoding="async">
+                    </figure>
+                    <figure class="pantone-slide" data-title="PANTONE 2655 C" data-color="Lavanda">
+                        <img src="img/pantone-gallery/pantone-lavanda.webp" alt="Composición lavanda PANTONE 2655 C" loading="lazy" decoding="async">
+                    </figure>
+                    <figure class="pantone-slide" data-title="PANTONE 711 C" data-color="Rojo">
+                        <img src="img/pantone-gallery/pantone-rojo.webp" alt="Composición roja PANTONE 711 C" loading="lazy" decoding="async">
+                    </figure>
+                    <figure class="pantone-slide" data-title="PANTONE 1765 C" data-color="Tulipán">
+                        <img src="img/pantone-gallery/pantone-tulipan.webp" alt="Composición rosa tulipán PANTONE 1765 C" loading="lazy" decoding="async">
+                    </figure>
+                    <figure class="pantone-slide" data-title="PANTONE 359 C" data-color="Verde claro">
+                        <img src="img/pantone-gallery/pantone-verde-claro.webp" alt="Composición verde claro PANTONE 359 C" loading="lazy" decoding="async">
+                    </figure>
+                    <figure class="pantone-slide" data-title="PANTONE 7481 C" data-color="Verde fuerte">
+                        <img src="img/pantone-gallery/pantone-verde-fuerte.webp" alt="Composición verde fuerte PANTONE 7481 C" loading="lazy" decoding="async">
+                    </figure>
+                </div>
 
-                            <div class="comparison-footer">
-                                <input type="range" id="comparisonRange" class="comparison-range" min="0" max="100" value="50" aria-label="Deslizador comparativo antes y después">
-                                <div class="pair-controls">
-                                    <button type="button" class="pair-btn" id="pairPrevBtn" aria-label="Proyecto anterior">&#8249;</button>
-                                    <span class="pair-counter" id="pairCounter">1 / 1</span>
-                                    <button type="button" class="pair-btn" id="pairNextBtn" aria-label="Siguiente proyecto">&#8250;</button>
-                                </div>
-                                <div class="project-dots" id="projectDots"></div>
-                            </div>
-                        </div>
+                <button type="button" class="pantone-slider-btn pantone-next" id="pantoneNextBtn" aria-label="Ver siguiente color">&#8250;</button>
 
-                        <div class="promo-card">
-                            <div class="promo-image-wrap">
-                                <img id="promoImage" class="promo-image" alt="Producto promocional destacado" src="img/Princess_promo.png">
-                            </div>
-                            <div class="promo-content">
-                                <span class="promo-badge" id="promoBadge">Producto destacado</span>
-                                <h3 id="promoTitle">Arquitectónica Premium</h3>
-                                <p id="promoText">Excelente poder cubriente, acabado uniforme y gran desempeño para proyectos residenciales y comerciales.</p>
-                                <a id="promoLink" href="productos.html" class="promo-link">Ver productos</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="pantone-slider-info">
+                    <span id="pantoneSlideCounter">01 / 07</span>
+                    <strong id="pantoneSlideName">PANTONE 116 C · Amarillo</strong>
+                </div>
 
+                <div class="pantone-thumbs" id="pantoneThumbs" aria-label="Seleccionar color">
+                    <button type="button" class="pantone-thumb is-active" aria-label="Ver amarillo" data-slide="0"><img src="img/pantone-gallery/pantone-amarillo.webp" alt=""></button>
+                    <button type="button" class="pantone-thumb" aria-label="Ver azul" data-slide="1"><img src="img/pantone-gallery/pantone-azul.webp" alt=""></button>
+                    <button type="button" class="pantone-thumb" aria-label="Ver lavanda" data-slide="2"><img src="img/pantone-gallery/pantone-lavanda.webp" alt=""></button>
+                    <button type="button" class="pantone-thumb" aria-label="Ver rojo" data-slide="3"><img src="img/pantone-gallery/pantone-rojo.webp" alt=""></button>
+                    <button type="button" class="pantone-thumb" aria-label="Ver tulipán" data-slide="4"><img src="img/pantone-gallery/pantone-tulipan.webp" alt=""></button>
+                    <button type="button" class="pantone-thumb" aria-label="Ver verde claro" data-slide="5"><img src="img/pantone-gallery/pantone-verde-claro.webp" alt=""></button>
+                    <button type="button" class="pantone-thumb" aria-label="Ver verde fuerte" data-slide="6"><img src="img/pantone-gallery/pantone-verde-fuerte.webp" alt=""></button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="calculadora" class="paint-calculator-section">
+    <section id="productos" class="products product-lines-section">
+        <div class="container">
+            <div class="section-title-wrap reveal">
+                <span class="section-kicker">Soluciones por aplicación</span>
+                <h2 class="section-title line-section-header">Nuestras Líneas de Pintura</h2>
+                <p>Explora nuestras 3 líneas principales en primer plano: soluciones arquitectónicas, industriales y de mantenimiento para cada tipo de proyecto.</p>
+            </div>
+
+            <div class="line-liquid-grid reveal" aria-label="Líneas principales de pintura">
+                <article class="line-liquid-card" style="--line-accent: #2f9a48; --line-glow: rgba(47,154,72,0.34);">
+                    <div class="line-liquid-top">
+                        <span class="line-liquid-badge">Soluciones arquitectónicas</span>
+                        <a href="productos.html#arquitectonica" class="line-liquid-link">Ver línea completa</a>
+                    </div>
+                    <div class="line-liquid-image-wrap">
+                        <img src="img/Productos/Princess_19L.png" alt="Cubeta Princess 19 L - Línea Arquitectónica" class="line-liquid-image line-liquid-image-princess">
+                    </div>
+                    <div class="line-liquid-content">
+                        <span class="line-liquid-number">01</span>
+                        <h3>Línea Arquitectónica</h3>
+                        <p>Vinil-acrílicas, impermeabilizantes, selladores y productos especiales para interiores y exteriores.</p>
+                        <ul>
+                            <li>Excelente presentación visual</li>
+                            <li>Opciones para preparación y acabado</li>
+                            <li>Productos para obra nueva y mantenimiento</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="line-liquid-card" style="--line-accent: #cf3f38; --line-glow: rgba(207,63,56,0.34);">
+                    <div class="line-liquid-top">
+                        <span class="line-liquid-badge">Protección industrial</span>
+                        <a href="productos.html#industrial" class="line-liquid-link">Ver línea completa</a>
+                    </div>
+                    <div class="line-liquid-image-wrap">
+                        <img src="img/Productos/Productos_especiales_19L.png" alt="Línea Industrial" class="line-liquid-image">
+                    </div>
+                    <div class="line-liquid-content">
+                        <span class="line-liquid-number">02</span>
+                        <h3>Línea Industrial</h3>
+                        <p>Primarios, epóxicos, poliuretanos, sistemas para piso, intumescentes y recubrimientos de alto desempeño.</p>
+                        <ul>
+                            <li>Sistemas para ambientes exigentes</li>
+                            <li>Opciones base agua y base solvente</li>
+                            <li>Enfoque en protección y durabilidad</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="line-liquid-card" style="--line-accent: #d4a514; --line-glow: rgba(212,165,20,0.34);">
+                    <div class="line-liquid-top">
+                        <span class="line-liquid-badge">Mantenimiento operativo</span>
+                        <a href="productos.html#mantenimiento" class="line-liquid-link">Ver línea completa</a>
+                    </div>
+                    <div class="line-liquid-image-wrap">
+                        <img src="img/Productos/trafico.png" alt="Mantenimiento y Señalización" class="line-liquid-image">
+                    </div>
+                    <div class="line-liquid-content">
+                        <span class="line-liquid-number">03</span>
+                        <h3>Mantenimiento y Señalización</h3>
+                        <p>Pinturas para señalamiento, pisos, canchas, albercas y esmaltes de mantenimiento para conservar áreas en buen estado.</p>
+                        <ul>
+                            <li>Aplicaciones para áreas de tránsito</li>
+                            <li>Opciones para repintado y conservación</li>
+                            <li>Productos para operación y mantenimiento</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora" class="paint-calculator-section" hidden>
         <div class="container">
             <div class="calculator-box calculator-standalone-box reveal">
                 <div class="compact-calculator-card">

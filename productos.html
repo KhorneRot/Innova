@@ -1,644 +1,1257 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos | Innovadora de Pinturas Industriales</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/productos.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Productos | Innovadora de Pinturas Industriales</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="css/productos.css" rel="stylesheet"/>
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html" style="display:block; width:100%; height:100%; position:relative;">
-                <img src="img/IMAGOTIPObLB.png" alt="Innovadora de Pinturas" class="logo-white">
-                <img src="img/IMAGOTIPO.png" alt="Innovadora de Pinturas" class="logo-color">
-            </a>
-        </div>
-
-        <div class="nav-right">
-            <ul class="nav-links" id="mobileMenu">
-                <li><a href="index.html#inicio">Inicio</a></li>
-                <li><a href="index.html#nosotros">Empresa</a></li>
-                <li><a href="productos.html" class="active">Productos</a></li>
-                <li><a href="index.html#contacto" class="nav-btn">Contacto</a></li>
-            </ul>
-
-            <div class="nav-search desktop-search">
-                <div class="nav-search-box">
-                    <input
-                        type="text"
-                        id="productSearch"
-                        placeholder="Buscar producto..."
-                        aria-label="Buscar producto"
-                        autocomplete="off"
-                    >
-                    <button type="button" onclick="buscarProducto('productSearch', 'searchSuggestions')">Buscar</button>
-                </div>
-                <div class="search-suggestions" id="searchSuggestions"></div>
-            </div>
-
-            <div class="mobile-search-panel" id="mobileSearchPanel">
-                <div class="nav-search">
-                    <div class="nav-search-box">
-                        <input
-                            type="text"
-                            id="mobileProductSearch"
-                            placeholder="Buscar producto..."
-                            aria-label="Buscar producto"
-                            autocomplete="off"
-                        >
-                        <button type="button" onclick="buscarProducto('mobileProductSearch', 'mobileSearchSuggestions')">Buscar</button>
-                    </div>
-                    <div class="search-suggestions" id="mobileSearchSuggestions"></div>
-                </div>
-            </div>
-
-            <button class="search-toggle-btn" id="searchToggleBtn" aria-label="Abrir búsqueda" aria-expanded="false" aria-controls="mobileSearchPanel">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <circle cx="11" cy="11" r="7"></circle>
-                    <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
-                </svg>
-            </button>
-
-            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <header class="products-hero">
-        <div class="container hero-grid">
-            <div class="hero-copy reveal">
-                <h1>Catálogo de Productos</h1>
-                <p>
+<nav class="navbar">
+<div class="logo">
+<a href="index.html" style="display:block; width:100%; height:100%; position:relative;">
+<img alt="Innovadora de Pinturas" class="logo-white" src="img/IMAGOTIPObLB.png"/>
+<img alt="Innovadora de Pinturas" class="logo-color" src="img/IMAGOTIPO.png"/>
+</a>
+</div>
+<div class="nav-right">
+<ul class="nav-links" id="mobileMenu">
+<li><a href="index.html#inicio">Inicio</a></li>
+<li><a href="index.html#nosotros">Empresa</a></li>
+<li><a class="active" href="productos.html">Productos</a></li>
+<li><a class="nav-btn" href="index.html#contacto">Contacto</a></li>
+</ul>
+<div class="nav-search desktop-search">
+<div class="nav-search-box">
+<input aria-label="Buscar producto" autocomplete="off" id="productSearch" placeholder="Buscar producto..." type="text"/>
+<button onclick="buscarProducto('productSearch', 'searchSuggestions')" type="button">Buscar</button>
+</div>
+<div class="search-suggestions" id="searchSuggestions"></div>
+</div>
+<div class="mobile-search-panel" id="mobileSearchPanel">
+<div class="nav-search">
+<div class="nav-search-box">
+<input aria-label="Buscar producto" autocomplete="off" id="mobileProductSearch" placeholder="Buscar producto..." type="text"/>
+<button onclick="buscarProducto('mobileProductSearch', 'mobileSearchSuggestions')" type="button">Buscar</button>
+</div>
+<div class="search-suggestions" id="mobileSearchSuggestions"></div>
+</div>
+</div>
+<button aria-controls="mobileSearchPanel" aria-expanded="false" aria-label="Abrir búsqueda" class="search-toggle-btn" id="searchToggleBtn">
+<svg aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24">
+<circle cx="11" cy="11" r="7"></circle>
+<line x1="16.65" x2="21" y1="16.65" y2="21"></line>
+</svg>
+</button>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Abrir menú" class="hamburger-btn" id="hamburgerBtn">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</nav>
+<header class="products-hero">
+<div class="container hero-grid">
+<div class="hero-copy reveal">
+<h1>Catálogo de Productos</h1>
+<p>
                     Soluciones en pinturas y recubrimientos para aplicaciones arquitectónicas,
                     industriales, mantenimiento, señalización y sistemas complementarios.
                     Diseñadas para ofrecer protección, durabilidad, estética y desempeño.
                 </p>
-
-                <div class="hero-badges">
-                    <span class="hero-badge">Arquitectónica</span>
-                    <span class="hero-badge">Industrial</span>
-                    <span class="hero-badge">Señalización</span>
-                    <span class="hero-badge">Primarios y selladores</span>
-                    <span class="hero-badge">Especialidades</span>
-                </div>
-
-                <div class="hero-btns">
-                    <a href="#lineas" class="btn primary">Ver catálogo</a>
-                    <a href="#solicitud" class="btn secondary">Solicitar cotización</a>
-                </div>
-            </div>
-
-            <div class="hero-panel reveal">
-                <h3>Nuestro catálogo está pensado para:</h3>
-                <ul>
-                    <li>✔ Proyectos de construcción y acabados</li>
-                    <li>✔ Estructuras metálicas y superficies industriales</li>
-                    <li>✔ Mantenimiento general de instalaciones</li>
-                    <li>✔ Señalización de tránsito y seguridad</li>
-                    <li>✔ Sistemas de preparación, sellado y protección</li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    <section id="lineas" class="catalog-intro">
-        <div class="container">
-            <div class="section-heading reveal">
-                <h2>Nuestras líneas de producto</h2>
-                <p>
-                    Te presentamos una propuesta de catálogo separada por líneas, con productos
-                    sugeridos para una fábrica de pinturas. Cada producto incluye descripción general
-                    y presentaciones comerciales de referencia.
+<div class="hero-badges">
+<span class="hero-badge">Arquitectónica</span>
+<span class="hero-badge">Industrial</span>
+<span class="hero-badge">Señalización</span>
+<span class="hero-badge">Primarios y selladores</span>
+<span class="hero-badge">Hojas técnicas</span>
+</div>
+<div class="hero-btns">
+<a class="btn primary" href="#lineas">Ver catálogo</a>
+<a class="btn secondary" href="#solicitud">Solicitar cotización</a>
+</div>
+</div>
+<div class="hero-panel reveal">
+<h3>Catálogo integrado:</h3>
+<ul>
+<li>✔ 52 productos de la página original</li>
+<li>✔ Hojas técnicas descargables</li>
+<li>✔ Hojas de seguridad disponibles</li>
+<li>✔ Buscador por nombre, línea o aplicación</li>
+<li>✔ Contacto directo por producto</li>
+</ul>
+</div>
+</div>
+</header>
+<section class="catalog-intro" id="lineas">
+<div class="container">
+<div class="section-heading reveal">
+<h2>Nuestras líneas de producto</h2>
+<p>
+                    Catálogo actualizado con los productos de la página original, incluyendo su información técnica,
+                    presentaciones y enlaces descargables a hojas técnicas y hojas de seguridad disponibles.
                 </p>
-            </div>
-
-            <div class="line-nav reveal">
-                <a href="#arquitectonica">Arquitectónica</a>
-                <a href="#industrial">Industrial</a>
-                <a href="#mantenimiento">Mantenimiento y señalización</a>
-                <a href="#complementos">Selladores y complementos</a>
-                <a href="#especialidades">Especialidades</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="arquitectonica" class="product-line">
-        <div class="container">
-            <div class="line-header reveal">
-                <div class="line-title-wrap">
-                    <h3>Línea Arquitectónica</h3>
-                    <p>
-                        Productos para interiores y exteriores con enfoque en acabado,
-                        poder cubriente, lavabilidad y durabilidad.
-                    </p>
-                </div>
-                <span class="line-pill blue">Acabado y decoración</span>
-            </div>
-
-            <div class="products-grid">
-                <article class="product-card reveal" data-search="pintura vinilica mate interior recubrimiento base agua muros plafones interiores buen poder cubriente acabado uniforme 1 l 4 l 19 l casas oficinas escuelas comercios">
-                    <h4>Pintura Vinílica Mate Interior</h4>
-                    <p>Recubrimiento base agua para muros y plafones interiores. Buen poder cubriente y acabado uniforme.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>1 L, 4 L, 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Aplicación</strong>
-                            <span>Casas, oficinas, escuelas, comercios</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card reveal" data-search="pintura acrilica premium exterior fachadas superficies expuestas intemperie humedad radiacion solar 4 l 19 l mayor durabilidad retencion de color">
-                    <h4>Pintura Acrílica Premium Exterior</h4>
-                    <p>Formulada para resistir intemperie, humedad y radiación solar. Ideal para fachadas y superficies expuestas.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>4 L, 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Beneficio</strong>
-                            <span>Mayor durabilidad y retención de color</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card reveal" data-search="esmalte arquitectonico base solvente herreria puertas barandales madera metal brillante satinado mate 1 l 4 l 19 l">
-                    <h4>Esmalte Arquitectónico Base Solvente</h4>
-                    <p>Acabado brillante o satinado para herrería, puertas, barandales y superficies de madera o metal.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>1 L, 4 L, 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Acabados</strong>
-                            <span>Brillante, satinado, mate</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card reveal" data-search="impermeabilizante acrilico elastomerico losas azoteas elasticidad resistencia al agua 4 l 19 l techumbres mantenimiento preventivo">
-                    <h4>Impermeabilizante Acrílico Elastomérico</h4>
-                    <p>Recubrimiento protector para losas y azoteas con buena elasticidad y resistencia al agua.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>4 L, 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Uso recomendado</strong>
-                            <span>Azoteas, techumbres y mantenimiento preventivo</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="industrial" class="product-line alt">
-        <div class="container">
-            <div class="line-header reveal">
-                <div class="line-title-wrap">
-                    <h3>Línea Industrial</h3>
-                    <p>
-                        Recubrimientos para protección de superficies metálicas, maquinaria,
-                        estructuras, equipos y ambientes de mayor exigencia.
-                    </p>
-                </div>
-                <span class="line-pill red">Protección y desempeño</span>
-            </div>
-
-            <div class="products-grid">
-                <article class="product-card red reveal" data-search="primario anticorrosivo alquidalico metal metalico estructuras herreria equipo metalico adherencia corrosion 1 l 4 l 19 l 200 l">
-                    <h4>Primario Anticorrosivo Alquidálico</h4>
-                    <p>Base protectora para superficies metálicas ferrosas. Favorece la adherencia y ayuda a reducir la corrosión.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>1 L, 4 L, 19 L, 200 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Aplicación</strong>
-                            <span>Estructuras, herrería, equipo metálico</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card red reveal" data-search="esmalte industrial secado rapido superficies metalicas brillo semi mate mate 1 l 4 l 19 l 200 l">
-                    <h4>Esmalte Industrial de Secado Rápido</h4>
-                    <p>Acabado para superficies metálicas con buena apariencia, rapidez de secado y facilidad de aplicación.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>1 L, 4 L, 19 L, 200 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Acabados</strong>
-                            <span>Brillante, semi mate y mate</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card red reveal" data-search="recubrimiento epoxico 2k epoxico dos componentes resistencia quimica mecanica pisos tanques areas de proceso kit 4 l kit 19 l plantas talleres">
-                    <h4>Recubrimiento Epóxico 2K</h4>
-                    <p>Sistema de dos componentes de alta resistencia química y mecánica para pisos, tanques y áreas de proceso.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>Kit 4 L, Kit 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Uso recomendado</strong>
-                            <span>Plantas, talleres, zonas de alto desgaste</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card red reveal" data-search="poliuretano alifatico acabado industrial premium retencion brillo color exterior kit 4 l kit 19 l">
-                    <h4>Poliuretano Alifático</h4>
-                    <p>Acabado industrial premium con excelente retención de brillo, color y resistencia al exterior.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>Kit 4 L, Kit 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Beneficio</strong>
-                            <span>Excelente acabado final y durabilidad</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card red reveal" data-search="pintura alta temperatura escapes hornos tuberias equipos termicos componentes metalicos 1 l 4 l">
-                    <h4>Pintura Alta Temperatura</h4>
-                    <p>Recubrimiento especial para superficies sometidas a temperaturas elevadas como escapes, hornos y tuberías.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>1 L, 4 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Aplicación</strong>
-                            <span>Equipos térmicos y componentes metálicos</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="mantenimiento" class="product-line">
-        <div class="container">
-            <div class="line-header reveal">
-                <div class="line-title-wrap">
-                    <h3>Mantenimiento y Señalización</h3>
-                    <p>
-                        Productos pensados para mantenimiento de instalaciones, seguridad visual,
-                        marcaje y control de áreas operativas.
-                    </p>
-                </div>
-                <span class="line-pill yellow">Seguridad y tráfico</span>
-            </div>
-
-            <div class="products-grid">
-                <article class="product-card yellow reveal" data-search="pintura para trafico base solvente señalizacion horizontal pisos patios estacionamientos amarillo blanco rojo azul 4 l 19 l 200 l">
-                    <h4>Pintura para Tráfico Base Solvente</h4>
-                    <p>Desarrollada para señalización horizontal en pisos, patios y estacionamientos con secado funcional y buena visibilidad.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>4 L, 19 L, 200 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Colores comunes</strong>
-                            <span>Amarillo, blanco, rojo, azul</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card yellow reveal" data-search="pintura demarcadora de areas delimitar pasillos zonas peatonales seguridad industrial almacenamiento naves almacenes patios estacionamientos 4 l 19 l">
-                    <h4>Pintura Demarcadora de Áreas</h4>
-                    <p>Ideal para delimitar pasillos, zonas peatonales, seguridad industrial y áreas de almacenamiento.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>4 L, 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Uso recomendado</strong>
-                            <span>Naves, almacenes, patios y estacionamientos</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card yellow reveal" data-search="recubrimiento antideslizante rampas escalones zonas humedas seguridad peatonal 1 l 4 l 19 l">
-                    <h4>Recubrimiento Antideslizante</h4>
-                    <p>Producto para generar superficies con mayor seguridad al tránsito peatonal en rampas, escalones y zonas húmedas.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>1 L, 4 L, 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Beneficio</strong>
-                            <span>Ayuda a reducir riesgo de resbalones</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card yellow reveal" data-search="esmalte para mantenimiento general equipos herreria estructuras mantenimiento correctivo preventivo 1 l 4 l 19 l planta edificios talleres">
-                    <h4>Esmalte para Mantenimiento General</h4>
-                    <p>Acabado funcional para equipos, herrería, estructuras ligeras y mantenimiento correctivo o preventivo.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>1 L, 4 L, 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Aplicación</strong>
-                            <span>Uso general en planta, edificios y talleres</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="complementos" class="product-line alt">
-        <div class="container">
-            <div class="line-header reveal">
-                <div class="line-title-wrap">
-                    <h3>Selladores y Complementos</h3>
-                    <p>
-                        Productos auxiliares para preparar superficie, mejorar adherencia,
-                        uniformar absorción y complementar el sistema de recubrimiento.
-                    </p>
-                </div>
-                <span class="line-pill green">Preparación de superficie</span>
-            </div>
-
-            <div class="products-grid">
-                <article class="product-card green reveal" data-search="sellador vinilico superficies porosas rendimiento pintura interiores exteriores muros nuevos yeso pasta aplanados 1 l 4 l 19 l">
-                    <h4>Sellador Vinílico</h4>
-                    <p>Reduce absorción en superficies porosas y mejora el rendimiento de la pintura en interiores y exteriores.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>1 L, 4 L, 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Uso recomendado</strong>
-                            <span>Muros nuevos, yeso, pasta y aplanados</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card green reveal" data-search="sellador acrilico para exterior fachadas exteriores adherencia uniformidad acabado 4 l 19 l">
-                    <h4>Sellador Acrílico para Exterior</h4>
-                    <p>Ayuda a estabilizar la superficie y favorece una mejor adherencia en sistemas de fachadas y exteriores.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>4 L, 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Beneficio</strong>
-                            <span>Mejora la uniformidad del acabado</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card green reveal" data-search="thinner reductor ajuste viscosidad limpieza equipo base solvente 1 l 4 l 19 l 200 l">
-                    <h4>Thinner / Reductor</h4>
-                    <p>Auxiliar para ajuste de viscosidad y limpieza de equipo según el tipo de sistema base solvente.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>1 L, 4 L, 19 L, 200 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Aplicación</strong>
-                            <span>Ajuste de aplicación y limpieza de herramienta</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card green reveal" data-search="fondo base preparadora anclaje desempeno acabado final sistemas architectonicos industriales 1 l 4 l 19 l">
-                    <h4>Fondo / Base Preparadora</h4>
-                    <p>Producto de transición para promover anclaje y mejorar el desempeño del acabado final.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>1 L, 4 L, 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Uso recomendado</strong>
-                            <span>Sistemas arquitectónicos e industriales</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="especialidades" class="product-line">
-        <div class="container">
-            <div class="line-header reveal">
-                <div class="line-title-wrap">
-                    <h3>Línea de Especialidades</h3>
-                    <p>
-                        Productos para requerimientos específicos donde el desempeño técnico,
-                        la resistencia o el acabado especial son clave.
-                    </p>
-                </div>
-                <span class="line-pill dark">Soluciones especializadas</span>
-            </div>
-
-            <div class="products-grid">
-                <article class="product-card dark reveal" data-search="wash primer primario anclaje superficies metalicas no ferrosas aluminio galvanizado sistemas especiales kit 1 l kit 4 l">
-                    <h4>Wash Primer</h4>
-                    <p>Primario de anclaje para superficies metálicas no ferrosas o preparaciones especiales previas al acabado.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>Kit 1 L, Kit 4 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Uso recomendado</strong>
-                            <span>Aluminio, galvanizado y sistemas especiales</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card dark reveal" data-search="recubrimiento para piso industrial resistencia desgaste limpieza plantas talleres almacenes laboratorios kit 4 l kit 19 l">
-                    <h4>Recubrimiento para Piso Industrial</h4>
-                    <p>Producto para áreas con tránsito moderado o alto, con buena resistencia al desgaste y fácil limpieza.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>Kit 4 L, Kit 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Aplicación</strong>
-                            <span>Plantas, talleres, almacenes, laboratorios</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card dark reveal" data-search="barniz protector transparente madera metal sellado brillante satinado 1 l 4 l 19 l">
-                    <h4>Barniz Protector Transparente</h4>
-                    <p>Capa de protección y acabado para madera, metal u otras superficies cuando se busca realzar apariencia y sellado.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>1 L, 4 L, 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Acabados</strong>
-                            <span>Brillante y satinado</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card dark reveal" data-search="recubrimiento alta resistencia quimica exposicion agentes quimicos limpieza frecuente areas de proceso contencion mantenimiento pesado kit 4 l kit 19 l">
-                    <h4>Recubrimiento de Alta Resistencia Química</h4>
-                    <p>Sistema para ambientes agresivos donde existe exposición a agentes químicos o limpieza frecuente.</p>
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <strong>Presentaciones</strong>
-                            <span>Kit 4 L, Kit 19 L</span>
-                        </div>
-                        <div class="meta-item">
-                            <strong>Uso recomendado</strong>
-                            <span>Áreas de proceso, contención y mantenimiento pesado</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="advantages">
-        <div class="container">
-            <div class="section-heading reveal">
-                <h2>¿Qué puedes destacar de tu catálogo?</h2>
-                <p>
+</div>
+<div class="line-nav reveal">
+<a href="#arquitectonica">Arquitectónica</a>
+<a href="#industrial">Industrial</a>
+<a href="#mantenimiento">Mantenimiento y señalización</a>
+</div>
+</div>
+</section>
+<section class="product-line" id="arquitectonica">
+<div class="container">
+<div class="line-header reveal">
+<div class="line-title-wrap">
+<h3>Línea Arquitectónica</h3>
+<p>Productos para interiores, exteriores, impermeabilización, selladores y acabados arquitectónicos disponibles en el catálogo original.</p>
+</div>
+<span class="line-pill blue">Arquitectónica</span>
+</div>
+<div class="product-category-block">
+<h4 class="product-subtitle reveal">PINTURAS VINIL-ACRÍLICAS PARA INTERIORES Y EXTERIORES</h4>
+<div class="products-grid">
+<article class="product-card reveal" data-search="pintura vinil acrilica vinirec linea arquitectonica pinturas vinil acrilicas para interiores y exteriores producto pintura arquitectonica vinil acrilica de base agua gran adherencia y permanencia del color pintura economica para uso en interiores superficies de aplicacion muros de concreto yeso cemento madera aplanados tablaroca yeso y superficies arquitectonicas en general presentaciones 4 l 19 l y 200 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pintura Vinil-Acrílica Vinirec" class="product-image" src="img/Productos/Vinirec_19L.png"/></div>
+<h4>PINTURA VINIL-ACRÍLICA VINIREC</h4>
+<p>Pintura arquitectónica, vinil-acrílica de base agua, gran adherencia y permanencia del color, pintura económica para uso en interiores</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>PINTURAS VINIL-ACRÍLICAS PARA INTERIORES Y EXTERIORES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Pintura arquitectónica, vinil-acrílica de base agua, gran adherencia y permanencia del color, pintura económica para uso en interiores. Superficies de aplicación Muros de concreto, yeso, cemento, madera, aplanados, tablaroca, yeso y superficies arquitectónicas en general. Presentaciones 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Vinil_acrilica_vinirec_(VE).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_VE.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="pintura vinil acrilica innovamax linea arquitectonica pinturas vinil acrilicas para interiores y exteriores producto pintura arquitectonica vinil acrilica de base agua semi lavable especial para interiores y exteriores superficies de aplicacion muros de concreto yeso cemento madera aplanados tablaroca yeso y superficies arquitectonicas en general presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pintura Vinil-Acrílica Innovamax" class="product-image" src="img/Productos/Innovamax_19L.png"/></div>
+<h4>PINTURA VINIL-ACRÍLICA INNOVAMAX</h4>
+<p>Pintura arquitectónica, vinil acrílica de base agua, semi lavable especial para interiores y exteriores</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>PINTURAS VINIL-ACRÍLICAS PARA INTERIORES Y EXTERIORES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Pintura arquitectónica, vinil acrílica de base agua, semi lavable especial para interiores y exteriores. Superficies de aplicación Muros de concreto, yeso, cemento, madera, aplanados, tablaroca, yeso y superficies arquitectónicas en general. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Vinil_acrilica_innovamax_VS.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_VS.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="pintura vinil acrilica kolors linea arquitectonica pinturas vinil acrilicas para interiores y exteriores producto pintura arquitectonica vinil acrilica de base agua especial para interiores y exteriores resistente a los rayos uv gran durabilidad adherencia gran impermeabilidad y permanencia del color 100 lavable superficies de aplicacion muros de concreto yeso cemento madera aplanados tablaroca yeso y superficies arquitectonicas en general presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pintura Vinil-Acrílica Kolors" class="product-image" src="img/Productos/Kolors_19L.png"/></div>
+<h4>PINTURA VINIL-ACRÍLICA KOLORS</h4>
+<p>Pintura arquitectónica, vinil-acrílica de base agua especial para interiores y exteriores, resistente a los rayos UV, gran durabilidad, adherencia, gran impermeabilidad y permanencia del color, 100% lavable</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>PINTURAS VINIL-ACRÍLICAS PARA INTERIORES Y EXTERIORES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Pintura arquitectónica, vinil-acrílica de base agua especial para interiores y exteriores, resistente a los rayos UV, gran durabilidad, adherencia, gran impermeabilidad y permanencia del color, 100% lavable. Superficies de aplicación Muros de concreto, yeso, cemento, madera, aplanados, tablaroca, yeso y superficies arquitectónicas en general. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Vinil_acrilica_kolors_VL.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_VL.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="pintura vinil acrilica acridel linea arquitectonica pinturas vinil acrilicas para interiores y exteriores producto pintura arquitectonica vinil acrilica de base agua especial para interiores y exteriores resistente a los rayos uv gran durabilidad adherencia gran impermeabilidad y permanencia del color 100 lavable superficies de aplicacion muros de concreto yeso cemento madera aplanados tablaroca yeso y superficies arquitectonicas en general presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pintura Vinil-Acrílica Acridel" class="product-image" src="img/Productos/Acridel_19L.png"/></div>
+<h4>PINTURA VINIL-ACRÍLICA ACRIDEL</h4>
+<p>Pintura arquitectónica, vinil acrílica de base agua especial para interiores y exteriores, resistente a los rayos UV, gran durabilidad, adherencia, gran impermeabilidad y permanencia del color, 100% lavable</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>PINTURAS VINIL-ACRÍLICAS PARA INTERIORES Y EXTERIORES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Pintura arquitectónica, vinil acrílica de base agua especial para interiores y exteriores, resistente a los rayos UV, gran durabilidad, adherencia, gran impermeabilidad y permanencia del color, 100% lavable. Superficies de aplicación Muros de concreto, yeso, cemento, madera, aplanados, Tablaroca, yeso y superficies arquitectónicas en general. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Vinil_acrilica_acridel_VP.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_VP.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="pintura vinil acrilica princess especial linea arquitectonica pinturas vinil acrilicas para interiores y exteriores producto esta pintura arquitectonica vinil acrilica formulada a base de agua es altamente recomendada tanto para interiores como exteriores debido a su excepcional resistencia a los rayos uv destaca por su durabilidad excelente adherencia gran impermeabilidad y la retencion del color a lo largo del tiempo ademas su acabado satinado y su caracteristica superlavable la convierten en una opcion versatil y practica para cualquier proyecto de decoracion superficies de aplicacion muros de concreto yeso cemento madera aplanados tablaroca yeso y superficies arquitectonicas en general presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pintura Vinil-Acrílica Princess Especial" class="product-image" src="img/Productos/Princess_19L.png"/></div>
+<h4>PINTURA VINIL-ACRÍLICA PRINCESS ESPECIAL</h4>
+<p>Esta pintura arquitectónica vinil-acrílica, formulada a base de agua, es altamente recomendada tanto para interiores como exteriores debido a su excepcional resistencia a los rayos UV. Destaca por su…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>PINTURAS VINIL-ACRÍLICAS PARA INTERIORES Y EXTERIORES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Esta pintura arquitectónica vinil-acrílica, formulada a base de agua, es altamente recomendada tanto para interiores como exteriores debido a su excepcional resistencia a los rayos UV. Destaca por su durabilidad, excelente adherencia, gran impermeabilidad y la retención del color a lo largo del tiempo. Además, su acabado satinado y su característica superlavable la convierten en una opción versátil y práctica para cualquier proyecto de decoración. Superficies de aplicación Muros de concreto, yeso, cemento, madera, aplanados, Tablaroca, yeso y superficies arquitectónicas en general. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Vinil_acrilica_princess_especial_VT.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_VT.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="pintura vinil acrilica princess e antibacterial linea arquitectonica pinturas vinil acrilicas para interiores y exteriores producto se recomienda el uso de pintura arquitectonica vinil acrilica de base agua tanto para interiores como exteriores debido a su excepcional resistencia a los rayos uv durabilidad excelente adherencia gran impermeabilidad y retencion del color esta pintura de naturaleza plastica y acabado satinado ofrece una alta resistencia al lavado ademas presenta la capacidad de reducir hasta un 99 9 la presencia de microorganismos comunes como bacterias hongos y algas superficies de aplicacion muros de concreto yeso cemento madera aplanados tablaroca yeso y superficies arquitectonicas en general presentaciones 1 l 4 l 19 l y 200 l 2 1 l 4 l 19 l y 200 l 2"><div class="product-image-wrap"><img alt="Cubeta del producto Pintura Vinil-Acrílica Princess E Antibacterial" class="product-image" src="img/Productos/Princess_19L.png"/></div>
+<h4>PINTURA VINIL-ACRÍLICA PRINCESS E ANTIBACTERIAL</h4>
+<p>Se recomienda el uso de pintura arquitectónica vinil-acrílica de base agua tanto para interiores como exteriores debido a su excepcional resistencia a los rayos UV, durabilidad, excelente adherencia, gran…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>PINTURAS VINIL-ACRÍLICAS PARA INTERIORES Y EXTERIORES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L. 2</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Se recomienda el uso de pintura arquitectónica vinil-acrílica de base agua tanto para interiores como exteriores debido a su excepcional resistencia a los rayos UV, durabilidad, excelente adherencia, gran impermeabilidad y retención del color. Esta pintura, de naturaleza plástica y acabado satinado, ofrece una alta resistencia al lavado, además presenta la capacidad de reducir hasta un 99.9% la presencia de microorganismos comunes como bacterias, hongos y algas. Superficies de aplicación Muros de concreto, yeso, cemento, madera, aplanados, tablaroca, yeso y superficies arquitectónicas en general. Presentaciones 1 L, 4 L, 19 L, y 200 L. 2.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Vinil_acrilica_princess_antibacterial_VT_E.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_VT_E.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+</div>
+</div>
+<div class="product-category-block">
+<h4 class="product-subtitle reveal">IMPERMEABILIZANTES</h4>
+<div class="products-grid">
+<article class="product-card reveal" data-search="impermeabilizante acrilico elastomerico 3 anos linea arquitectonica impermeabilizantes producto material elaborado con resinas acrilicas de buena elasticidad que forma una carpeta autoadherible impermeable de alta calidad por sus propiedades se puede aplicar sobre cualquier tipo de superficie como concreto madera e impermeabilizaciones asfalticas envejecidas o deterioradas superficies de aplicacion muros de concreto yeso cemento aplanados tablaroca y superficies arquitectonicas en general presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Impermeabilizante Acrílico Elastomérico 3 Años" class="product-image" src="img/Productos/Princess_19L.png"/></div>
+<h4>IMPERMEABILIZANTE ACRÍLICO ELASTOMÉRICO 3 AÑOS</h4>
+<p>Material elaborado con resinas acrílicas de buena elasticidad, que forma una carpeta autoadherible impermeable de alta calidad. Por sus propiedades se puede aplicar sobre cualquier tipo de superficie como…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>IMPERMEABILIZANTES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Material elaborado con resinas acrílicas de buena elasticidad, que forma una carpeta autoadherible impermeable de alta calidad. Por sus propiedades se puede aplicar sobre cualquier tipo de superficie como concreto, madera e impermeabilizaciones asfálticas envejecidas o deterioradas. Superficies de aplicación Muros de concreto, yeso, cemento, aplanados, Tablaroca y superficies arquitectónicas en general. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Impermeabilizante_acrilico_elastomerico_3_anos_(IE3_55).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_IE.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="impermeabilizante acrilico elastomerico 5 anos linea arquitectonica impermeabilizantes producto material elaborado con resinas acrilicas de buena elasticidad que forma una carpeta autoadherible impermeable de alta calidad por sus propiedades se puede aplicar sobre cualquier tipo de superficie como concreto madera e impermeabilizaciones asfalticas envejecidas o deterioradas superficies de aplicacion muros de concreto yeso cemento aplanados tablaroca y superficies arquitectonicas en general presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Impermeabilizante Acrílico Elastomérico 5 Años" class="product-image" src="img/Productos/Princess_19L.png"/></div>
+<h4>IMPERMEABILIZANTE ACRÍLICO ELASTOMÉRICO 5 AÑOS</h4>
+<p>Material elaborado con resinas acrílicas de buena elasticidad, que forma una carpeta autoadherible impermeable de alta calidad. Por sus propiedades se puede aplicar sobre cualquier tipo de superficie como…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>IMPERMEABILIZANTES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Material elaborado con resinas acrílicas de buena elasticidad, que forma una carpeta autoadherible impermeable de alta calidad. Por sus propiedades se puede aplicar sobre cualquier tipo de superficie como concreto, madera e impermeabilizaciones asfálticas envejecidas o deterioradas. Superficies de aplicación Muros de concreto, yeso, cemento, aplanados, Tablaroca y superficies arquitectónicas en general. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Impermeabilizante_acrilico_elastomerico_5_anos_(IE5_55).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_IE.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="impermeabilizante acrilico elastomerico 7 anos linea arquitectonica impermeabilizantes producto material elaborado con resinas acrilicas de buena elasticidad que forma una carpeta autoadherible impermeable de alta calidad por sus propiedades se puede aplicar sobre cualquier tipo de superficie como concreto madera e impermeabilizaciones asfalticas envejecidas o deterioradas superficies de aplicacion muros de concreto yeso cemento aplanados tablaroca y superficies arquitectonicas en general presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Impermeabilizante Acrílico Elastomérico 7 Años" class="product-image" src="img/Productos/Princess_19L.png"/></div>
+<h4>IMPERMEABILIZANTE ACRÍLICO ELASTOMÉRICO 7 AÑOS</h4>
+<p>Material elaborado con resinas acrílicas de buena elasticidad, que forma una carpeta autoadherible impermeable de alta calidad. Por sus propiedades se puede aplicar sobre cualquier tipo de superficie como…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>IMPERMEABILIZANTES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Material elaborado con resinas acrílicas de buena elasticidad, que forma una carpeta autoadherible impermeable de alta calidad. Por sus propiedades se puede aplicar sobre cualquier tipo de superficie como concreto, madera e impermeabilizaciones asfálticas envejecidas o deterioradas. Superficies de aplicación Muros de concreto, yeso, cemento, aplanados, Tablaroca y superficies arquitectónicas en general. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Impermeabilizante_acrilico_elastomerico_7_anos_(IE7_55).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_IE.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="impermeabilizante acrilico elastomerico 10 anos linea arquitectonica impermeabilizantes producto material elaborado con resinas acrilicas de buena elasticidad que forma una carpeta autoadherible impermeable de alta calidad por sus propiedades se puede aplicar sobre cualquier tipo de superficie como concreto madera e impermeabilizaciones asfalticas envejecidas o deterioradas superficies de aplicacion muros de concreto yeso cemento aplanados tablaroca y superficies arquitectonicas en general presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Impermeabilizante Acrílico Elastomérico 10 Años" class="product-image" src="img/Productos/Princess_19L.png"/></div>
+<h4>IMPERMEABILIZANTE ACRÍLICO ELASTOMÉRICO 10 AÑOS</h4>
+<p>Material elaborado con resinas acrílicas de buena elasticidad, que forma una carpeta autoadherible impermeable de alta calidad. Por sus propiedades se puede aplicar sobre cualquier tipo de superficie como…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>IMPERMEABILIZANTES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Material elaborado con resinas acrílicas de buena elasticidad, que forma una carpeta autoadherible impermeable de alta calidad. Por sus propiedades se puede aplicar sobre cualquier tipo de superficie como concreto, madera e impermeabilizaciones asfálticas envejecidas o deterioradas. Superficies de aplicación Muros de concreto, yeso, cemento, aplanados, Tablaroca y superficies arquitectónicas en general. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Impermeabilizante_acrilico_elastomerico_10_anos_(IE10_55).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_IE.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="impermeabilizante fibratado linea arquitectonica impermeabilizantes producto material elaborado con resinas estiren acrilicas de buena elasticidad que forma una carpeta autoadherible impermeable de alta calidad y resistencia que le confirieren caracteristicas de reflectancia y aislamiento termico presentaciones 4 l 19 l y 200 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Impermeabilizante Fibratado" class="product-image" src="img/Productos/Princess_19L.png"/></div>
+<h4>IMPERMEABILIZANTE FIBRATADO</h4>
+<p>Material elaborado con resinas estiren acrílicas de buena elasticidad, que forma una carpeta autoadherible impermeable de alta calidad y resistencia que le confirieren características de reflectancia y…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>IMPERMEABILIZANTES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Material elaborado con resinas estiren acrílicas de buena elasticidad, que forma una carpeta autoadherible impermeable de alta calidad y resistencia que le confirieren características de reflectancia y aislamiento térmico Presentaciones 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Impermeabilizante_Fibratado_IF.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_IF.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+</div>
+</div>
+<div class="product-category-block">
+<h4 class="product-subtitle reveal">PRODUCTOS ESPECIALES</h4>
+<div class="products-grid">
+<article class="product-card reveal" data-search="pasta texturizada linea arquitectonica productos especiales producto recubrimiento acrilico para acabados texturizados de diferentes tamanos de grano de gran calidad para ser utilizado tanto en interiores como en exteriores superficies de aplicacion aplicable sobre superficies como concreto yeso cemento madera panel de yeso o fibrocemento en superficies tanto de interior como de exterior previo tratamiento presentaciones 4 l 19 l y 200 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pasta Texturizada" class="product-image" src="img/Productos/Princess_19L.png"/></div>
+<h4>PASTA TEXTURIZADA</h4>
+<p>Recubrimiento acrílico para acabados texturizados de diferentes tamaños de grano de gran calidad, para ser utilizado tanto en interiores como en exteriores</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>PRODUCTOS ESPECIALES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L, 19 L y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Recubrimiento acrílico para acabados texturizados de diferentes tamaños de grano de gran calidad, para ser utilizado tanto en interiores como en exteriores. Superficies de aplicación Aplicable sobre superficies como concreto, yeso, cemento, madera, panel de yeso o fibrocemento; en superficies tanto de interior como de exterior, previo tratamiento. Presentaciones 4 L, 19 L y 200 L</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Pasta_texturizada_(TX_200).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_TX.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="pegatirol linea arquitectonica productos especiales producto adhesivo disenado especialmente para mejorar la adherencia de las pastas de tirol sobre la superficie superficies de aplicacion muros de concreto ladrillo planchados de yeso plafones panel de yeso y madera presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pegatirol" class="product-image" src="img/Productos/Princess_19L.png"/></div>
+<h4>PEGATIROL</h4>
+<p>Adhesivo diseñado especialmente para mejorar la adherencia de las pastas de Tirol sobre la superficie</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>PRODUCTOS ESPECIALES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Adhesivo diseñado especialmente para mejorar la adherencia de las pastas de Tirol sobre la superficie. Superficies de aplicación Muros de concreto, ladrillo, planchados de yeso, plafones, panel de yeso y madera. Presentaciones 1 L, 4 L, 19 L y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Pegatirol_(PT).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_PT.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="pegayeso linea arquitectonica productos especiales producto adhesivo disenado especialmente para mejorar la adherencia del yeso a sustratos de concreto superficies de aplicacion muros de concreto yeso cemento aplanados tablaroca y superficies arquitectonicas en general presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pegayeso" class="product-image" src="img/Productos/Princess_19L.png"/></div>
+<h4>PEGAYESO</h4>
+<p>Adhesivo diseñado especialmente para mejorar la adherencia del yeso a sustratos de concreto</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>PRODUCTOS ESPECIALES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Adhesivo diseñado especialmente para mejorar la adherencia del yeso a sustratos de concreto. Superficies de aplicación Muros de concreto, yeso, cemento, aplanados, Tablaroca y superficies arquitectónicas en general. Presentaciones 1 L, 4 L, 19 L y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Pegayeso_(PY).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_PY.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="resina multiusos linea arquitectonica productos especiales producto adhesivo universal para usos multiples emulsion sintetica de color blanco lacteo que diluido en agua mejora las propiedades de concretos morteros y lechadas ademas optimiza la trabajabilidad de otras aplicaciones como sellador presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Resina Multiusos" class="product-image" src="img/Productos/Princess_19L.png"/></div>
+<h4>RESINA MULTIUSOS</h4>
+<p>Adhesivo universal para usos múltiples. Emulsión sintética de color blanco lácteo que diluido en agua mejora las propiedades de concretos, morteros y lechadas. Además, optimiza la trabajabilidad de otras…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>PRODUCTOS ESPECIALES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Adhesivo universal para usos múltiples. Emulsión sintética de color blanco lácteo que diluido en agua mejora las propiedades de concretos, morteros y lechadas. Además, optimiza la trabajabilidad de otras aplicaciones como sellador. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Resina_multiusos_(RA_50).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_RA_50.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="sellador vinilico 5x1 linea arquitectonica productos especiales producto es un producto liquido base agua de apariencia lechosa y viscosa fabricado con resinas acrilicas y aditivos quimicos especiales de alta calidad ideal para sellar superficies porosas y absorbentes como preparacion previa a la aplicacion del acabado ya que al secar forma una pelicula transparente impermeable con excelente adhesividad y resistente a la alcalinidad de las superficies de cemento superficies de aplicacion este producto sella superficies porosas como panel de yeso cemento y concreto preparandolas para recibir adhesivos ceramicos acabados texturizados o pinturas evita la absorcion de humedad mejorando la adherencia y durabilidad de los materiales aplicados tambien se puede utilizar para pegar concreto nuevo sobre concreto viejo y como aditivo para mejorar la calidad y rendimiento de pinturas base agua al reducir la penetracion del agua presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Sellador Vinílico 5X1" class="product-image" src="img/Productos/Princess_19L.png"/></div>
+<h4>SELLADOR VINÍLICO 5X1</h4>
+<p>Es un producto líquido base agua, de apariencia lechosa y viscosa, fabricado con resinas acrílicas y aditivos químicos especiales de alta calidad, ideal para sellar superficies porosas y absorbentes como…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>PRODUCTOS ESPECIALES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Es un producto líquido base agua, de apariencia lechosa y viscosa, fabricado con resinas acrílicas y aditivos químicos especiales de alta calidad, ideal para sellar superficies porosas y absorbentes como preparación previa a la aplicación del acabado, ya que al secar forma una película transparente, impermeable, con excelente adhesividad y resistente a la alcalinidad de las superficies de cemento. Superficies de aplicación Este producto sella superficies porosas como panel de yeso, cemento y concreto, preparándolas para recibir adhesivos cerámicos, acabados texturizados o pinturas. Evita la absorción de humedad, mejorando la adherencia y durabilidad de los materiales aplicados. También se puede utilizar para pegar concreto nuevo sobre concreto viejo y como aditivo para mejorar la calidad y rendimiento de pinturas base agua al reducir la penetración del agua. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Sellador_vinilico_(5X1).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_SV_51.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="sellador vinilico entintable linea arquitectonica productos especiales producto sellador liquido base agua fabricado con resinas acrilicas y aditivos quimicos especiales de alta calidad de facil aplicacion que fondea las superficies sella la porosidad y promueve la adherencia es ideal para recibir acabados en base agua en colores intensos superficies de aplicacion para sellar superficies porosas y de alta absorcion de agua tales como panel de yeso panel de cemento concreto block de concreto zarpeo y aplanados de yeso estuco o mortero como preparacion previa a la aplicacion de cualquier tipo de pintura base agua vinil acrilica o estiren acrilica evitando asi que absorban la humedad proveniente de estos materiales lo cual ayuda a que se adhieran mejor al sustrato y mantengan sus propiedades adhesivas y de trabajabilidad por mas tiempo presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Sellador Vinílico Entintable" class="product-image" src="img/Productos/Princess_19L.png"/></div>
+<h4>SELLADOR VINÍLICO ENTINTABLE</h4>
+<p>Sellador líquido base agua, fabricado con resinas acrílicas y aditivos químicos especiales de alta calidad, de fácil aplicación que fondea las superficies, sella la porosidad y promueve la adherencia. Es ideal…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>PRODUCTOS ESPECIALES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Sellador líquido base agua, fabricado con resinas acrílicas y aditivos químicos especiales de alta calidad, de fácil aplicación que fondea las superficies, sella la porosidad y promueve la adherencia. Es ideal para recibir acabados en base agua en colores intensos. Superficies de aplicación Para sellar superficies porosas y de alta absorción de agua tales como panel de yeso, panel de cemento, concreto, block de concreto, zarpeo y aplanados de yeso, estuco o mortero, como preparación previa a la aplicación de cualquier tipo de pintura base agua, vinil-acrílica o estiren-acrílica, evitando así que absorban la humedad proveniente de estos materiales lo cual ayuda a que se adhieran mejor al sustrato y mantengan sus propiedades adhesivas y de trabajabilidad por más tiempo. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Sellador_vinilico_entintable_(SV_2).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_SV_2.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card reveal" data-search="esmalte base agua linea arquitectonica productos especiales producto recubrimiento base agua disenado especialmente para la industria del envase producto base agua libre de plomo de acabado brillante de gran rendimiento excelente poder cubriente y gran durabilidad recomendado para interiores y exteriores por su alta resistencia a los rayos uv superficies de aplicacion producto disenado especialmente para la aplicacion en tambores de fibra de papel de facil aplicacion y bajo olor presentaciones 4 l 19 l y 200 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Esmalte Base Agua" class="product-image" src="img/Productos/Princess_19L.png"/></div>
+<h4>ESMALTE BASE AGUA</h4>
+<p>Recubrimiento base agua diseñado especialmente para la industria del envase, producto base agua libre de plomo de</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>PRODUCTOS ESPECIALES</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L, 19 L y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Recubrimiento base agua diseñado especialmente para la industria del envase, producto base agua libre de plomo de acabado brillante de gran rendimiento, excelente poder cubriente y gran durabilidad, recomendado para interiores y exteriores por su alta resistencia a los rayos UV. Superficies de aplicación Producto diseñado especialmente para la aplicación en tambores de fibra de papel, de fácil aplicación y bajo olor. Presentaciones 4 L, 19 L y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/arquitectonico/Hoja_tecnica/Esmalte_base_agua_elsa_fibra_(EBA).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/arquitectonico/Hoja_seguridad/HDS_EBA.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="product-line alt" id="industrial">
+<div class="container">
+<div class="line-header reveal">
+<div class="line-title-wrap">
+<h3>Línea Industrial</h3>
+<p>Recubrimientos industriales, primarios, sistemas epóxicos, poliuretanos, productos para altas exigencias y normas CFE/PEMEX.</p>
+</div>
+<span class="line-pill red">Industrial y especiales</span>
+</div>
+<div class="product-category-block">
+<h4 class="product-subtitle reveal">BASE AGUA</h4>
+<div class="products-grid">
+<article class="product-card red reveal" data-search="recubrimiento intumescente linea industrial base agua producto es un recubrimiento antiflama base agua compuesto de resinas y cargas especiales y esta disenada para la proteccion contra el fuego de estructuras de acero en caso de incendio produce una reaccion quimica que hace que el material se expanda y forme una capa aislante que evita que la temperatura del acero se eleve hasta el nivel critico superficies de aplicacion se puede usar especificamente en las areas donde la aplicacion de productos a base de solvente se considera como un riesgo ambiental tales como hospitales centros de salud escuelas edificios publicos cines gimnasios etc producto recomendado para uso interior para uso en exterior se recomienda aplicar un acabado tipo poliuretano despues de haber aplicado el recubrimiento intumescente presentaciones 4 l 19 l y 200 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Recubrimiento Intumescente" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>RECUBRIMIENTO INTUMESCENTE</h4>
+<p>Es un recubrimiento antiflama base agua compuesto de resinas y cargas especiales y está diseñada para la protección contra el fuego de estructuras de acero. En caso de incendio produce una reacción química que…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE AGUA</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L, 19 L y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Es un recubrimiento antiflama base agua compuesto de resinas y cargas especiales y está diseñada para la protección contra el fuego de estructuras de acero. En caso de incendio produce una reacción química que hace que el material se expanda y forme una capa aislante que evita que la temperatura del acero se eleve hasta el nivel crítico Superficies de aplicación Se puede usar específicamente en las áreas donde la aplicación de productos a base de solvente se considera como un riesgo ambiental, tales como: hospitales, centros de salud, escuelas, edificios públicos, cines, gimnasios, etc. Producto recomendado para uso interior, para uso en exterior se recomienda aplicar un acabado tipo poliuretano después de haber aplicado el Recubrimiento Intumescente. Presentaciones 4 L, 19 L y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/Recubrimiento_intumescente_(RI).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_RI.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+</div>
+</div>
+<div class="product-category-block">
+<h4 class="product-subtitle reveal">BASE SOLVENTE</h4>
+<div class="products-grid">
+<article class="product-card red reveal" data-search="esmalte martillado linea industrial base solvente producto esmalte de secado rapido de facil aplicacion curado por evaporacion de solventes dando un acabado tipo martillado su acabado ayuda a disimular los defectos que presente la superficie acabado brillante superficies de aplicacion en madera y superficies metalicas interiores tales como estanterias mobiliarios maquinaria interior de carrocerias etc colores plata azul metalico y verde metalico presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Esmalte Martillado" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>ESMALTE MARTILLADO</h4>
+<p>Esmalte de secado rápido, de fácil aplicación, curado por evaporación de solventes, dando un</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Esmalte de secado rápido, de fácil aplicación, curado por evaporación de solventes, dando un acabado tipo martillado. Su acabado ayuda a disimular los defectos que presente la superficie. Acabado Brillante. Superficies de aplicación En madera y superficies metálicas interiores, tales como: estanterías, mobiliarios, maquinaria interior de carrocerías, etc. Colores Plata, azul metálico y verde metálico. Presentaciones 1 L, 4 L, 19 L y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/Esmalte_martillado_ERM_2000.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_ERM.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="aluminio alta temperatura linea industrial base solvente producto esmalte recubrimiento de un solo componente especialmente disenado para soportar temperaturas de hasta 260 c resiste cambios bruscos de temperaturas sin afectacion ademas de poseer una excelente resistencia a la corrosion abrasion intemperie y resistencia al agua acabado brillante superficies de aplicacion en superficies de acero o hierro donde existan condiciones de altas temperaturas tales como chimeneas calderas mofles tuberias exteriores de tanques y hornos colores plata azul metalico y verde metalico presentaciones 4 l 19 l y 200 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Aluminio Alta Temperatura" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>ALUMINIO ALTA TEMPERATURA</h4>
+<p>Esmalte Recubrimiento de un solo componente especialmente diseñado para soportar temperaturas de hasta 260°C. Resiste cambios bruscos de temperaturas sin afectación, además de poseer una excelente resistencia…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L, 19 L y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Esmalte Recubrimiento de un solo componente especialmente diseñado para soportar temperaturas de hasta 260°C. Resiste cambios bruscos de temperaturas sin afectación, además de poseer una excelente resistencia a la corrosión, abrasión, intemperie y resistencia al agua. Acabado Brillante. Superficies de aplicación En superficies de acero o hierro donde existan condiciones de altas temperaturas, tales como: chimeneas, calderas, mofles, tuberías, exteriores de tanques y hornos. Colores Plata, azul metálico y verde metálico. Presentaciones 4 L, 19 L y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/Recubrimiento_para_altas_temperaturas_(PHT).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a></div>
+</article>
+<article class="product-card red reveal" data-search="esmalte acrilico linea industrial base solvente producto esmalte de excelente brillo de secado rapido gran poder cubriente para uso en interiores y exteriores con resistencia a los rayos uv gran durabilidad y adherencia al sustrato acabado brillante superficies de aplicacion se recomienda su uso en superficies metalicas herreria en general y acabado automotriz es posible utilizarse en madera y concreto en interiores y exteriores colores toda la gama pantone presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Esmalte Acrílico" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>ESMALTE ACRÍLICO</h4>
+<p>Esmalte de excelente brillo, de secado rápido, gran poder cubriente, para uso en interiores y exteriores, con resistencia a los rayos UV, gran durabilidad y adherencia al sustrato</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Esmalte de excelente brillo, de secado rápido, gran poder cubriente, para uso en interiores y exteriores, con resistencia a los rayos UV, gran durabilidad y adherencia al sustrato. Acabado Brillante. Superficies de aplicación Se recomienda su uso en superficies metálicas, herrería en general y acabado automotriz. Es posible utilizarse en madera y concreto en interiores y exteriores. Colores Toda la gama Pantone. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/Esmalte_acrilico_(EA).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_EA.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="esmalte de horneo alquidal linea industrial base solvente producto esmalte de horneo eha es un recubrimiento de alta resistencia con excelentes propiedades quimicas y mecanicas disenado principalmente para la industria del envase formulado para ser aplicado sobre superficie metalica su secado es mediante el curado al horno fabricado con materias primas de alta calidad libres de metales pesados acabado brillante superficies de aplicacion esmalte disenado principalmente para la adhesion a metales empleados en la industria del envase y embalaje colores toda la gama pantone y colores bajo especificacion presentaciones 19 l y 200 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Esmalte De Horneo Alquidal" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>ESMALTE DE HORNEO ALQUIDAL</h4>
+<p>Esmalte de Horneo (EHA) es un recubrimiento de alta resistencia con excelentes propiedades químicas y mecánicas, diseñado principalmente para la industria del envase, formulado para ser aplicado sobre…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>19 L y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Esmalte de Horneo (EHA) es un recubrimiento de alta resistencia con excelentes propiedades químicas y mecánicas, diseñado principalmente para la industria del envase, formulado para ser aplicado sobre superficie metálica, su secado es mediante el curado al horno. Fabricado con materias primas de alta calidad libres de metales pesados. Acabado Brillante. Superficies de aplicación Esmalte diseñado principalmente para la adhesión a metales empleados en la industria del envase y embalaje. Colores Toda la gama Pantone y colores bajo especificación. Presentaciones 19 L y 200 L</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/Esmalte_de_Horneo_(EHA).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_EHA.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="poliuretano altos solidos linea industrial base solvente producto recubrimiento de acabado de alto brillo gran durabilidad al exterior excelente resistencia mecanica resistencia quimica a solventes y a los rayos uv ademas de presentar gran retencion del color y gran compatibilidad con recubrimientos epoxicos superficies de aplicacion este producto es recomendado para utilizarse sobre superficies metalicas de concreto y madera tales como estructuras maquinaria de alto rendimiento tuberias tanques de gases e inmobiliario en general presentaciones 4 l 19 l y 200 l cada uno con catalizador 4 l 19 l y 200 l cada uno con catalizador"><div class="product-image-wrap"><img alt="Cubeta del producto Poliuretano Altos Sólidos" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>POLIURETANO ALTOS SÓLIDOS</h4>
+<p>Recubrimiento de</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L, 19 L y 200 L (cada uno con catalizador)</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Recubrimiento de acabado de alto brillo, gran durabilidad al exterior, excelente resistencia mecánica, resistencia química a solventes y a los rayos UV, además de presentar gran retención del color y gran compatibilidad con recubrimientos epóxicos. Superficies de aplicación Este producto es recomendado para utilizarse sobre superficies metálicas, de concreto y madera; tales como estructuras, maquinaria de alto rendimiento, tuberías, tanques de gases e inmobiliario en general. Presentaciones 4 L, 19 L y 200 L (cada uno con catalizador).</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/Recubrimiento_de_poliuretano_2K50_(PUL).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_PUL.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="primario epoxico linea industrial base solvente producto sistema epoxico de dos componentes exento de solventes y excelente resistencia mecanica de gran resistencia a la corrosion y a productos quimicos su curado es por reaccion quimica con su catalizador especial superficies de aplicacion es utilizado especialmente para proteger de la corrosion a superficies tales como acero al carbon y metal mecanico en general presentaciones 4 l 19 l y 200 l cada uno con su endurecedor 4 l 19 l y 200 l cada uno con su endurecedor"><div class="product-image-wrap"><img alt="Cubeta del producto Primario Epóxico" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>PRIMARIO EPÓXICO</h4>
+<p>Sistema epóxico de dos componentes exento de solventes y excelente resistencia mecánica, de gran resistencia a la corrosión y a productos químicos; su curado es por reacción química con su catalizador especial</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L, 19 L, y 200 L (cada uno con su endurecedor)</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Sistema epóxico de dos componentes exento de solventes y excelente resistencia mecánica, de gran resistencia a la corrosión y a productos químicos; su curado es por reacción química con su catalizador especial. Superficies de aplicación Es utilizado especialmente para proteger de la corrosión a superficies tales como acero al carbón y metal mecánico en general. Presentaciones 4 L, 19 L, y 200 L (cada uno con su endurecedor)</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/Primario_epoxico_(PX).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_PX.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="primer de poliuretano linea industrial base solvente producto primario anticorrosivo de dos componentes de altos solidos brinda una excelente proteccion a la corrosion ideal para sustrato metalico y fibra de vidrio en repintado automotriz y para uso industrial superficies de aplicacion se recomienda para el repintado automotriz estructuras metalicas de acero al carbon galvanizado aluminio acero cromo laton no se recomienda aplicar sobre plastico excelente adherencia a lamina desnuda preparada adecuadamente presentaciones 1 l 4 l y 19 l cada uno con endurecedor 1 l 4 l y 19 l cada uno con endurecedor"><div class="product-image-wrap"><img alt="Cubeta del producto Primer De Poliuretano" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>PRIMER DE POLIURETANO</h4>
+<p>Primario anticorrosivo de dos componentes de altos sólidos, brinda una excelente protección a la corrosión. ideal para sustrato metálico y fibra de vidrio en repintado automotriz y para uso industrial</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L y 19 L (cada uno con endurecedor)</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Primario anticorrosivo de dos componentes de altos sólidos, brinda una excelente protección a la corrosión. ideal para sustrato metálico y fibra de vidrio en repintado automotriz y para uso industrial. Superficies de aplicación Se recomienda para el repintado automotriz, estructuras metálicas de acero al carbón, galvanizado, aluminio, acero, cromo, latón. No se recomienda aplicar sobre plástico. Excelente adherencia a lámina desnuda preparada adecuadamente. Presentaciones 1 L, 4 L y 19 L (cada uno con endurecedor)</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/Primario_de_poliuretano_de_dos_componentes_(PPUR).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_PPUR.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="recubrimiento de poliuretano de 2 componentes al 10 linea industrial base solvente producto es un recubrimiento de dos componentes recomendado como acabado de alto desempeno en superficies de concreto y de acero en interiores y exteriores acabado de altos solidos y alto brillo excelente dureza flexibilidad y adherencia al acero y al concreto producto anticorrosivo con contenido de inhibidor de corrosion superficies de aplicacion es un recubrimiento especialmente disenado para cubrir superficies metalicas madera y concreto tales como estructuras maquinaria de alto rendimiento tuberias tanques de gases recomendado para maquinaria y equipo se puede aplicar como acabado original en equipo industrial como tolvas y vehiculos de transporte no se recomienda para inmersion en productos quimicos acidos alcalis solventes y agua potable presentaciones 4 l y 19 l 4 l y 19 l"><div class="product-image-wrap"><img alt="Cubeta del producto Recubrimiento De Poliuretano De 2 Componentes Al 10%" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>RECUBRIMIENTO DE POLIURETANO DE 2 COMPONENTES AL 10%</h4>
+<p>Es un recubrimiento de dos componentes, recomendado como</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L y 19 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Es un recubrimiento de dos componentes, recomendado como acabado de alto desempeño en superficies de concreto y de acero en interiores y exteriores. Acabado de altos sólidos y alto brillo, excelente dureza, flexibilidad y adherencia al acero y al concreto. Producto anticorrosivo con contenido de inhibidor de corrosión. Superficies de aplicación Es un recubrimiento especialmente diseñado para cubrir superficies metálicas, madera y concreto; tales como estructuras, maquinaria de alto rendimiento, tuberías, tanques de gases, recomendado para maquinaria y equipo. Se puede aplicar como acabado original en equipo industrial como tolvas y vehículos de transporte. No se recomienda para inmersión en productos químicos, ácidos, álcalis, solventes y agua potable. Presentaciones 4 L y 19 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/Recubrimiento_de_poliuretano_(PUR)_2K10.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_PUR.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="sistema epoxico max para piso linea industrial base solvente producto sistema epoxico de dos componentes exento de solventes y excelente resistencia mecanica de gran resistencia a la corrosion y a productos quimicos su curado es por reaccion quimica con su catalizador especial superficies de aplicacion es utilizado en superficies de concreto y metal presentando una gran adherencia y excelente resistencia quimica y mecanica se puede aplicar en maquinaria en superficies metalicas lamina galvanizada acero estructural acero al carbon tuberias tanques de almacenamiento concreto pisos industriales de trafico ligero o moderado presentaciones 4 l 19 l y 200 l cada uno con endurecedor 4 l 19 l y 200 l cada uno con endurecedor"><div class="product-image-wrap"><img alt="Cubeta del producto Sistema Epóxico Max Para Piso" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>SISTEMA EPÓXICO MAX PARA PISO</h4>
+<p>Sistema epóxico de dos componentes exento de solventes y excelente resistencia mecánica, de gran resistencia a la corrosión y a productos químicos; su curado es por reacción química con su catalizador especial</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L, 19 L, y 200 L. (cada uno con endurecedor)</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Sistema epóxico de dos componentes exento de solventes y excelente resistencia mecánica, de gran resistencia a la corrosión y a productos químicos; su curado es por reacción química con su catalizador especial. Superficies de aplicación Es utilizado en superficies de concreto y metal, presentando una gran adherencia y excelente resistencia química y mecánica. Se puede aplicar en maquinaria, en superficies metálicas, lámina galvanizada, acero estructural, acero al carbón, tuberías, tanques de almacenamiento, concreto, pisos industriales de tráfico ligero o moderado. Presentaciones 4 L, 19 L, y 200 L. (cada uno con endurecedor).</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/Sistema_epoxico_para_piso_(SMP).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_SMP.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="sistema epoxico max para metal linea industrial base solvente producto sistema epoxico de dos componentes exento de solventes y excelente resistencia mecanica de gran resistencia a la corrosion y a productos quimicos su curado es por reaccion quimica con su catalizador especial superficies de aplicacion es utilizado en superficies de concreto y metal presentando una gran adherencia y excelente resistencia quimica y mecanica se puede aplicar en maquinaria en superficies metalicas lamina galvanizada acero estructural acero al carbon tuberias tanques de almacenamiento concreto pisos industriales de trafico ligero o moderado presentaciones 4 l 19 l y 200 l cada uno con endurecedor 4 l 19 l y 200 l cada uno con endurecedor"><div class="product-image-wrap"><img alt="Cubeta del producto Sistema Epóxico Max Para Metal" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>SISTEMA EPÓXICO MAX PARA METAL</h4>
+<p>Sistema epóxico de dos componentes exento de solventes y excelente resistencia mecánica, de gran resistencia a la corrosión y a productos químicos; su curado es por reacción química con su catalizador especial</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L, 19 L, y 200 L. (cada uno con endurecedor)</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Sistema epóxico de dos componentes exento de solventes y excelente resistencia mecánica, de gran resistencia a la corrosión y a productos químicos; su curado es por reacción química con su catalizador especial. Superficies de aplicación Es utilizado en superficies de concreto y metal, presentando una gran adherencia y excelente resistencia química y mecánica. Se puede aplicar en maquinaria, en superficies metálicas, lámina galvanizada, acero estructural, acero al carbón, tuberías, tanques de almacenamiento, concreto, pisos industriales de tráfico ligero o moderado. Presentaciones 4 L, 19 L, y 200 L. (cada uno con endurecedor).</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/Sistema_epoxico_max_para_piso_(SMM).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_SMM.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="recubrimiento altos solidos blanco linea industrial base solvente producto recubrimiento de altos solidos de dos componentes que nos ofrece una excelente resistencia a la intemperie a los rayos uv y al amarillamiento superficies de aplicacion es utilizado para proteger superficies de metal presentando una gran adherencia y excelente resistencia quimica y mecanica presentaciones 4 l 19 l y 200 l cada uno con catalizador 4 l 19 l y 200 l cada uno con catalizador"><div class="product-image-wrap"><img alt="Cubeta del producto Recubrimiento Altos Sólidos Blanco" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>RECUBRIMIENTO ALTOS SÓLIDOS BLANCO</h4>
+<p>Recubrimiento de altos sólidos de dos componentes, que nos ofrece una excelente resistencia, a la intemperie, a los rayos UV y al amarillamiento</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L, 19 L y 200 L (cada uno con catalizador)</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Recubrimiento de altos sólidos de dos componentes, que nos ofrece una excelente resistencia, a la intemperie, a los rayos UV y al amarillamiento. Superficies de aplicación Es utilizado para proteger superficies de metal, presentando una gran adherencia y excelente resistencia química y mecánica. Presentaciones 4 L, 19 L y 200 L (cada uno con catalizador)</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/Recubrimiento_altos_solidos_blanco_(RXM).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_RXM.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="primario fosfato de zinc epoxi poliamida c f e p 19 norma linea industrial base solvente recubrimiento compuesto por dos componentes una base epoxica que se cataliza con poliamida este recubrimiento contiene fosfato de zinc como pigmento inhibidor de la corrosion presentaciones 4 l y 19 l 4 l y 19 l"><div class="product-image-wrap"><img alt="Cubeta del producto Primario Fosfato De Zinc Epoxi-Poliamida (C.F.E. P-19 Norma)" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>PRIMARIO FOSFATO DE ZINC EPOXI-POLIAMIDA (C.F.E. P-19 NORMA)</h4>
+<p>Recubrimiento compuesto por dos componentes: Una base epóxica que se cataliza con poliamida. Este recubrimiento contiene fosfato de zinc como pigmento inhibidor de la corrosión</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L y 19 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Recubrimiento compuesto por dos componentes: Una base epóxica que se cataliza con poliamida. Este recubrimiento contiene fosfato de zinc como pigmento inhibidor de la corrosión. Presentaciones 4 L y 19 L</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/P_19_Epoxi-poliamida.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_PXZ.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="intumescente contra incendios c f e p 32 norma linea industrial base solvente recubrimiento intumescente de capa delgada y de secado rapido brinda proteccion contra fuego celulosico hasta 90 minutos aplicado directamente sobre un primario de taller consta de un solo componente presentaciones 4 l y 19 l 4 l y 19 l"><div class="product-image-wrap"><img alt="Cubeta del producto Intumescente Contra Incendios (C.F.E. P-32 Norma)" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>INTUMESCENTE CONTRA INCENDIOS (C.F.E. P-32 NORMA)</h4>
+<p>Recubrimiento intumescente de capa delgada y de secado rápido, brinda protección contra fuego celulósico hasta 90 minutos aplicado directamente sobre un primario de taller. Consta de un solo componente</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L y 19 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Recubrimiento intumescente de capa delgada y de secado rápido, brinda protección contra fuego celulósico hasta 90 minutos aplicado directamente sobre un primario de taller. Consta de un solo componente. Presentaciones 4 L y 19 L</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/P_32_Intumescente_contra_incendios..pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_RIS.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="primario epoxi cicloalifatico de altos solidos c f e p 33 norma linea industrial base solvente primario anticorrosivo resistente a derrames de sustancias quimicas combustibles al impacto y a la abrasion presentaciones 4 l 19 l 4 l 19 l"><div class="product-image-wrap"><img alt="Cubeta del producto Primario Epoxi-Cicloalifático De Altos Sólidos (C.F.E. P-33 Norma)" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>PRIMARIO EPOXI-CICLOALIFÁTICO DE ALTOS SÓLIDOS (C.F.E. P-33 NORMA)</h4>
+<p>Primario anticorrosivo resistente a derrames de sustancias químicas, combustibles, al impacto y a la abrasión</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L, 19 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Primario anticorrosivo resistente a derrames de sustancias químicas, combustibles, al impacto y a la abrasión. Presentaciones 4 L, 19 L</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/P_33_Epoxi-cicloalifatico.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_PXF.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="primario epoxi amina de altos solidos linea industrial base solvente recubrimiento epoxico que consta de dos componentes con una relacion de mezcla de 4 partes del componente a por una parte del componente b en volumen 4 1 presentaciones 1l 4 l y 19 l 1l 4 l y 19 l"><div class="product-image-wrap"><img alt="Cubeta del producto Primario Epoxi-Amina De Altos Sólidos" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>PRIMARIO EPOXI-AMINA DE ALTOS SÓLIDOS</h4>
+<p>Recubrimiento epóxico que consta de dos componentes con una relación de mezcla de 4 partes del componente A por una parte del componente B en volumen (4:1)</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1L, 4 L y 19 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Recubrimiento epóxico que consta de dos componentes con una relación de mezcla de 4 partes del componente A por una parte del componente B en volumen (4:1). Presentaciones 1L, 4 L y 19 L</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/PPX_HXA.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_PPX_HXA.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="pemex rp 4b modificado linea industrial base solvente recubrimiento inorganico constituido por un pigmento de polvo de zinc y un vehiculo de silicato de etilo inorganico parcialmente hidrolizado envasados por separado es sumamente duro y resistente a la abrasion con excelente resistencia a la mayoria de los solventes a los ambientes humedo salino y marino con excepcion de hidrocarburos clorados en presencia de humedad presentaciones 1l 4 l y 19 l 1l 4 l y 19 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pemex Rp-4B Modificado" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>PEMEX RP-4B MODIFICADO</h4>
+<p>Recubrimiento inorgánico, constituido por un pigmento de polvo de zinc, y un vehículo de silicato de etilo inorgánico parcialmente hidrolizado, envasados por separado. Es sumamente duro y resistente a la…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1L, 4 L y 19 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Recubrimiento inorgánico, constituido por un pigmento de polvo de zinc, y un vehículo de silicato de etilo inorgánico parcialmente hidrolizado, envasados por separado. Es sumamente duro y resistente a la abrasión, con excelente resistencia a la mayoría de los solventes, a los ambientes húmedo, salino y marino, con excepción de hidrocarburos clorados en presencia de humedad. Presentaciones. 1L, 4 L y 19 L</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/PPX_Z.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_PPX_Z.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="primario organico de zinc epoxico poliamida c f e p 9 norma linea industrial base solvente producto recubrimiento de altos solidos de dos componentes que nos ofrece una excelente resistencia a la intemperie a los rayos uv y al amarillamiento superficies de aplicacion es utilizado para proteger superficies de metal presentando una gran adherencia y excelente resistencia quimica y mecanica presentaciones 1l 4 l y 19 l 1l 4 l y 19 l"><div class="product-image-wrap"><img alt="Cubeta del producto Primario Orgánico De Zinc Epóxico-Poliamida (C.F.E. P-9 Norma)" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>PRIMARIO ORGÁNICO DE ZINC EPÓXICO-POLIAMIDA (C.F.E. P-9 NORMA)</h4>
+<p>Recubrimiento de altos sólidos de dos componentes, que nos ofrece una excelente resistencia, a la intemperie, a los rayos UV y al amarillamiento</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1L, 4 L y 19 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Recubrimiento de altos sólidos de dos componentes, que nos ofrece una excelente resistencia, a la intemperie, a los rayos UV y al amarillamiento. Superficies de aplicación Es utilizado para proteger superficies de metal, presentando una gran adherencia y excelente resistencia química y mecánica. Presentaciones 1L, 4 L y 19 L</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/PZC_24.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_PZC_24.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="pemex ra 26 modificado linea industrial base solvente el pemex ra 26 modificado es un acabado epoxico catalizado de altos solidos curado con poliamidas tiene una excelente resistencia a agentes quimicos y a ambiente industrial marino soporta los gases derivados del azufre y apropiado para inmersion continua de destilados sin tratar presentaciones 1l 4 l y 19 l 1l 4 l y 19 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pemex Ra-26 Modificado" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>PEMEX RA-26 MODIFICADO</h4>
+<p>El pemex RA-26 modificado es un</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1L, 4 L y 19 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>El pemex RA-26 modificado es un acabado epóxico catalizado de altos sólidos curado con poliamidas. Tiene una excelente resistencia a agentes químicos y a ambiente industrial marino, soporta los gases derivados del azufre, y apropiado para inmersión continua de destilados sin tratar. Presentaciones 1L, 4 L y 19 L</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/RPX_62.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_RPX_62.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="pemex ra 28 modificado linea industrial base solvente pemex ra 28 modificado es un acabado catalizado de poliuretano acrilico e isocianato alifatico polifuncional forma una pelicula dura de secado rapido apariencia brillante y excelente adhesion y propiedades mecanicas su resistencia quimica limita el uso de este producto a condiciones no muy severas de exposicion directa y continua a agentes quimicos presentaciones 1l 4 l y 19 l 1l 4 l y 19 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pemex Ra-28 Modificado" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>PEMEX RA-28 MODIFICADO</h4>
+<p>Pemex RA-28 modificado es un</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1L, 4 L y 19 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Pemex RA-28 modificado es un acabado catalizado de poliuretano acrílico e isocianato alifático polifuncional. Forma una película dura, de secado rápido, apariencia brillante y excelente adhesión y propiedades mecánicas. Su resistencia química limita el uso de este producto a condiciones no muy severas de exposición directa y continua a agentes químicos. Presentaciones 1L, 4 L y 19 L</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/RPX_82U.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_RPX_82U.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card red reveal" data-search="acabado poliuretano modificado de altos solidos cfe a29 linea industrial base solvente alta mente resistente a la intemperie y sustancias quimicas mantiene un alto brillo y es compatible con recubrimientos epoxicos con buena adhesion sobre galvanizado sin necesidad de mordentador o primario bajo nivel de isocianatos presentaciones 1l 4 l y 19 l 1l 4 l y 19 l"><div class="product-image-wrap"><img alt="Cubeta del producto Acabado Poliuretano Modificado De Altos Sólidos Cfe-A29" class="product-image" src="img/Productos/Productos_especiales_19L.png"/></div>
+<h4>ACABADO POLIURETANO MODIFICADO DE ALTOS SÓLIDOS CFE-A29</h4>
+<p>Alta mente resistente a la intemperie y sustancias químicas, mantiene un alto brillo y es compatible con recubrimientos epóxicos, con buena adhesión sobre galvanizado sin necesidad de mordentador o primario.…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1L, 4 L y 19 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Alta mente resistente a la intemperie y sustancias químicas, mantiene un alto brillo y es compatible con recubrimientos epóxicos, con buena adhesión sobre galvanizado sin necesidad de mordentador o primario. Bajo nivel de isocianatos. Presentaciones 1L, 4 L y 19 L</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/industrial/Hola_tecnicai/RPX_92U.pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/industrial/Hoja_seguridadi/HDS_RPX_92U.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="product-line" id="mantenimiento">
+<div class="container">
+<div class="line-header reveal">
+<div class="line-title-wrap">
+<h3>Línea de Mantenimiento y Señalización</h3>
+<p>Productos para mantenimiento, señalización vial, pisos, albercas, canchas y protección de superficies.</p>
+</div>
+<span class="line-pill yellow">Mantenimiento y señalización</span>
+</div>
+<div class="product-category-block">
+<h4 class="product-subtitle reveal">BASE AGUA</h4>
+<div class="products-grid">
+<article class="product-card yellow reveal" data-search="pintura para canchas linea de mantenimiento y senalizacion base agua producto pintura acrilica de acabado antiderrapante de excelente resistencia a los rayos uv y al interperismo disenada para utilizase como acabado en todo tipo de canchas deportivas y pisos de transito ligero superficies de aplicacion especialmente para canchas deportivas futbol basquetbol tenis fronton etc tambien puede aplicarse en pisos de pasillos peatonales o de transito ligero no recomendable para pisos de paso vehicular o transito pesado presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pintura Para Canchas" class="product-image" src="img/Productos/trafico.png"/></div>
+<h4>PINTURA PARA CANCHAS</h4>
+<p>Pintura acrílica de</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE AGUA</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Pintura acrílica de acabado antiderrapante de excelente resistencia a los rayos UV y al interperismo, diseñada para utilizase como acabado en todo tipo de canchas deportivas y pisos de tránsito ligero. Superficies de aplicación Especialmente para canchas deportivas: futbol, basquetbol, tenis, frontón, etc. también puede aplicarse en pisos de pasillos peatonales o de tránsito ligero, no recomendable para pisos de paso vehicular o tránsito pesado. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/mantenimiento/Hoja_tecnicam/Pintura_para_canchas_(PCTA).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/mantenimiento/Hoja_seguridadm/HDS_PCTA.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card yellow reveal" data-search="pintura para senalamiento base agua linea de mantenimiento y senalizacion base agua producto pintura de secado rapido especial para senalamiento vial y areas peatonales de gran resistencia a la abrasion y de secado por evaporacion de agua superficies de aplicacion pintura especialmente desarrollada para el senalamiento de transito sobre pavimentos asfalticos y de concreto tanto en carreteras como en zonas urbanas util para marcar lineas centrales continuas o discontinuas lineas laterales senalamientos de cruces de ferrocarril guarniciones de concreto en carreteras puentes y senalamientos de aeropistas cajones de estacionamientos y banquetas en zonas urbanas para senalamiento de cruces peatonales y de transito presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pintura Para Señalamiento Base Agua" class="product-image" src="img/Productos/trafico.png"/></div>
+<h4>PINTURA PARA SEÑALAMIENTO BASE AGUA</h4>
+<p>Pintura de secado rápido especial para señalamiento vial y áreas peatonales de gran resistencia a la abrasión y de secado por evaporación de agua</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE AGUA</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Pintura de secado rápido especial para señalamiento vial y áreas peatonales de gran resistencia a la abrasión y de secado por evaporación de agua. Superficies de aplicación Pintura especialmente desarrollada para el señalamiento de tránsito sobre pavimentos asfálticos y de concreto, tanto en carreteras como en zonas urbanas. Útil para marcar líneas centrales continuas o discontinuas, líneas laterales, señalamientos de cruces de ferrocarril, guarniciones de concreto en carreteras, puentes y señalamientos de aeropistas, cajones de estacionamientos y banquetas; en zonas urbanas para señalamiento de cruces peatonales y de tránsito. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/mantenimiento/Hoja_tecnicam/Pintura_para_se%23U00f1alamiento_base_agua_(PTA).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/mantenimiento/Hoja_seguridadm/HDS_PTA.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+</div>
+</div>
+<div class="product-category-block">
+<h4 class="product-subtitle reveal">BASE SOLVENTE</h4>
+<div class="products-grid">
+<article class="product-card yellow reveal" data-search="recubrimiento antigrafiti linea de mantenimiento y senalizacion base solvente producto recubrimiento de dos componentes que protege las superficies contra pintura en aerosol grafitis con excelentes propiedades quimicas y mecanicas su secado es por reaccion quimica con la mezcla de su catalizador acabado brillante mate y semimate superficies de aplicacion es un recubrimiento especialmente disenado para cubrir superficies metalicas de madera y de concreto tales como bardas fachadas cortinas y rejas metalicas zaguanes tanques y todas aquellas superficies de metal o muros perfectamente bien aplanados y lisos que se deseen decorar y proteger contra pinturas en aerosol de cualquier tipo marcadores pinturas de aceite pinturas latex etc se utiliza tambien como acabado final para recubrir todo tipo de superficies expuestas a agentes quimicos solventes acidos y alcalis debiles y atmosfericos colores toda la gama pantone presentaciones 4 l 19 l y 200 l con catalizador incluido 4 l 19 l y 200 l con catalizador incluido"><div class="product-image-wrap"><img alt="Cubeta del producto Recubrimiento Antigrafiti" class="product-image" src="img/Productos/trafico.png"/></div>
+<h4>RECUBRIMIENTO ANTIGRAFITI</h4>
+<p>Recubrimiento de dos componentes que protege las superficies contra pintura en aerosol (grafitis), con excelentes propiedades químicas y mecánicas. Su secado es por reacción química con la mezcla de su…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>4 L, 19 L, y 200 L (con catalizador incluido)</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Recubrimiento de dos componentes que protege las superficies contra pintura en aerosol (grafitis), con excelentes propiedades químicas y mecánicas. Su secado es por reacción química con la mezcla de su catalizador. Acabado Brillante, mate y semimate Superficies de aplicación Es un recubrimiento especialmente diseñado para cubrir superficies metálicas, de madera y de concreto, tales como: bardas, fachadas, cortinas y rejas metálicas, zaguanes, tanques y todas aquellas superficies de metal o muros perfectamente bien aplanados y lisos que se deseen decorar y proteger contra pinturas en aerosol de cualquier tipo, marcadores, pinturas de aceite, pinturas látex, etc. Se utiliza también, como acabado final para recubrir todo tipo de superficies expuestas a agentes químicos (solventes, ácidos y álcalis débiles) y atmosféricos. Colores Toda la gama Pantone. Presentaciones 4 L, 19 L, y 200 L (con catalizador incluido)</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/mantenimiento/Hoja_tecnicam/Recubrimiento_antigraffiti_(RPA_200).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/mantenimiento/Hoja_tecnicam/Recubrimiento_antigraffiti_(RPA_200).pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card yellow reveal" data-search="esmalte de hule clorado linea de mantenimiento y senalizacion base solvente producto esmalte formulado a partir de resinas de hule clorado de secado rapido de facil aplicacion y excelente brillo especial para senalamiento vial y areas peatonales y de transito vehicular de gran resistencia a la abrasion acabado brillante superficies de aplicacion pintura especialmente desarrollada para el senalamiento de transito sobre pavimentos asfalticos y de concreto tanto en carreteras como en zonas urbanas util para marcar lineas centrales continuas discontinuas lineas laterales senalamientos de cruces de ferrocarril guarniciones de concreto en carreteras puentes y senalamientos de aeropistas cajones de estacionamientos y banquetas en zonas urbanas para senalamiento de cruces peatonales y de transito para su uso en superficies metalicas herreria en general colores toda la gama pantone presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Esmalte De Hule Clorado" class="product-image" src="img/Productos/trafico.png"/></div>
+<h4>ESMALTE DE HULE CLORADO</h4>
+<p>Esmalte formulado a partir de resinas de hule clorado de secado rápido, de fácil aplicación y excelente brillo. Especial para señalamiento vial y áreas peatonales y de tránsito vehicular de gran resistencia a…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Esmalte formulado a partir de resinas de hule clorado de secado rápido, de fácil aplicación y excelente brillo. Especial para señalamiento vial y áreas peatonales y de tránsito vehicular de gran resistencia a la abrasión. Acabado Brillante. Superficies de aplicación Pintura especialmente desarrollada para el señalamiento de tránsito sobre pavimentos asfálticos y de concreto, tanto en carreteras como en zonas urbanas. Útil para marcar líneas centrales continuas, discontinuas, líneas laterales, señalamientos de cruces de ferrocarril, guarniciones de concreto en carreteras, puentes y señalamientos de aeropistas, cajones de estacionamientos y banquetas; en zonas urbanas para señalamiento de cruces peatonales y de tránsito. para su uso en superficies metálicas, herrería en general. Colores Toda la gama Pantone. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/mantenimiento/Hoja_tecnicam/Esmalte_de_hule_clorado_(EH).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/mantenimiento/Hoja_seguridadm/HDS_EH.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card yellow reveal" data-search="esmalte innovarel secado rapido linea de mantenimiento y senalizacion base solvente producto esmalte alquidico anticorrosivo de secado rapido de facil aplicacion gran dureza curado por evaporacion de solventes acabado brillante mate o semimate superficies de aplicacion esta disenada principalmente para su aplicacion en madera concreto metal y yeso colores toda la gama pantone presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Esmalte Innovarel Secado Rápido" class="product-image" src="img/Productos/Innovarel_19L.png"/></div>
+<h4>ESMALTE INNOVAREL SECADO RÁPIDO</h4>
+<p>Esmalte alquídico, anticorrosivo de secado rápido, de fácil aplicación, gran dureza, curado por evaporación de solventes</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Esmalte alquídico, anticorrosivo de secado rápido, de fácil aplicación, gran dureza, curado por evaporación de solventes. Acabado Brillante, mate o semimate Superficies de aplicación Está diseñada principalmente para su aplicación en madera, concreto, metal y yeso. Colores Toda la gama Pantone Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/mantenimiento/Hoja_tecnicam/Esmalte_alquidalico_anticorrosivo_de_secado_rapido_(ERI).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/mantenimiento/Hoja_seguridadm/HDS_ERI.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card yellow reveal" data-search="esmalte lustrasol secado normal linea de mantenimiento y senalizacion base solvente producto esmalte alquidalico anticorrosivo de secado normal que proporciona un alto rendimiento alto poder cubriente y excelente proteccion contra la corrosion buena nivelacion y brochabilidad superficies de aplicacion disenada principalmente para su uso en madera y en superficies de concreto cemento metal y yeso presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Esmalte Lustrasol Secado Normal" class="product-image" src="img/Productos/trafico.png"/></div>
+<h4>ESMALTE LUSTRASOL SECADO NORMAL</h4>
+<p>Esmalte alquidálico, anticorrosivo de secado normal que proporciona un alto rendimiento, alto poder cubriente y excelente protección contra la corrosión, buena nivelación y brochabilidad</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Esmalte alquidálico, anticorrosivo de secado normal que proporciona un alto rendimiento, alto poder cubriente y excelente protección contra la corrosión, buena nivelación y brochabilidad. Superficies de aplicación Diseñada principalmente para su uso en madera y en superficies de concreto, cemento, metal y yeso. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/mantenimiento/Hoja_tecnicam/Esmalte_alquidalico_anticorrosivo_de_secado_normal_(ENL).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/mantenimiento/Hoja_seguridadm/HDS_ENL.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card yellow reveal" data-search="esmalte lustrasol secado rapido linea de mantenimiento y senalizacion base solvente producto esmalte alquidalico anticorrosivo de secado rapido de facil aplicacion gran dureza curado por evaporacion de solventes superficies de aplicacion esmalte disenado principalmente para su uso en madera concreto cemento metal y yeso presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Esmalte Lustrasol Secado Rápido" class="product-image" src="img/Productos/trafico.png"/></div>
+<h4>ESMALTE LUSTRASOL SECADO RÁPIDO</h4>
+<p>Esmalte alquidálico, anticorrosivo de secado rápido, de fácil aplicación, gran dureza, curado por evaporación de solventes</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Esmalte alquidálico, anticorrosivo de secado rápido, de fácil aplicación, gran dureza, curado por evaporación de solventes. Superficies de aplicación Esmalte diseñado principalmente para su uso en madera, concreto, cemento, metal y yeso. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/mantenimiento/Hoja_tecnicam/Esmalte_alquidalico_anticorrosivo_de_secado_rapido_(ERL).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/mantenimiento/Hoja_seguridadm/HDS_ERL.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card yellow reveal" data-search="esmalte innovarel secado normal linea de mantenimiento y senalizacion base solvente producto esmalte alquidalico anticorrosivo de secado normal proporciona un alto rendimiento poder cubriente y proteccion contra la corrosion excelente nivelacion y brochabilidad superficies de aplicacion esmalte disenado principalmente para su uso en madera concreto cemento metal y yeso presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Esmalte Innovarel Secado Normal" class="product-image" src="img/Productos/Innovarel_19L.png"/></div>
+<h4>ESMALTE INNOVAREL SECADO NORMAL</h4>
+<p>Esmalte alquidálico, anticorrosivo de secado normal, proporciona un alto rendimiento, poder cubriente y protección contra la corrosión, excelente nivelación y brochabilidad</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Esmalte alquidálico, anticorrosivo de secado normal, proporciona un alto rendimiento, poder cubriente y protección contra la corrosión, excelente nivelación y brochabilidad. Superficies de aplicación Esmalte diseñado principalmente para su uso en madera, concreto, cemento, metal y yeso. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/mantenimiento/Hoja_tecnicam/Esmalte_alquidalico_anticorrosivo_de_secado_normal_(ENI).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/mantenimiento/Hoja_seguridadm/HDS_ENI.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card yellow reveal" data-search="esmalte secado rapido metalicos linea de mantenimiento y senalizacion base solvente producto esmalte alquidalico anticorrosivo de secado rapido de facil aplicacion gran dureza curado por evaporacion de solventes en acabado metalico brillante superficies de aplicacion esmalte disenado para interiores y exteriores sobre superficies de madera concreto cemento metal y yeso presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Esmalte Secado Rápido Metálicos" class="product-image" src="img/Productos/trafico.png"/></div>
+<h4>ESMALTE SECADO RÁPIDO METÁLICOS</h4>
+<p>Esmalte alquidálico, anticorrosivo de secado rápido, de fácil aplicación, gran dureza, curado por evaporación de solventes en</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Esmalte alquidálico, anticorrosivo de secado rápido, de fácil aplicación, gran dureza, curado por evaporación de solventes en acabado metálico brillante. Superficies de aplicación Esmalte diseñado para interiores y exteriores, sobre superficies de madera, concreto, cemento, metal y yeso. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/mantenimiento/Hoja_tecnicam/Esmalte_alquidalico_de_secado_rapido_colores_metalicos_(ERI_2000).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/mantenimiento/Hoja_seguridadm/HDS_ERI_2000.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card yellow reveal" data-search="pintura para alberca linea de mantenimiento y senalizacion base solvente producto producto fabricado 100 a base de hule clorado resistente a los alcalis y productos quimicos empleados en el mantenimiento de las albercas satisface perfectamente todos los requerimientos de impermeabilidad elasticidad resistencia a la intemperie y al desarrollo de microorganismos de este tipo de recubrimientos especialmente disenada para condiciones de inmersion o humedad superficies de aplicacion se usa como acabado para albercas banos cisternas piletas fuentes estanques y en superficies de concreto expuestas a la intemperie excelente resistencia al ambiente humedo presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pintura Para Alberca" class="product-image" src="img/Productos/trafico.png"/></div>
+<h4>PINTURA PARA ALBERCA</h4>
+<p>Producto fabricado 100% a base de hule clorado, resistente a los álcalis y productos químicos empleados en el mantenimiento de las albercas. Satisface perfectamente todos los requerimientos de impermeabilidad,…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Producto fabricado 100% a base de hule clorado, resistente a los álcalis y productos químicos empleados en el mantenimiento de las albercas. Satisface perfectamente todos los requerimientos de impermeabilidad, elasticidad, resistencia a la intemperie y al desarrollo de microorganismos de este tipo de recubrimientos. Especialmente diseñada para condiciones de inmersión o humedad. Superficies de aplicación Se usa como acabado para albercas, baños, cisternas, piletas, fuentes, estanques y en superficies de concreto expuestas a la intemperie. Excelente resistencia al ambiente húmedo. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/mantenimiento/Hoja_tecnicam/Pintura_para_alberca_(PA).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/mantenimiento/Hoja_seguridadm/HDS_PA.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card yellow reveal" data-search="pintura para piso linea de mantenimiento y senalizacion base solvente producto es un recubrimiento de un solo componente de secado rapido de facil aplicacion y buen brillo especial para senalamiento vial y areas peatonales de gran resistencia a la abrasion y a la corrosion disenada principalmente para su uso en madera y en superficies de concreto cemento y metal superficies de aplicacion pintura especialmente desarrollada para el senalamiento de transito sobre pavimentos asfalticos y de concreto util para aplicacion en pasillos peatonales o en areas de paso vehicular excelente poder cubriente adherencia y durabilidad disenada principalmente para su uso en madera y en superficies de concreto asfalto cemento y metal presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pintura Para Piso" class="product-image" src="img/Productos/trafico.png"/></div>
+<h4>PINTURA PARA PISO</h4>
+<p>Es un recubrimiento de un solo componente de secado rápido de fácil aplicación y buen brillo especial para señalamiento vial y áreas peatonales de gran resistencia a la abrasión y a la corrosión. Diseñada…</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Es un recubrimiento de un solo componente de secado rápido de fácil aplicación y buen brillo especial para señalamiento vial y áreas peatonales de gran resistencia a la abrasión y a la corrosión. Diseñada principalmente para su uso en madera y en superficies de concreto, cemento y metal. Superficies de aplicación Pintura especialmente desarrollada para el señalamiento de tránsito sobre pavimentos asfálticos y de concreto, útil para aplicación en pasillos peatonales o en áreas de paso vehicular. Excelente poder cubriente, adherencia y durabilidad. Diseñada principalmente para su uso en madera y en superficies de concreto, asfalto, cemento y metal. Presentaciones 1 L, 4 L, 19 L y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/mantenimiento/Hoja_tecnicam/Pintura_para_piso_(PP).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/mantenimiento/Hoja_seguridadm/HDS_PP.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card yellow reveal" data-search="primario de secado rapido linea de mantenimiento y senalizacion base solvente producto primario alquidalico anticorrosivo de uso industrial y mantenimiento que brinda una excelente proteccion a la corrosion y dar gran adherencia al acabado que se desee aplicar en el sustrato superficies de aplicacion recubrimiento para la proteccion de superficies metalicas y ferrosas que esten expuestas a la corrosion presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Primario De Secado Rápido" class="product-image" src="img/Productos/trafico.png"/></div>
+<h4>PRIMARIO DE SECADO RÁPIDO</h4>
+<p>Primario alquidálico anticorrosivo de uso industrial y mantenimiento que brinda una excelente protección a la corrosión y dar gran adherencia al</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L, y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Primario alquidálico anticorrosivo de uso industrial y mantenimiento que brinda una excelente protección a la corrosión y dar gran adherencia al acabado que se desee aplicar en el sustrato. Superficies de aplicación Recubrimiento para la protección de superficies metálicas y ferrosas que estén expuestas a la corrosión. Presentaciones 1 L, 4 L, 19 L, y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/mantenimiento/Hoja_tecnicam/Primario%20anticorrosivo%20secado%20rapido%20(PAR).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/mantenimiento/Hoja_seguridadm/HDS_PAR.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+<article class="product-card yellow reveal" data-search="pintura para senalamiento base solvente linea de mantenimiento y senalizacion base solvente producto pintura de secado rapido especial para senalamiento vial y areas peatonales de gran resistencia a la abrasion cura por evaporacion de solventes y oxidacion superficies de aplicacion pintura especialmente desarrollada para el senalamiento de transito sobre pavimentos asfalticos y de concreto tanto en carreteras como en zonas urbanas util para marcar lineas centrales continuas o discontinuas lineas laterales senalamientos de cruces de ferrocarril guarniciones de concreto en carreteras puentes y senalamientos de aeropistas cajones de estacionamientos y banquetas en zonas urbanas para senalamiento de cruces peatonales y de transito presentaciones 1 l 4 l 19 l y 200 l 1 l 4 l 19 l y 200 l"><div class="product-image-wrap"><img alt="Cubeta del producto Pintura Para Señalamiento Base Solvente" class="product-image" src="img/Productos/trafico.png"/></div>
+<h4>PINTURA PARA SEÑALAMIENTO BASE SOLVENTE</h4>
+<p>Pintura de secado rápido especial para señalamiento vial y áreas peatonales de gran resistencia a la abrasión, cura por evaporación de solventes y oxidación</p>
+<div class="product-meta">
+<div class="meta-item">
+<strong>Categoría</strong>
+<span>BASE SOLVENTE</span>
+</div>
+<div class="meta-item">
+<strong>Presentaciones</strong>
+<span>1 L, 4 L, 19 L y 200 L</span>
+</div>
+</div>
+<details class="product-detail">
+<summary>Ver información completa</summary>
+<p>Producto Pintura de secado rápido especial para señalamiento vial y áreas peatonales de gran resistencia a la abrasión, cura por evaporación de solventes y oxidación. Superficies de aplicación Pintura especialmente desarrollada para el señalamiento de tránsito sobre pavimentos asfálticos y de concreto, tanto en carreteras como en zonas urbanas, útil para marcar líneas centrales continuas o discontinuas, líneas laterales, señalamientos de cruces de ferrocarril, guarniciones de concreto en carreteras, puentes y señalamientos de aeropistas, cajones de estacionamientos y banquetas; en zonas urbanas para señalamiento de cruces peatonales y de tránsito. Presentaciones 1 L, 4 L, 19 L y 200 L.</p>
+</details>
+<div class="product-docs"><a class="product-doc-btn tech" href="assets/PDF/mantenimiento/Hoja_tecnicam/Pintura_para_se%23U00f1alamiento_(PTS).pdf" rel="noopener noreferrer" target="_blank">Hoja Técnica</a><a class="product-doc-btn safety" href="assets/PDF/mantenimiento/Hoja_seguridadm/HDS_PTS.pdf" rel="noopener noreferrer" target="_blank">Hoja de Seguridad</a></div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="advantages">
+<div class="container">
+<div class="section-heading reveal">
+<h2>¿Qué puedes destacar de tu catálogo?</h2>
+<p>
                     Esta sección te ayuda a comunicar valor comercial y técnico, no solo listar productos.
                 </p>
-            </div>
-
-            <div class="advantages-grid">
-                <div class="adv-card reveal">
-                    <div class="adv-icon">🎨</div>
-                    <h4>Variedad de sistemas</h4>
-                    <p>Portafolio para proyectos arquitectónicos, industriales y de mantenimiento.</p>
-                </div>
-
-                <div class="adv-card reveal">
-                    <div class="adv-icon">🛡️</div>
-                    <h4>Protección</h4>
-                    <p>Soluciones diseñadas para durabilidad, adherencia y desempeño funcional.</p>
-                </div>
-
-                <div class="adv-card reveal">
-                    <div class="adv-icon">🏭</div>
-                    <h4>Aplicación técnica</h4>
-                    <p>Productos adaptados a distintos sustratos, condiciones y exigencias operativas.</p>
-                </div>
-
-                <div class="adv-card reveal">
-                    <div class="adv-icon">📦</div>
-                    <h4>Presentaciones comerciales</h4>
-                    <p>Opciones para menudeo, proyectos medianos y consumo industrial.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="solicitud" class="catalog-cta">
-        <div class="container">
-            <div class="cta-box reveal">
-                <h2>¿Necesitas una cotización o ficha técnica?</h2>
-                <p>
+</div>
+<div class="advantages-grid">
+<div class="adv-card reveal">
+<div class="adv-icon">🎨</div>
+<h4>Variedad de sistemas</h4>
+<p>Portafolio para proyectos arquitectónicos, industriales y de mantenimiento.</p>
+</div>
+<div class="adv-card reveal">
+<div class="adv-icon">🛡️</div>
+<h4>Protección</h4>
+<p>Soluciones diseñadas para durabilidad, adherencia y desempeño funcional.</p>
+</div>
+<div class="adv-card reveal">
+<div class="adv-icon">🏭</div>
+<h4>Aplicación técnica</h4>
+<p>Productos adaptados a distintos sustratos, condiciones y exigencias operativas.</p>
+</div>
+<div class="adv-card reveal">
+<div class="adv-icon">📦</div>
+<h4>Presentaciones comerciales</h4>
+<p>Opciones para menudeo, proyectos medianos y consumo industrial.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="catalog-cta" id="solicitud">
+<div class="container">
+<div class="cta-box reveal">
+<h2>¿Necesitas una cotización o ficha técnica?</h2>
+<p>
                     Podemos ayudarte a definir el sistema ideal según superficie, ambiente,
                     rendimiento esperado y presentación requerida.
                 </p>
-
-                <div class="cta-tags">
-                    <span>Asesoría técnica</span>
-                    <span>Atención a distribuidores</span>
-                    <span>Proyectos especiales</span>
-                    <span>Desarrollo de color</span>
+<div class="cta-tags">
+<span>Asesoría técnica</span>
+<span>Atención a distribuidores</span>
+<span>Proyectos especiales</span>
+<span>Desarrollo de color</span>
+</div>
+<a class="btn primary" href="index.html#contacto">Ir a contacto</a>
+</div>
+</div>
+</section>
+<footer class="custom-footer">
+<div class="footer-wave">
+<svg preserveaspectratio="none" viewbox="0 0 1200 120">
+<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.42,126.3,200.72,118.7,243.6,114.08,285.3,95.1,321.39,56.44Z" fill="#0a1931"></path>
+</svg>
+</div>
+<div class="footer-content container">
+<div class="footer-col">
+<div class="footer-logo">
+<span>🖌️</span> Innovadora de Pinturas
                 </div>
-
-                <a href="index.html#contacto" class="btn primary">Ir a contacto</a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="custom-footer">
-        <div class="footer-wave">
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.42,126.3,200.72,118.7,243.6,114.08,285.3,95.1,321.39,56.44Z" fill="#0a1931"></path>
-            </svg>
-        </div>
-
-        <div class="footer-content container">
-            <div class="footer-col">
-                <div class="footer-logo">
-                    <span>🖌️</span> Innovadora de Pinturas
-                </div>
-                <p>Empresa 100% mexicana dedicada a la fabricación de pinturas y recubrimientos de alta calidad para todo tipo de aplicaciones.</p>
-            </div>
-
-            <div class="footer-col">
-                <h4>Productos</h4>
-                <ul>
-                    <li><a href="#arquitectonica">Línea Arquitectónica</a></li>
-                    <li><a href="#industrial">Línea Industrial</a></li>
-                    <li><a href="#mantenimiento">Señalización</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Empresa</h4>
-                <ul>
-                    <li><a href="index.html#nosotros">Sobre Nosotros</a></li>
-                    <li><a href="index.html#productos">Líneas</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Soporte</h4>
-                <ul>
-                    <li><a href="index.html#contacto">Contacto</a></li>
-                    <li><a href="index.html#contacto">Soporte Técnico</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom container">
-            <p>© 2026 Innovadora de Pinturas Industriales. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <a href="https://wa.me/525546192932" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-        </svg>
-    </a>
-
-    <script src="js/productos.js" defer></script>
+<p>Empresa 100% mexicana dedicada a la fabricación de pinturas y recubrimientos de alta calidad para todo tipo de aplicaciones.</p>
+</div>
+<div class="footer-col">
+<h4>Productos</h4>
+<ul>
+<li><a href="#arquitectonica">Línea Arquitectónica</a></li>
+<li><a href="#industrial">Línea Industrial</a></li>
+<li><a href="#mantenimiento">Mantenimiento y señalización</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Empresa</h4>
+<ul>
+<li><a href="index.html#nosotros">Sobre Nosotros</a></li>
+<li><a href="index.html#productos">Líneas</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Soporte</h4>
+<ul>
+<li><a href="index.html#contacto">Contacto</a></li>
+<li><a href="index.html#contacto">Soporte Técnico</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom container">
+<p>© 2026 Innovadora de Pinturas Industriales. Todos los derechos reservados.</p>
+</div>
+</footer>
+<a aria-label="WhatsApp" class="whatsapp-btn" href="https://wa.me/525546192932" rel="noopener noreferrer" target="_blank">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+</svg>
+</a>
+<script defer="" src="js/productos.js"></script>
 </body>
 </html>

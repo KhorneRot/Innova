@@ -1,27 +1,58 @@
 /* Archivo extraído de index.html */
 
     const productosCatalogo = [
-        "Pintura Vinílica Mate Interior",
-        "Pintura Acrílica Premium Exterior",
-        "Esmalte Arquitectónico Base Solvente",
-        "Impermeabilizante Acrílico Elastomérico",
-        "Primario Anticorrosivo Alquidálico",
-        "Esmalte Industrial de Secado Rápido",
-        "Recubrimiento Epóxico 2K",
-        "Poliuretano Alifático",
-        "Pintura Alta Temperatura",
-        "Pintura para Tráfico Base Solvente",
-        "Pintura Demarcadora de Áreas",
-        "Recubrimiento Antideslizante",
-        "Esmalte para Mantenimiento General",
-        "Sellador Vinílico",
-        "Sellador Acrílico para Exterior",
-        "Thinner / Reductor",
-        "Fondo / Base Preparadora",
-        "Wash Primer",
-        "Recubrimiento para Piso Industrial",
-        "Barniz Protector Transparente",
-        "Recubrimiento de Alta Resistencia Química"
+        "PINTURA VINIL-ACRÍLICA VINIREC",
+        "PINTURA VINIL-ACRÍLICA INNOVAMAX",
+        "PINTURA VINIL-ACRÍLICA KOLORS",
+        "PINTURA VINIL-ACRÍLICA ACRIDEL",
+        "PINTURA VINIL-ACRÍLICA PRINCESS ESPECIAL",
+        "PINTURA VINIL-ACRÍLICA PRINCESS E ANTIBACTERIAL",
+        "IMPERMEABILIZANTE ACRÍLICO ELASTOMÉRICO 3 AÑOS",
+        "IMPERMEABILIZANTE ACRÍLICO ELASTOMÉRICO 5 AÑOS",
+        "IMPERMEABILIZANTE ACRÍLICO ELASTOMÉRICO 7 AÑOS",
+        "IMPERMEABILIZANTE ACRÍLICO ELASTOMÉRICO 10 AÑOS",
+        "IMPERMEABILIZANTE FIBRATADO",
+        "PASTA TEXTURIZADA",
+        "PEGATIROL",
+        "PEGAYESO",
+        "RESINA MULTIUSOS",
+        "SELLADOR VINÍLICO 5X1",
+        "SELLADOR VINÍLICO ENTINTABLE",
+        "ESMALTE BASE AGUA",
+        "RECUBRIMIENTO INTUMESCENTE",
+        "ESMALTE MARTILLADO",
+        "ALUMINIO ALTA TEMPERATURA",
+        "ESMALTE ACRÍLICO",
+        "ESMALTE DE HORNEO ALQUIDAL",
+        "POLIURETANO ALTOS SÓLIDOS",
+        "PRIMARIO EPÓXICO",
+        "PRIMER DE POLIURETANO",
+        "RECUBRIMIENTO DE POLIURETANO DE 2 COMPONENTES AL 10%",
+        "SISTEMA EPÓXICO MAX PARA PISO",
+        "SISTEMA EPÓXICO MAX PARA METAL",
+        "RECUBRIMIENTO ALTOS SÓLIDOS BLANCO",
+        "PRIMARIO FOSFATO DE ZINC EPOXI-POLIAMIDA (C.F.E. P-19 NORMA)",
+        "INTUMESCENTE CONTRA INCENDIOS (C.F.E. P-32 NORMA)",
+        "PRIMARIO EPOXI-CICLOALIFÁTICO DE ALTOS SÓLIDOS (C.F.E. P-33 NORMA)",
+        "PRIMARIO EPOXI-AMINA DE ALTOS SÓLIDOS",
+        "PEMEX RP-4B MODIFICADO",
+        "PRIMARIO ORGÁNICO DE ZINC EPÓXICO-POLIAMIDA (C.F.E. P-9 NORMA)",
+        "PEMEX RA-26 MODIFICADO",
+        "PEMEX RA-28 MODIFICADO",
+        "ACABADO POLIURETANO MODIFICADO DE ALTOS SÓLIDOS CFE-A29",
+        "PINTURA PARA CANCHAS",
+        "PINTURA PARA SEÑALAMIENTO BASE AGUA",
+        "RECUBRIMIENTO ANTIGRAFITI",
+        "ESMALTE DE HULE CLORADO",
+        "ESMALTE INNOVAREL SECADO RÁPIDO",
+        "ESMALTE LUSTRASOL SECADO NORMAL",
+        "ESMALTE LUSTRASOL SECADO RÁPIDO",
+        "ESMALTE INNOVAREL SECADO NORMAL",
+        "ESMALTE SECADO RÁPIDO METÁLICOS",
+        "PINTURA PARA ALBERCA",
+        "PINTURA PARA PISO",
+        "PRIMARIO DE SECADO RÁPIDO",
+        "PINTURA PARA SEÑALAMIENTO BASE SOLVENTE"
     ];
 
     function calcularPintura() {
@@ -58,66 +89,73 @@
             slug: 'arquitectonica',
             badge: 'Línea arquitectónica',
             color: '#2f9a48',
-            descripcion: 'Proyectos residenciales y comerciales con acabados uniformes, cubrimiento confiable y excelente presentación.',
+            descripcion: 'Acabados decorativos y funcionales para muros, fachadas, impermeabilización y superficies arquitectónicas.',
+            descripcionExtendida: 'Una línea pensada para proyectos residenciales, comerciales e institucionales que requieren buena apariencia, protección, rendimiento y soluciones complementarias para preparación de superficie.',
+            tags: ['Interiores', 'Exteriores', 'Impermeabilización', 'Selladores', 'Texturizados'],
+            metricas: [
+                { numero: '18', label: 'productos en catálogo' },
+                { numero: '3', label: 'familias principales' },
+                { numero: '1L–200L', label: 'presentaciones' }
+            ],
             producto: {
-                badge: 'Producto destacado',
-                titulo: 'Arquitectónica Premium',
-                texto: 'Excelente poder cubriente, acabado uniforme y gran desempeño para proyectos residenciales y comerciales.',
+                badge: 'Soluciones arquitectónicas',
+                titulo: 'Línea Arquitectónica',
+                texto: 'Vinil-acrílicas, impermeabilizantes, selladores y productos especiales para interiores y exteriores.',
                 imagen: 'img/Princess_promo.png',
-                enlace: 'productos.html',
-                cta: 'Ver productos'
-            },
-            proyectos: [
-                { titulo: 'Renovación residencial 01', texto: 'Desliza para ver el cambio del muro antes y después de aplicar la línea arquitectónica.', antes: 'img/Antes2.png', despues: 'img/Despues2.png' },
-                { titulo: 'Renovación residencial 02', texto: 'Agrega aquí un segundo par de imágenes del antes y después para esta misma línea.', antes: 'img/Antes2.png', despues: 'img/Despues2.png' },
-                { titulo: 'Renovación residencial 03', texto: 'Puedes seguir agregando más proyectos dentro del arreglo de la línea arquitectónica.', antes: 'img/Antes2.png', despues: 'img/Despues2.png' }
-            ]
+                enlace: 'productos.html#arquitectonica',
+                cta: 'Ver línea completa',
+                caracteristicas: ['Excelente presentación visual', 'Opciones para preparación y acabado', 'Productos para obra nueva y mantenimiento']
+            }
         },
         {
             nombre: 'Industrial',
             slug: 'industrial',
             badge: 'Línea industrial',
             color: '#cf3f38',
-            descripcion: 'Recubrimientos para superficies de alta exigencia, con resistencia, protección y durabilidad en planta y obra.',
+            descripcion: 'Recubrimientos para protección de superficies metálicas, pisos, equipos y estructuras expuestas a alta exigencia.',
+            descripcionExtendida: 'Diseñada para plantas, talleres, estructuras, equipos y proyectos donde el desempeño del recubrimiento es clave: resistencia, protección anticorrosiva, durabilidad y sistemas especializados.',
+            tags: ['Epóxicos', 'Poliuretanos', 'Primarios', 'Altos sólidos', 'Protección anticorrosiva'],
+            metricas: [
+                { numero: '21', label: 'productos en catálogo' },
+                { numero: '2', label: 'bases disponibles' },
+                { numero: 'CFE', label: 'sistemas especializados' }
+            ],
             producto: {
-                badge: 'Producto destacado',
-                titulo: 'Industrial Alta Resistencia',
-                texto: 'Ideal para estructuras y superficies que requieren resistencia química, mecánica y larga vida útil.',
-                imagen: 'img/producto-promocional.jpg',
-                enlace: 'productos.html',
-                cta: 'Ver productos'
-            },
-            proyectos: [
-                { titulo: 'Proyecto industrial 01', texto: 'Reemplaza estas imágenes por tus ejemplos reales de la línea industrial.', antes: 'img/Antes2.png', despues: 'img/Despues2.png' },
-                { titulo: 'Proyecto industrial 02', texto: 'Agrega más pares antes/después según los trabajos que quieras mostrar.', antes: 'img/Antes2.png', despues: 'img/Despues2.png' },
-                { titulo: 'Proyecto industrial 03', texto: 'Este carrusel conserva siempre el mismo encuadre para el efecto cortina.', antes: 'img/Antes2.png', despues: 'img/Despues2.png' }
-            ]
+                badge: 'Protección industrial',
+                titulo: 'Línea Industrial',
+                texto: 'Primarios, epóxicos, poliuretanos, sistemas para piso, intumescentes y recubrimientos de alto desempeño.',
+                imagen: 'img/Productos/Productos_especiales_19L.png',
+                enlace: 'productos.html#industrial',
+                cta: 'Ver línea completa',
+                caracteristicas: ['Sistemas para ambientes exigentes', 'Opciones base agua y base solvente', 'Enfoque en protección y durabilidad']
+            }
         },
         {
             nombre: 'Mantenimiento',
             slug: 'mantenimiento',
-            badge: 'Línea mantenimiento',
+            badge: 'Mantenimiento y señalización',
             color: '#d4a514',
-            descripcion: 'Soluciones para conservación, retoque y señalización, pensadas para mantener superficies protegidas y visibles.',
+            descripcion: 'Soluciones para conservación, repintado, señalización, pisos, canchas, albercas y áreas de tránsito.',
+            descripcionExtendida: 'Una línea práctica para mantener áreas operativas, visibles y protegidas, con productos orientados a retoque, señalamiento, pintura para piso, canchas y necesidades de mantenimiento general.',
+            tags: ['Señalamiento', 'Pisos', 'Albercas', 'Canchas', 'Esmaltes'],
+            metricas: [
+                { numero: '13', label: 'productos en catálogo' },
+                { numero: '2', label: 'bases disponibles' },
+                { numero: 'Alta', label: 'visibilidad operativa' }
+            ],
             producto: {
-                badge: 'Producto destacado',
+                badge: 'Mantenimiento operativo',
                 titulo: 'Mantenimiento y Señalización',
-                texto: 'Acabados prácticos y funcionales para retoque, mantenimiento preventivo y señalización de áreas.',
-                imagen: 'img/producto-promocional.jpg',
-                enlace: 'productos.html',
-                cta: 'Ver productos'
-            },
-            proyectos: [
-                { titulo: 'Proyecto de mantenimiento 01', texto: 'Sustituye estas rutas por los antes y después de la línea de mantenimiento.', antes: 'img/Antes2.png', despues: 'img/Despues2.png' },
-                { titulo: 'Proyecto de mantenimiento 02', texto: 'La transición tipo cortina se mantiene aunque cambies de línea o de proyecto.', antes: 'img/Antes2.png', despues: 'img/Despues2.png' },
-                { titulo: 'Proyecto de mantenimiento 03', texto: 'También puedes usar este espacio para señalización y repintado de áreas.', antes: 'img/Antes2.png', despues: 'img/Despues2.png' }
-            ]
+                texto: 'Pinturas para señalamiento, pisos, canchas, albercas y esmaltes de mantenimiento para conservar áreas en buen estado.',
+                imagen: 'img/Productos/trafico.png',
+                enlace: 'productos.html#mantenimiento',
+                cta: 'Ver línea completa',
+                caracteristicas: ['Aplicaciones para áreas de tránsito', 'Opciones para repintado y conservación', 'Productos para operación y mantenimiento']
+            }
         }
     ];
 
     let activeLineIndex = 0;
-    let activeProjectIndex = 0;
-    let comparisonDragging = false;
 
     function animateLinePanels(direction = 1) {
         const lineContentGrid = document.getElementById('lineContentGrid');
@@ -134,50 +172,34 @@
         }, 520);
     }
 
-    function setComparisonPosition(value) {
-        const wrapper = document.getElementById('beforeAfterWrapper');
-        const range = document.getElementById('comparisonRange');
-        if (!wrapper || !range) return;
-        const porcentaje = Math.min(100, Math.max(0, Number(value) || 0));
-        wrapper.style.setProperty('--comparison-position', porcentaje + '%');
-        range.value = porcentaje;
-    }
-
-    function actualizarComparadorDesdePointer(clientX) {
-        const wrapper = document.getElementById('beforeAfterWrapper');
-        if (!wrapper) return;
-        const rect = wrapper.getBoundingClientRect();
-        const porcentaje = ((clientX - rect.left) / rect.width) * 100;
-        setComparisonPosition(porcentaje);
-    }
-
     function renderLineCarousel() {
         const track = document.getElementById('lineCarouselTrack');
         if (!track) return;
 
-        track.innerHTML = lineasSeccion.map((linea, index) => {
-            const total = lineasSeccion.length;
-            const diff = (index - activeLineIndex + total) % total;
-            let stateClass = 'is-right';
-            if (diff === 0) stateClass = 'is-center';
-            else if (diff === total - 1) stateClass = 'is-left';
+        track.innerHTML = lineasSeccion.map((linea, index) => `
+            <button
+                type="button"
+                class="line-tab-button ${index === activeLineIndex ? 'is-active' : ''}"
+                data-line-index="${index}"
+                role="tab"
+                aria-selected="${index === activeLineIndex ? 'true' : 'false'}"
+                aria-label="Mostrar línea ${linea.nombre}"
+                style="--card-accent: ${linea.color};"
+            >
+                <span class="line-tab-index">0${index + 1}</span>
+                <span class="line-tab-text">
+                    <strong>${linea.nombre}</strong>
+                    <small>${linea.badge}</small>
+                </span>
+            </button>
+        `).join('');
 
-            return `
-                <button type="button" class="line-3d-card ${stateClass}" data-line-index="${index}" aria-label="Mostrar línea ${linea.nombre}" style="--card-accent: ${linea.color};">
-                    <span class="line-card-chip">Línea</span>
-                    <strong class="line-card-title">${linea.nombre}</strong>
-                    <span class="line-card-copy">${linea.descripcion}</span>
-                </button>
-            `;
-        }).join('');
-
-        track.querySelectorAll('.line-3d-card').forEach(card => {
+        track.querySelectorAll('.line-tab-button').forEach(card => {
             card.addEventListener('click', () => {
                 const nextIndex = Number(card.dataset.lineIndex);
                 if (Number.isNaN(nextIndex) || nextIndex === activeLineIndex) return;
-                const direction = card.classList.contains('is-left') ? -1 : 1;
+                const direction = nextIndex > activeLineIndex ? 1 : -1;
                 activeLineIndex = nextIndex;
-                activeProjectIndex = 0;
                 renderLineCarousel();
                 renderActiveLineContent(true, direction);
             });
@@ -188,19 +210,19 @@
         const lineBox = document.getElementById('lineShowcaseBox');
         const activeLineBadge = document.getElementById('activeLineBadge');
         const activeLineTitle = document.getElementById('activeLineTitle');
-        const activeProjectText = document.getElementById('activeProjectText');
-        const beforeImage = document.getElementById('beforeImage');
-        const afterImage = document.getElementById('afterImage');
-        const pairCounter = document.getElementById('pairCounter');
-        const projectDots = document.getElementById('projectDots');
+        const activeLineDescription = document.getElementById('activeLineDescription');
+        const lineMetrics = document.getElementById('lineMetrics');
+        const lineTags = document.getElementById('lineTags');
         const promoBadge = document.getElementById('promoBadge');
         const promoTitle = document.getElementById('promoTitle');
         const promoText = document.getElementById('promoText');
         const promoImage = document.getElementById('promoImage');
         const promoLink = document.getElementById('promoLink');
+        const lineFeatureList = document.getElementById('lineFeatureList');
+        const lineCatalogLink = document.getElementById('lineCatalogLink');
+        const lineQuoteLink = document.getElementById('lineQuoteLink');
 
         const linea = lineasSeccion[activeLineIndex];
-        const proyecto = linea.proyectos[activeProjectIndex];
 
         if (lineBox) {
             lineBox.style.setProperty('--line-accent', linea.color);
@@ -208,27 +230,19 @@
 
         if (activeLineBadge) activeLineBadge.textContent = linea.badge;
         if (activeLineTitle) activeLineTitle.textContent = linea.nombre;
-        if (activeProjectText) activeProjectText.textContent = proyecto.texto;
-        if (beforeImage) beforeImage.src = proyecto.antes;
-        if (afterImage) afterImage.src = proyecto.despues;
-        if (beforeImage) beforeImage.alt = `${linea.nombre} antes`;
-        if (afterImage) afterImage.alt = `${linea.nombre} después`;
-        if (pairCounter) pairCounter.textContent = `${activeProjectIndex + 1} / ${linea.proyectos.length}`;
+        if (activeLineDescription) activeLineDescription.textContent = linea.descripcionExtendida;
 
-        if (projectDots) {
-            projectDots.innerHTML = linea.proyectos.map((item, index) => `
-                <button type="button" class="project-dot ${index === activeProjectIndex ? 'active' : ''}" data-project-index="${index}" aria-label="Mostrar ${item.titulo}"></button>
+        if (lineMetrics) {
+            lineMetrics.innerHTML = linea.metricas.map(item => `
+                <div class="line-metric">
+                    <strong>${item.numero}</strong>
+                    <span>${item.label}</span>
+                </div>
             `).join('');
+        }
 
-            projectDots.querySelectorAll('.project-dot').forEach(dot => {
-                dot.addEventListener('click', () => {
-                    const nextProject = Number(dot.dataset.projectIndex);
-                    if (!Number.isNaN(nextProject)) {
-                        activeProjectIndex = nextProject;
-                        renderActiveLineContent();
-                    }
-                });
-            });
+        if (lineTags) {
+            lineTags.innerHTML = linea.tags.map(tag => `<span>${tag}</span>`).join('');
         }
 
         if (promoBadge) promoBadge.textContent = linea.producto.badge;
@@ -242,8 +256,11 @@
             promoLink.href = linea.producto.enlace;
             promoLink.textContent = linea.producto.cta;
         }
-
-        setComparisonPosition(50);
+        if (lineCatalogLink) lineCatalogLink.href = linea.producto.enlace;
+        if (lineQuoteLink) lineQuoteLink.href = '#contacto';
+        if (lineFeatureList) {
+            lineFeatureList.innerHTML = linea.producto.caracteristicas.map(item => `<li>${item}</li>`).join('');
+        }
 
         if (animate) {
             animateLinePanels(direction);
@@ -252,57 +269,100 @@
 
     function cambiarLinea(direction) {
         activeLineIndex = (activeLineIndex + direction + lineasSeccion.length) % lineasSeccion.length;
-        activeProjectIndex = 0;
         renderLineCarousel();
         renderActiveLineContent(true, direction);
     }
 
-    function cambiarProyecto(direction) {
-        const proyectos = lineasSeccion[activeLineIndex].proyectos;
-        activeProjectIndex = (activeProjectIndex + direction + proyectos.length) % proyectos.length;
-        renderActiveLineContent();
-    }
-
     function initLineShowcase() {
         const track = document.getElementById('lineCarouselTrack');
-        const wrapper = document.getElementById('beforeAfterWrapper');
-        const range = document.getElementById('comparisonRange');
         const linePrevBtn = document.getElementById('linePrevBtn');
         const lineNextBtn = document.getElementById('lineNextBtn');
-        const pairPrevBtn = document.getElementById('pairPrevBtn');
-        const pairNextBtn = document.getElementById('pairNextBtn');
 
-        if (!track || !wrapper || !range) return;
+        if (!track) return;
 
         renderLineCarousel();
         renderActiveLineContent(false);
 
         if (linePrevBtn) linePrevBtn.addEventListener('click', () => cambiarLinea(-1));
         if (lineNextBtn) lineNextBtn.addEventListener('click', () => cambiarLinea(1));
-        if (pairPrevBtn) pairPrevBtn.addEventListener('click', () => cambiarProyecto(-1));
-        if (pairNextBtn) pairNextBtn.addEventListener('click', () => cambiarProyecto(1));
 
-        range.addEventListener('input', (event) => setComparisonPosition(event.target.value));
-
-        wrapper.addEventListener('pointerdown', (event) => {
-            comparisonDragging = true;
-            wrapper.setPointerCapture(event.pointerId);
-            actualizarComparadorDesdePointer(event.clientX);
+        track.addEventListener('keydown', (e) => {
+            if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+            e.preventDefault();
+            cambiarLinea(e.key === 'ArrowRight' ? 1 : -1);
+            const activeButton = track.querySelector('.line-tab-button.is-active');
+            if (activeButton) activeButton.focus();
         });
-
-        wrapper.addEventListener('pointermove', (event) => {
-            if (!comparisonDragging) return;
-            actualizarComparadorDesdePointer(event.clientX);
-        });
-
-        const stopDragging = () => {
-            comparisonDragging = false;
-        };
-
-        wrapper.addEventListener('pointerup', stopDragging);
-        wrapper.addEventListener('pointercancel', stopDragging);
-        wrapper.addEventListener('lostpointercapture', stopDragging);
     }
+
+    function initPantoneGallery() {
+        const slider = document.getElementById('pantoneSlider');
+        if (!slider) return;
+
+        const slides = [...slider.querySelectorAll('.pantone-slide')];
+        const thumbs = [...slider.querySelectorAll('.pantone-thumb')];
+        const prevBtn = document.getElementById('pantonePrevBtn');
+        const nextBtn = document.getElementById('pantoneNextBtn');
+        const counter = document.getElementById('pantoneSlideCounter');
+        const name = document.getElementById('pantoneSlideName');
+        let current = 0;
+        let autoplayId;
+
+        function showSlide(index) {
+            if (!slides.length) return;
+            current = (index + slides.length) % slides.length;
+
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('is-active', i === current);
+            });
+
+            thumbs.forEach((thumb, i) => {
+                thumb.classList.toggle('is-active', i === current);
+                thumb.setAttribute('aria-pressed', i === current ? 'true' : 'false');
+            });
+
+            const activeSlide = slides[current];
+            if (counter) counter.textContent = String(current + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0');
+            if (name) name.textContent = `${activeSlide.dataset.title} · ${activeSlide.dataset.color}`;
+        }
+
+        function nextSlide() {
+            showSlide(current + 1);
+        }
+
+        function prevSlide() {
+            showSlide(current - 1);
+        }
+
+        function startAutoplay() {
+            stopAutoplay();
+            autoplayId = window.setInterval(nextSlide, 4800);
+        }
+
+        function stopAutoplay() {
+            if (autoplayId) window.clearInterval(autoplayId);
+        }
+
+        if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); startAutoplay(); });
+        if (nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); startAutoplay(); });
+
+        thumbs.forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                showSlide(Number(thumb.dataset.slide));
+                startAutoplay();
+            });
+        });
+
+        slider.addEventListener('mouseenter', stopAutoplay);
+        slider.addEventListener('mouseleave', startAutoplay);
+        slider.addEventListener('focusin', stopAutoplay);
+        slider.addEventListener('focusout', startAutoplay);
+
+        showSlide(0);
+        startAutoplay();
+    }
+
+
 
 
     function handleNavbar() {
@@ -595,6 +655,7 @@
         handleNavbar();
         cargarProductoEnFormulario();
         initLineShowcase();
+        initPantoneGallery();
 
         const heroReveals = document.querySelectorAll('.hero .reveal');
         heroReveals.forEach(element => element.classList.remove('active'));
