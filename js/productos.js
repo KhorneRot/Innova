@@ -485,9 +485,21 @@
 
         function actualizarBloqueoScroll() {
             const menuAbierto = mobileMenu && mobileMenu.classList.contains('show');
-            const searchAbierta = mobileSearchPanel && mobileSearchPanel.classList.contains('show');
             const modalAbierto = document.body.classList.contains('product-modal-open');
-            document.body.style.overflow = (modalAbierto || (window.innerWidth <= 992 && (menuAbierto || searchAbierta))) ? 'hidden' : '';
+
+            // La búsqueda móvil no bloquea el desplazamiento. Esto evita saltos y
+            // cierres involuntarios cuando aparece el teclado del celular.
+            document.body.style.overflow = (modalAbierto || (window.innerWidth <= 992 && menuAbierto)) ? 'hidden' : '';
+        }
+
+        function actualizarPosicionBusquedaMovil() {
+            if (!mobileSearchPanel || window.innerWidth > 992) return;
+
+            const navbar = document.querySelector('.navbar');
+            if (!navbar) return;
+
+            const navbarBottom = Math.max(0, navbar.getBoundingClientRect().bottom);
+            mobileSearchPanel.style.setProperty('--mobile-search-top', `${navbarBottom + 8}px`);
         }
 
         function closeMobileMenu() {
@@ -523,11 +535,22 @@
             const willOpen = !mobileSearchPanel.classList.contains('show');
 
             closeMobileMenu();
+            actualizarPosicionBusquedaMovil();
 
             mobileSearchPanel.classList.toggle('show', willOpen);
             searchToggleBtn.classList.toggle('active', willOpen);
             searchToggleBtn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
             actualizarBloqueoScroll();
+
+            if (willOpen && mobileProductSearchInput) {
+                window.setTimeout(() => {
+                    try {
+                        mobileProductSearchInput.focus({ preventScroll: true });
+                    } catch (error) {
+                        mobileProductSearchInput.focus();
+                    }
+                }, 80);
+            }
         }
 
         if (hamburgerBtn) {
@@ -568,18 +591,29 @@
 
             if (window.innerWidth <= 992) {
                 closeMobileMenu();
-                closeMobileSearch();
+
+                // Mantener el buscador abierto al aparecer el teclado o al hacer
+                // pequeños desplazamientos. Solo se actualiza su posición.
+                if (mobileSearchPanel?.classList.contains('show')) {
+                    actualizarPosicionBusquedaMovil();
+                }
             }
-        });
+        }, { passive: true });
 
         window.addEventListener('resize', () => {
             if (window.innerWidth > 992) {
                 closeMobileMenu();
                 closeMobileSearch();
             } else {
+                actualizarPosicionBusquedaMovil();
                 actualizarBloqueoScroll();
             }
         });
+
+        if (window.visualViewport) {
+            window.visualViewport.addEventListener('resize', actualizarPosicionBusquedaMovil);
+            window.visualViewport.addEventListener('scroll', actualizarPosicionBusquedaMovil);
+        }
 
         window.addEventListener('load', () => {
             handleNavbar();

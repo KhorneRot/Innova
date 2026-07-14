@@ -2042,3 +2042,90 @@
 .product-modal-action:only-child {
     grid-column: 1 / -1;
 }
+
+
+/* ===== Corrección del buscador móvil ===== */
+@media (max-width: 992px) {
+    .mobile-search-panel {
+        position: fixed;
+        top: var(--mobile-search-top, 88px);
+        left: 14px;
+        right: 14px;
+        width: auto;
+        max-width: none;
+        padding: 12px;
+        border-radius: 16px;
+        z-index: 3000;
+        overflow: visible;
+        overscroll-behavior: contain;
+    }
+
+    .mobile-search-panel .nav-search {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .mobile-search-panel .nav-search-box {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 7px;
+        padding: 5px;
+        border-radius: 13px;
+    }
+
+    .mobile-search-panel .nav-search-box input {
+        width: 100%;
+        min-width: 0;
+        height: 42px;
+        padding: 8px 9px;
+        font-size: 16px; /* Evita el zoom automático en iPhone. */
+    }
+
+    .mobile-search-panel .nav-search-box button {
+        min-width: 68px;
+        height: 42px;
+        padding: 8px 10px;
+        touch-action: manipulation;
+    }
+
+    .mobile-search-panel .search-suggestions {
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+        max-height: min(42vh, 310px);
+        margin-top: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border-radius: 12px;
+        box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+    }
+
+    .mobile-search-panel .suggestion-item {
+        min-height: 44px;
+        padding: 11px 12px;
+        display: flex;
+        align-items: center;
+        font-size: 0.84rem;
+        line-height: 1.3;
+        touch-action: manipulation;
+    }
+}
+
+@media (max-width: 420px) {
+    .mobile-search-panel {
+        left: 10px;
+        right: 10px;
+        padding: 10px;
+    }
+
+    .mobile-search-panel .nav-search-box button {
+        min-width: 62px;
+        font-size: 0.78rem;
+    }
+}
