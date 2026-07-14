@@ -1335,3 +1335,710 @@
         justify-content: center !important;
     }
 }
+
+/* =========================================================
+   CATÁLOGO RESPONSIVO EN GRID
+   3 columnas escritorio / 2 tableta / 1 celular
+   ========================================================= */
+.product-category-block .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+    justify-content: stretch !important;
+    width: 100%;
+}
+
+.product-category-block .product-card {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    height: 100%;
+    padding: 22px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-category-block .product-image-wrap {
+    width: 100%;
+    height: 210px;
+    aspect-ratio: auto;
+    margin-bottom: 16px;
+    padding: 14px;
+    border-radius: 16px;
+}
+
+.product-category-block .product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-category-block .product-card h4 {
+    min-height: 3.2em;
+    margin-bottom: 10px;
+    font-size: 1.04rem;
+    line-height: 1.45;
+}
+
+.product-category-block .product-card > p {
+    min-height: 4.65em;
+    margin-bottom: 14px;
+    font-size: 0.89rem;
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product-category-block .product-meta {
+    gap: 9px;
+}
+
+.product-category-block .meta-item {
+    padding: 10px 12px;
+    border-radius: 12px;
+}
+
+.product-category-block .meta-item strong {
+    font-size: 0.73rem;
+}
+
+.product-category-block .meta-item span {
+    font-size: 0.84rem;
+    line-height: 1.4;
+}
+
+.product-category-block .product-detail {
+    margin-top: auto;
+    padding: 10px 12px;
+}
+
+.product-category-block .product-detail summary {
+    font-size: 0.84rem;
+}
+
+.product-category-block .product-docs,
+.product-category-block .product-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.product-category-block .product-doc-btn,
+.product-category-block .product-action-btn {
+    min-width: 0;
+    min-height: 42px;
+    padding: 9px 8px;
+    border-radius: 11px;
+    font-size: 0.78rem;
+    line-height: 1.25;
+}
+
+/* Tabletas y pantallas medianas */
+@media (max-width: 900px) {
+    .product-category-block .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .product-category-block .product-image-wrap {
+        height: 200px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 640px) {
+    .product-line {
+        padding: 52px 0;
+    }
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .product-category-block {
+        margin-top: 24px;
+    }
+
+    .product-category-block + .product-category-block {
+        margin-top: 36px;
+    }
+
+    .product-subtitle {
+        margin-bottom: 14px;
+        padding-left: 11px;
+        font-size: 0.98rem;
+        line-height: 1.4;
+    }
+
+    .product-category-block .products-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .product-category-block .product-card {
+        padding: 18px;
+        border-radius: 18px;
+    }
+
+    .product-category-block .product-card:hover {
+        transform: none;
+    }
+
+    .product-category-block .product-image-wrap {
+        height: 190px;
+        margin-bottom: 14px;
+        padding: 12px;
+    }
+
+    .product-category-block .product-card h4 {
+        min-height: 0;
+        font-size: 1rem;
+    }
+
+    .product-category-block .product-card > p {
+        min-height: 0;
+        -webkit-line-clamp: 3;
+        font-size: 0.87rem;
+    }
+
+    /* La categoría ya aparece en el encabezado y se oculta en celular
+       para que cada tarjeta sea más rápida de leer. */
+    .product-category-block .product-meta .meta-item:first-child {
+        display: none;
+    }
+
+    .product-category-block .product-docs,
+    .product-category-block .product-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Celulares muy estrechos */
+@media (max-width: 380px) {
+    .product-category-block .product-docs,
+    .product-category-block .product-actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   CORRECCIÓN MÓVIL: GRID REAL DE 3 PRODUCTOS POR FILA
+   Tarjetas compactas para conservar legibilidad en celular.
+   ========================================================= */
+@media (max-width: 640px) {
+    .product-line .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .product-category-block .products-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 7px !important;
+        align-items: stretch;
+    }
+
+    .product-category-block .product-card {
+        min-width: 0;
+        padding: 7px 6px 8px;
+        border-radius: 11px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    }
+
+    .product-category-block .product-card::before {
+        height: 3px;
+    }
+
+    .product-category-block .product-image-wrap {
+        height: 78px;
+        min-height: 78px;
+        margin-bottom: 6px;
+        padding: 4px;
+        border-radius: 8px;
+    }
+
+    .product-category-block .product-card h4 {
+        min-height: 3.6em;
+        margin: 0 0 6px;
+        font-size: 0.62rem;
+        line-height: 1.2;
+        text-align: center;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        overflow-wrap: anywhere;
+    }
+
+    /* En la vista de 3 columnas se priorizan imagen, nombre y documentos. */
+    .product-category-block .product-card > p,
+    .product-category-block .product-meta,
+    .product-category-block .product-detail,
+    .product-category-block .product-actions {
+        display: none !important;
+    }
+
+    .product-category-block .product-docs {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 4px;
+        margin-top: auto;
+    }
+
+    .product-category-block .product-doc-btn {
+        min-width: 0;
+        min-height: 28px;
+        padding: 5px 2px;
+        border-radius: 7px;
+        font-size: 0;
+        line-height: 1;
+    }
+
+    .product-category-block .product-doc-btn::after {
+        font-size: 0.56rem;
+        font-weight: 800;
+        letter-spacing: 0.1px;
+    }
+
+    .product-category-block .product-doc-btn.tech::after {
+        content: "Ficha";
+    }
+
+    .product-category-block .product-doc-btn.safety::after {
+        content: "HDS";
+    }
+}
+
+@media (max-width: 380px) {
+    .product-category-block .products-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 5px !important;
+    }
+
+    .product-category-block .product-card {
+        padding: 6px 4px 7px;
+    }
+
+    .product-category-block .product-image-wrap {
+        height: 68px;
+        min-height: 68px;
+    }
+
+    .product-category-block .product-card h4 {
+        font-size: 0.56rem;
+    }
+
+    .product-category-block .product-doc-btn::after {
+        font-size: 0.5rem;
+    }
+}
+
+/* =========================================================
+   DETALLES DE PRODUCTO EN VENTANA MODAL
+   ========================================================= */
+.product-card-modal-trigger {
+    cursor: pointer;
+}
+
+.product-card-modal-trigger:focus-visible {
+    outline: 3px solid rgba(0, 103, 167, 0.35);
+    outline-offset: 4px;
+}
+
+.product-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2500;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.product-modal.show {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.product-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(4, 18, 32, 0.72);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.product-modal-dialog {
+    position: relative;
+    width: min(920px, 100%);
+    max-height: min(88vh, 820px);
+    overflow: auto;
+    overscroll-behavior: contain;
+    background: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 26px;
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.3);
+    transform: translateY(18px) scale(0.98);
+    transition: transform 0.28s ease;
+}
+
+.product-modal.show .product-modal-dialog {
+    transform: translateY(0) scale(1);
+}
+
+.product-modal-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 3;
+    width: 42px;
+    height: 42px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(10, 25, 49, 0.9);
+    color: #ffffff;
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.product-modal-layout {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.35fr);
+}
+
+.product-modal-visual {
+    min-height: 100%;
+    padding: 48px 34px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #f6fbff 0%, #e1edf7 100%);
+}
+
+.product-modal-visual.without-image {
+    display: none;
+}
+
+.product-modal-image {
+    width: 100%;
+    max-width: 330px;
+    max-height: 410px;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.13));
+}
+
+.product-modal-info {
+    padding: 44px 42px 38px;
+}
+
+.product-modal-category {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 6px 12px;
+    margin: 0 48px 12px 0;
+    border-radius: 999px;
+    background: #eaf5fd;
+    color: #005691;
+    font-size: 0.73rem;
+    font-weight: 800;
+    letter-spacing: 0.35px;
+    text-transform: uppercase;
+}
+
+.product-modal-category.red {
+    background: #fff0f0;
+    color: #b42929;
+}
+
+.product-modal-category.yellow {
+    background: #fff8df;
+    color: #886200;
+}
+
+.product-modal-category.green {
+    background: #eaf8ef;
+    color: #16773e;
+}
+
+.product-modal-category.dark {
+    background: #edf0f4;
+    color: #233044;
+}
+
+.product-modal-info h2 {
+    margin: 0 0 12px;
+    color: #142338;
+    font-size: clamp(1.45rem, 2.5vw, 2.05rem);
+    line-height: 1.18;
+}
+
+.product-modal-summary {
+    margin: 0 0 20px;
+    color: #5d6b7d;
+    font-size: 0.97rem;
+    line-height: 1.65;
+}
+
+.product-modal-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.product-modal-meta-item {
+    padding: 12px 14px;
+    border: 1px solid #e3edf5;
+    border-radius: 13px;
+    background: #f8fbfe;
+}
+
+.product-modal-meta-item strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #0067a7;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+}
+
+.product-modal-meta-item span {
+    color: #25364a;
+    font-size: 0.86rem;
+    line-height: 1.45;
+}
+
+.product-modal-description {
+    padding-top: 18px;
+    border-top: 1px solid #e5edf3;
+}
+
+.product-modal-description h3 {
+    margin: 0 0 8px;
+    color: #17283e;
+    font-size: 1rem;
+}
+
+.product-modal-description p {
+    margin: 0;
+    color: #5d6b7d;
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+.product-modal-docs,
+.product-modal-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.product-modal-actions {
+    margin-top: 10px;
+}
+
+.product-modal-doc,
+.product-modal-action {
+    min-height: 46px;
+    padding: 11px 13px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.83rem;
+    font-weight: 800;
+    line-height: 1.25;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-modal-doc:hover,
+.product-modal-action:hover {
+    transform: translateY(-2px);
+}
+
+.product-modal-doc.tech {
+    border: 1px solid rgba(0, 86, 145, 0.22);
+    background: #edf7ff;
+    color: #005691;
+}
+
+.product-modal-doc.safety {
+    border: 1px solid rgba(212, 161, 6, 0.28);
+    background: #fff7e3;
+    color: #8f6200;
+}
+
+.product-modal-action.contact {
+    background: #0067a7;
+    color: #ffffff;
+    box-shadow: 0 8px 18px rgba(0, 103, 167, 0.2);
+}
+
+.product-modal-action.whatsapp {
+    background: #25d366;
+    color: #ffffff;
+    box-shadow: 0 8px 18px rgba(37, 211, 102, 0.2);
+}
+
+@media (max-width: 700px) {
+    /* Más aire a los lados sin perder las tres columnas. */
+    .product-line .container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .product-category-block .products-grid {
+        gap: 7px !important;
+    }
+
+    .product-category-block .product-card {
+        padding-bottom: 7px;
+    }
+
+    .product-category-block .product-card::after {
+        content: "Ver detalles";
+        display: block;
+        margin-top: auto;
+        padding: 5px 2px;
+        border-radius: 7px;
+        background: #edf7ff;
+        color: #005691;
+        font-size: 0.52rem;
+        font-weight: 800;
+        line-height: 1;
+        text-align: center;
+    }
+
+    /* Los documentos y contactos quedan dentro del modal para una tarjeta más limpia. */
+    .product-category-block .product-docs {
+        display: none !important;
+    }
+
+    .product-modal {
+        align-items: end;
+        padding: 12px 10px;
+    }
+
+    .product-modal-dialog {
+        width: 100%;
+        max-height: 92vh;
+        border-radius: 22px 22px 16px 16px;
+    }
+
+    .product-modal-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .product-modal-visual {
+        min-height: 190px;
+        max-height: 230px;
+        padding: 24px 54px 12px;
+    }
+
+    .product-modal-image {
+        max-width: 210px;
+        max-height: 190px;
+    }
+
+    .product-modal-info {
+        padding: 22px 18px 20px;
+    }
+
+    .product-modal-close {
+        top: 10px;
+        right: 10px;
+        width: 38px;
+        height: 38px;
+        font-size: 1.55rem;
+    }
+
+    .product-modal-category {
+        margin-right: 42px;
+        margin-bottom: 9px;
+        font-size: 0.64rem;
+    }
+
+    .product-modal-info h2 {
+        margin-bottom: 9px;
+        font-size: 1.25rem;
+    }
+
+    .product-modal-summary {
+        margin-bottom: 15px;
+        font-size: 0.86rem;
+        line-height: 1.55;
+    }
+
+    .product-modal-meta {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .product-modal-description {
+        padding-top: 14px;
+    }
+
+    .product-modal-description p {
+        font-size: 0.84rem;
+        line-height: 1.55;
+    }
+
+    .product-modal-docs,
+    .product-modal-actions {
+        gap: 8px;
+        margin-top: 14px;
+    }
+
+    .product-modal-actions {
+        margin-top: 8px;
+    }
+
+    .product-modal-doc,
+    .product-modal-action {
+        min-height: 43px;
+        padding: 9px 7px;
+        font-size: 0.73rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .product-line .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .product-category-block .products-grid {
+        gap: 5px !important;
+    }
+
+    .product-category-block .product-card::after {
+        font-size: 0.48rem;
+    }
+
+    .product-modal-docs,
+    .product-modal-actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+.product-modal-doc:only-child,
+.product-modal-action:only-child {
+    grid-column: 1 / -1;
+}
